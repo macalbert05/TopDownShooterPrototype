@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\BulletEncoreProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{55825BA2-3654-4EB9-9B09-8B805E7F3830}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\BulletEncoreProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\BulletEncoreProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{DB6E0807-8775-48C8-9BEF-091F5A2AA07F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\BulletEncoreProject">
+      <UniqueIdentifier>{F8D37F49-35FD-4653-95C1-F9F0932486BE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\BulletEncoreProject\BulletEncoreProject.Build.cs">
+      <Filter>Source\BulletEncoreProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\BulletEncoreProject\BulletEncoreProject.cpp">
+      <Filter>Source\BulletEncoreProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BulletEncoreProject\BulletEncoreProject.h">
+      <Filter>Source\BulletEncoreProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BulletEncoreProject\BulletEncoreProjectGameMode.cpp">
+      <Filter>Source\BulletEncoreProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BulletEncoreProject\BulletEncoreProjectGameMode.h">
+      <Filter>Source\BulletEncoreProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BulletEncoreProject\BulletEncoreProjectPawn.cpp">
+      <Filter>Source\BulletEncoreProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BulletEncoreProject\BulletEncoreProjectPawn.h">
+      <Filter>Source\BulletEncoreProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BulletEncoreProject\BulletEncoreProjectProjectile.cpp">
+      <Filter>Source\BulletEncoreProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BulletEncoreProject\BulletEncoreProjectProjectile.h">
+      <Filter>Source\BulletEncoreProject</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
