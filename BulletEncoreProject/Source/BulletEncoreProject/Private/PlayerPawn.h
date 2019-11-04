@@ -54,6 +54,5 @@ private:
 
 	void MovePlayer(float deltaTime);
 	void RotatePlayer(float deltaTime);
-	void RotateDirection();
 
 };

@@ -26,13 +26,15 @@ APlayerPawn::APlayerPawn()
 	SetUpCameraComponent();
 
 	movementSpeed = 500.0f;
-	currentSpeed = movementSpeed;
+	currentSpeed = 0.0f;
 	rotationSpeed = 45.0f;
 }
 
 void APlayerPawn::BeginPlay()
 {
 	Super::BeginPlay();
+
+	currentSpeed = movementSpeed;
 	
 }
 
@@ -42,7 +44,6 @@ void APlayerPawn::Tick(float DeltaTime)
 
 	RotatePlayer(DeltaTime);
 	MovePlayer(DeltaTime);
-
 }
 
 void APlayerPawn::SetUpPlayerMeshComponent() {
@@ -120,6 +121,7 @@ void APlayerPawn::RotatePlayer(float deltaTime) {
 	FVector EndPoint = ( FVector(rightAxisValue, upAxisValue, 0.0f) * 25.0f ) + RootComponent->GetRelativeTransform().GetTranslation();
 	DrawDebugLine(GetWorld(), RootComponent->GetRelativeTransform().GetTranslation(), EndPoint, FColor::Red, false, -1.0f, 1, 5.0f);
 
+	// Getting the direction from the endpoint and current location
 	LookAtDirection = EndPoint - RootComponent->GetRelativeTransform().GetTranslation();
 	LookAtDirection.Normalize();
 	LookAtDirection = LookAtDirection * rotationSpeed * deltaTime;
@@ -127,18 +129,6 @@ void APlayerPawn::RotatePlayer(float deltaTime) {
 	FHitResult hit(1.0f);
 	FRotator rotation = LookAtDirection.Rotation();
 	
+	// Finally, smoothing the rotation of the player
 	RootComponent->SetRelativeRotation(FMath::Lerp(RootComponent->GetRelativeTransform().GetRotation(), rotation.Quaternion(), 0.3f), true, &hit);
 }
-
-void APlayerPawn::RotateDirection() {
-	// Get the input axis values
-	float rightAxisValue = GetInputAxisValue(LookRightBinding);
-	float upAxisValue = GetInputAxisValue(LookUpBinding);
-
-	LookAtDirection = FVector(rightAxisValue, upAxisValue, 0.0f);
-	LookAtDirection.Normalize();
-
-	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Green, LookAtDirection.ToString());
-}
-
