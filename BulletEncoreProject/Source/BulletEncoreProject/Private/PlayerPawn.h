@@ -38,6 +38,7 @@ public:
 private:
 
 	float currentSpeed;
+	float rotationSpeed;
 
 	FVector LookAtDirection;
 
@@ -52,7 +53,7 @@ private:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	void MovePlayer(float deltaTime);
-	void RotatePlayer();
+	void RotatePlayer(float deltaTime);
 	void RotateDirection();
 
 };

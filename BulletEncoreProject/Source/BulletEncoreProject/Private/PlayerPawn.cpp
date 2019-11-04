@@ -8,6 +8,7 @@
 #include "Components/InputComponent.h"	
 #include "GameFramework/PlayerController.h"
 #include "Engine.h"
+#include "DrawDebugHelpers.h"
 
 const FName APlayerPawn::MoveForwardBinding("MoveForward");
 const FName APlayerPawn::MoveRightBinding("MoveRight");
@@ -26,7 +27,7 @@ APlayerPawn::APlayerPawn()
 
 	movementSpeed = 500.0f;
 	currentSpeed = movementSpeed;
-
+	rotationSpeed = 45.0f;
 }
 
 void APlayerPawn::BeginPlay()
@@ -39,8 +40,8 @@ void APlayerPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	RotatePlayer(DeltaTime);
 	MovePlayer(DeltaTime);
-	RotatePlayer();
 
 }
 
@@ -104,21 +105,37 @@ void APlayerPawn::MovePlayer(float deltaTime) {
 	if (velocity.Size() > 0.0f) {
 		FHitResult hit(1.0f);
 		FRotator rotation = velocity.Rotation();
-		RootComponent->MoveComponent(velocity, rotation, true, &hit);
+		FVector newPosition = RootComponent->GetRelativeTransform().GetTranslation() + velocity;
+		RootComponent->SetRelativeLocation(newPosition, true, &hit);
 	}
 	
 }
 
-void APlayerPawn::RotatePlayer() {
+void APlayerPawn::RotatePlayer(float deltaTime) {
+	// Getting the input axis values
+	float upAxisValue = GetInputAxisValue(LookUpBinding);
+	float rightAxisValue = GetInputAxisValue(LookRightBinding);
 
+	// Calculate the direction Vector Based on the change in mouse position
+	FVector EndPoint = ( FVector(rightAxisValue, upAxisValue, 0.0f) * 25.0f ) + RootComponent->GetRelativeTransform().GetTranslation();
+	DrawDebugLine(GetWorld(), RootComponent->GetRelativeTransform().GetTranslation(), EndPoint, FColor::Red, false, -1.0f, 1, 5.0f);
 
+	LookAtDirection = EndPoint - RootComponent->GetRelativeTransform().GetTranslation();
+	LookAtDirection.Normalize();
+	LookAtDirection = LookAtDirection * rotationSpeed * deltaTime;
+
+	FHitResult hit(1.0f);
+	FRotator rotation = LookAtDirection.Rotation();
+	
+	RootComponent->SetRelativeRotation(FMath::Lerp(RootComponent->GetRelativeTransform().GetRotation(), rotation.Quaternion(), 0.3f), true, &hit);
 }
 
 void APlayerPawn::RotateDirection() {
+	// Get the input axis values
 	float rightAxisValue = GetInputAxisValue(LookRightBinding);
 	float upAxisValue = GetInputAxisValue(LookUpBinding);
 
-	LookAtDirection = FVector(rightAxisValue, upAxisValue, 0.0f) ;
+	LookAtDirection = FVector(rightAxisValue, upAxisValue, 0.0f);
 	LookAtDirection.Normalize();
 
 	if (GEngine)
