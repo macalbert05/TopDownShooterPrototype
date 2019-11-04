@@ -1,7 +1,7 @@
-E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\Definitions.BulletEncoreProject.h
-E:\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject\BulletEncoreProjectProjectile.h
-E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Inc\BulletEncoreProject\BulletEncoreProjectProjectile.generated.h
-E:\Software\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
-E:\Software\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
-E:\Software\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
-E:\Software\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ProjectileMovementComponent.generated.h
+C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\Definitions.BulletEncoreProject.h
+c:\users\malik\documents\github\bulletencore\bulletencoreproject\source\bulletencoreproject\BulletEncoreProjectProjectile.h
+C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Inc\BulletEncoreProject\BulletEncoreProjectProjectile.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ProjectileMovementComponent.generated.h

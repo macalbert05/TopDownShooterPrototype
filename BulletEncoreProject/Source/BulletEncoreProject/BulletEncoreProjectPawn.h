@@ -27,7 +27,7 @@ public:
 	ABulletEncoreProjectPawn();
 
 	/** Offset from the ships location to spawn projectiles */
-	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite )
+	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
 	FVector GunOffset;
 	
 	/* How fast the weapon will fire */
