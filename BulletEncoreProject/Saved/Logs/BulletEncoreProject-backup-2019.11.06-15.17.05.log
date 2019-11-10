@@ -1,0 +1,645 @@
+﻿Log file open, 11/06/19 08:18:55
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: BulletEncoreProject
+LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.573609
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleVision
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin Firebase
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.22-CL-7053642
+LogInit: Engine Version: 4.22.3-7053642+++UE4+Release-4.22
+LogInit: Compatible Engine Version: 4.22.0-5660361+++UE4+Release-4.22
+LogInit: Net CL: 5660361
+LogInit: OS: Windows 10 (Release 1809) (), CPU: Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz, GPU: Intel(R) UHD Graphics 630
+LogInit: Compiled (64-bit): Jun 18 2019 03:09:11
+LogInit: Compiled with Visual C++: 19.16.27025.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.22
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.22/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 23
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 3
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 30
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 35
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 28
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 11
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 2
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 25
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 6
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 2
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Engine.ini]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Engine.ini]
+[2019.11.06-13.18.56:415][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Engine.ini]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Engine.ini]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Engine.ini]
+[2019.11.06-13.18.56:415][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Engine.ini]
+[2019.11.06-13.18.56:415][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.11.06-13.18.56:415][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.11.06-13.18.56:415][  0]LogInit: Selected Device Profile: [Windows]
+[2019.11.06-13.18.56:415][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.11.06-13.18.56:446][  0]LogHAL: Display: Platform has ~ 8 GB [8437579776 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:0		; Required until we fix HLR fall-out]]
+[2019.11.06-13.18.56:478][  0]LogInit: Going up to parent DeviceProfile []
+[2019.11.06-13.18.56:478][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2019.11.06-13.18.56:478][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Engine.ini]
+[2019.11.06-13.18.56:486][  0]LogInit: Computer: LAPTOP-QRINR8CT
+[2019.11.06-13.18.56:486][  0]LogInit: User: Malik
+[2019.11.06-13.18.56:486][  0]LogInit: CPU Page size=4096, Cores=6
+[2019.11.06-13.18.56:486][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2019.11.06-13.18.56:486][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2019.11.06-13.18.56:486][  0]LogMemory: Platform Memory Stats for Windows
+[2019.11.06-13.18.56:486][  0]LogMemory: Process Physical Memory: 96.83 MB used, 96.83 MB peak
+[2019.11.06-13.18.56:486][  0]LogMemory: Process Virtual Memory: 91.78 MB used, 91.78 MB peak
+[2019.11.06-13.18.56:486][  0]LogMemory: Physical Memory: 4282.27 MB used,  3764.43 MB free, 8046.70 MB total
+[2019.11.06-13.18.56:486][  0]LogMemory: Virtual Memory: 4676.72 MB used,  134213048.00 MB free, 134217728.00 MB total
+[2019.11.06-13.18.57:298][  0]LogInit: Using OS detected language (en-US).
+[2019.11.06-13.18.57:298][  0]LogInit: Using OS detected locale (en-CA).
+[2019.11.06-13.18.57:300][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2019.11.06-13.18.58:177][  0]LogInit: Setting process to per monitor DPI aware
+[2019.11.06-13.18.58:431][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.11.06-13.18.58:431][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.11.06-13.19.00:499][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.11.06-13.19.00:499][  0]LogD3D11RHI: D3D11 adapters:
+[2019.11.06-13.19.01:326][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050 Ti' (Feature Level 11_0)
+[2019.11.06-13.19.01:326][  0]LogD3D11RHI:       4021/0/4023 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2019.11.06-13.19.01:346][  0]LogD3D11RHI:    1. 'Intel(R) UHD Graphics 630' (Feature Level 11_0)
+[2019.11.06-13.19.01:347][  0]LogD3D11RHI:       128/0/4023 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2019.11.06-13.19.01:349][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.11.06-13.19.01:349][  0]LogD3D11RHI:       0/0/4023 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.11.06-13.19.01:349][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.11.06-13.19.01:379][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.11.06-13.19.01:379][  0]LogD3D11RHI:     GPU DeviceId: 0x1c8c (for the marketing name, search the web for "GPU Device Id")
+[2019.11.06-13.19.01:379][  0]LogWindows: EnumDisplayDevices:
+[2019.11.06-13.19.01:379][  0]LogWindows:    0. 'Intel(R) UHD Graphics 630' (P:1 D:1)
+[2019.11.06-13.19.01:379][  0]LogWindows:    1. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2019.11.06-13.19.01:380][  0]LogWindows:    2. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2019.11.06-13.19.01:380][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2019.11.06-13.19.01:380][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050 Ti
+[2019.11.06-13.19.01:380][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2019.11.06-13.19.01:380][  0]LogD3D11RHI:      Driver Date: Unknown
+[2019.11.06-13.19.01:380][  0]LogRHI: Texture pool is 2814 MB (70% of 4021 MB)
+[2019.11.06-13.19.01:442][  0]LogD3D11RHI: Async texture creation enabled
+[2019.11.06-13.19.01:473][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.11.06-13.19.01:474][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.11.06-13.19.01:474][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.11.06-13.19.01:485][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2019.11.06-13.19.02:228][  0]LogTemp: Display: Module 'AllDesktopTargetPlatform' loaded TargetPlatform 'AllDesktop'
+[2019.11.06-13.19.02:242][  0]LogTemp: Display: Module 'MacClientTargetPlatform' loaded TargetPlatform 'MacClient'
+[2019.11.06-13.19.02:256][  0]LogTemp: Display: Module 'MacNoEditorTargetPlatform' loaded TargetPlatform 'MacNoEditor'
+[2019.11.06-13.19.02:271][  0]LogTemp: Display: Module 'MacServerTargetPlatform' loaded TargetPlatform 'MacServer'
+[2019.11.06-13.19.02:289][  0]LogTemp: Display: Module 'MacTargetPlatform' loaded TargetPlatform 'Mac'
+[2019.11.06-13.19.02:319][  0]LogTemp: Display: Module 'WindowsClientTargetPlatform' loaded TargetPlatform 'WindowsClient'
+[2019.11.06-13.19.02:334][  0]LogTemp: Display: Module 'WindowsNoEditorTargetPlatform' loaded TargetPlatform 'WindowsNoEditor'
+[2019.11.06-13.19.02:348][  0]LogTemp: Display: Module 'WindowsServerTargetPlatform' loaded TargetPlatform 'WindowsServer'
+[2019.11.06-13.19.02:356][  0]LogTemp: Display: Module 'WindowsTargetPlatform' loaded TargetPlatform 'Windows'
+[2019.11.06-13.19.02:443][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android'
+[2019.11.06-13.19.02:443][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTC'
+[2019.11.06-13.19.02:444][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATC'
+[2019.11.06-13.19.02:444][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXT'
+[2019.11.06-13.19.02:444][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1'
+[2019.11.06-13.19.02:444][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1a'
+[2019.11.06-13.19.02:444][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2'
+[2019.11.06-13.19.02:444][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTC'
+[2019.11.06-13.19.02:444][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'AndroidClient'
+[2019.11.06-13.19.02:444][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTCClient'
+[2019.11.06-13.19.02:444][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATCClient'
+[2019.11.06-13.19.02:444][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXTClient'
+[2019.11.06-13.19.02:444][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1Client'
+[2019.11.06-13.19.02:444][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1aClient'
+[2019.11.06-13.19.02:444][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2Client'
+[2019.11.06-13.19.02:444][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTCClient'
+[2019.11.06-13.19.02:444][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_Multi'
+[2019.11.06-13.19.02:444][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_MultiClient'
+[2019.11.06-13.19.02:446][  0]LogTemp: Display: Module 'HTML5TargetPlatform' loaded TargetPlatform 'HTML5'
+[2019.11.06-13.19.02:505][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOSClient'
+[2019.11.06-13.19.02:505][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOS'
+[2019.11.06-13.19.02:528][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOSClient'
+[2019.11.06-13.19.02:528][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOS'
+[2019.11.06-13.19.02:546][  0]LogTemp: Display: Module 'LinuxClientTargetPlatform' loaded TargetPlatform 'LinuxClient'
+[2019.11.06-13.19.02:558][  0]LogTemp: Display: Module 'LinuxNoEditorTargetPlatform' loaded TargetPlatform 'LinuxNoEditor'
+[2019.11.06-13.19.02:571][  0]LogTemp: Display: Module 'LinuxServerTargetPlatform' loaded TargetPlatform 'LinuxServer'
+[2019.11.06-13.19.02:590][  0]LogTemp: Display: Module 'LinuxTargetPlatform' loaded TargetPlatform 'Linux'
+[2019.11.06-13.19.02:636][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'Lumin'
+[2019.11.06-13.19.02:636][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'LuminClient'
+[2019.11.06-13.19.02:636][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.11.06-13.19.02:704][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2019.11.06-13.19.02:970][  0]LogShaderCompilers: Guid format shader working directory is -34 characters bigger than the processId version (../../../../../../Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Intermediate/Shaders/WorkingDirectory/20536/).
+[2019.11.06-13.19.02:970][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Malik/AppData/Local/Temp/UnrealShaderWorkingDir/BA94096046B97C6634D9ACA00BD62F94/'.
+[2019.11.06-13.19.02:974][  0]LogXGEController: Cleaning working directory: C:/Users/Malik/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2019.11.06-13.19.02:986][  0]LogShaderCompilers: Display: Using XGE Shader Compiler (Interception Interface).
+[2019.11.06-13.19.05:087][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.11.06-13.19.06:016][  0]LogDerivedDataCache: Loaded boot cache 0.91s 71MB C:/Users/Malik/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
+[2019.11.06-13.19.06:016][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Malik/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc
+[2019.11.06-13.19.06:017][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.11.06-13.19.06:017][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.11.06-13.19.06:017][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.11.06-13.19.06:017][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.11.06-13.19.06:038][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.11.06-13.19.06:038][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.11.06-13.19.06:038][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2019.11.06-13.19.06:051][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Malik/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.11.06-13.19.06:051][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.11.06-13.19.06:051][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.11.06-13.19.06:090][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.11.06-13.19.06:108][  0]LogSlate: Using FreeType 2.6.0
+[2019.11.06-13.19.06:122][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.11.06-13.19.06:607][  0]LogAssetRegistry: FAssetRegistry took 0.0339 seconds to start up
+[2019.11.06-13.19.08:573][  0]LogInit: Selected Device Profile: [Windows]
+[2019.11.06-13.19.09:459][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.11.06-13.19.09:459][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2019.11.06-13.19.09:459][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.11.06-13.19.09:459][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2019.11.06-13.19.09:460][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2019.11.06-13.19.09:623][  0]LogNetVersion: BulletEncoreProject 1.0.0, NetCL: 5660361, EngineNetVer: 10, GameNetVer: 0 (Checksum: 3294845334)
+[2019.11.06-13.19.13:141][  0]LogPackageLocalizationCache: Processed 10 localized package path(s) for 1 prioritized culture(s) in 0.050516 seconds
+[2019.11.06-13.19.13:153][  0]LogUObjectArray: 42205 objects as part of root set at end of initial load.
+[2019.11.06-13.19.13:153][  0]LogUObjectAllocator: 7325032 out of 0 bytes used by permanent object pool.
+[2019.11.06-13.19.13:154][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.11.06-13.19.27:787][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.11.06-13.19.27:803][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.11.06-13.19.28:422][  0]SourceControl: Source control is disabled
+[2019.11.06-13.19.28:423][  0]SourceControl: Source control is disabled
+[2019.11.06-13.19.28:486][  0]SourceControl: Source control is disabled
+[2019.11.06-13.19.28:499][  0]SourceControl: Source control is disabled
+[2019.11.06-13.19.29:314][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.11.06-13.19.29:744][  0]LogOcInput: OculusInput pre-init called
+[2019.11.06-13.19.31:244][  0]LogEngine: Initializing Engine...
+[2019.11.06-13.19.31:256][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.11.06-13.19.31:260][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.002 s
+[2019.11.06-13.19.31:882][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.11.06-13.19.32:130][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.11.06-13.19.32:207][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.06-13.19.32:707][  0]LogInit: FAudioDevice initialized.
+[2019.11.06-13.19.32:708][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.11.06-13.19.33:041][  0]LogDerivedDataCache: Saved boot cache 0.33s 71MB C:/Users/Malik/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
+[2019.11.06-13.19.33:046][  0]LogInit: Texture streaming: Enabled
+[2019.11.06-13.19.33:162][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.11.06-13.19.33:571][  0]LogInit: Transaction tracking system initialized
+[2019.11.06-13.19.34:562][  0]BlueprintLog: New page: Editor Load
+[2019.11.06-13.19.36:170][  0]LocalizationService: Localization service is disabled
+[2019.11.06-13.19.39:743][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Content/' took 0.02s
+[2019.11.06-13.19.39:743][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.11.06-13.19.39:761][  0]LogCook: Display: Mobile HDR setting 1
+[2019.11.06-13.19.45:554][  0]SourceControl: Source control is disabled
+[2019.11.06-13.19.45:566][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Content/TwinStickCPP/Maps/TwinStickExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.11.06-13.19.45:715][  0]LightingResults: New page: Lighting Build
+[2019.11.06-13.19.45:802][  0]MapCheck: New page: Map Check
+[2019.11.06-13.19.45:802][  0]LightingResults: New page: Lighting Build
+[2019.11.06-13.19.45:831][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.44ms
+[2019.11.06-13.19.47:251][  0]LogAIModule: Creating AISystem for world TwinStickExampleMap
+[2019.11.06-13.19.47:478][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.11.06-13.19.47:512][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.67ms
+[2019.11.06-13.19.47:512][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.11.06-13.19.47:512][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.157ms to complete.
+[2019.11.06-13.19.47:512][  0]LogFileHelpers: Loading map 'TwinStickExampleMap' took 1.948
+[2019.11.06-13.19.49:188][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.06-13.19.49:197][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.06-13.19.49:203][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.06-13.19.49:209][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.06-13.19.49:368][  0]LogCollectionManager: Loaded 0 collections in 0.001574 seconds
+[2019.11.06-13.19.49:538][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Collections/' took 0.01s
+[2019.11.06-13.19.49:538][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Content/Developers/Malik/Collections/' took 0.01s
+[2019.11.06-13.19.49:538][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Content/Collections/' took 0.01s
+[2019.11.06-13.19.49:538][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2019.11.06-13.19.49:551][  0]LogContentBrowser: Native class hierarchy populated in 0.0127 seconds. Added 2736 classes and 662 folders.
+[2019.11.06-13.19.49:712][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2019.11.06-13.19.49:789][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.49:913][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.49:943][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:010][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:017][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:036][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:075][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:080][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:089][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:137][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:184][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:199][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:239][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:273][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:288][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:306][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:350][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:410][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:415][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:450][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:456][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:516][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:524][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:530][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:537][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.50:543][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.11.06-13.19.51:501][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2019.11.06-13.19.51:557][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2019.11.06-13.19.52:520][  0]LogSlate: Took 0.049408 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.11.06-13.19.52:571][  0]LogSlate: Took 0.048437 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.11.06-13.19.52:609][  0]LogSlate: Took 0.032023 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.11.06-13.19.52:829][  0]LogRenderer: Reallocating scene render targets to support 896x436 Format 10 NumSamples 1 (Frame:1).
+[2019.11.06-13.19.52:966][  0]LogSlate: Took 0.043093 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.11.06-13.19.53:257][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2019.11.06-13.19.53:257][  0]LogLoad: (Engine Initialization) Total time: 69.99 seconds
+[2019.11.06-13.19.53:257][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.11.06-13.19.53:516][  0]LogAssetRegistry: Asset discovery search completed in 46.9311 seconds
+[2019.11.06-13.19.53:532][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2019.11.06-13.19.53:532][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000057 seconds (updated 0 objects)
+[2019.11.06-13.19.53:551][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.11.06-13.21.35:278][ 90]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.06-13.21.38:609][431]LogSlate: Took 0.000186 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.11.06-13.21.38:623][431]LogAssetEditorManager: Opening Asset editor for Class /Script/BulletEncoreProject.PlayerPawn
+[2019.11.06-13.22.53:387][997]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (35.788 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.11.06-13.52.44:175][898]LogDirectoryWatcher: A directory notification failed for 'C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Content/Collections/' because it could not be accessed. Aborting watch request...
+[2019.11.06-13.52.44:200][898]LogDirectoryWatcher: A directory notification failed for 'C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Content/Developers/Malik/Collections/' because it could not be accessed. Aborting watch request...
+[2019.11.06-13.52.44:201][898]LogDirectoryWatcher: A directory notification failed for 'C:/Users/Malik/Documents/GitHub/BulletEncore/BulletEncoreProject/Saved/Collections/' because it could not be accessed. Aborting watch request...
+[2019.11.06-14.14.54:112][537]LogHotReload: New module detected: UE4Editor-BulletEncoreProject-0001.dll
+[2019.11.06-14.14.59:155][553]LogHotReload: Starting Hot-Reload from IDE
+[2019.11.06-14.15.03:226][553]LogUObjectHash: Compacting FUObjectHashTables data took 1231.96ms
+[2019.11.06-14.15.04:104][553]LogClass: Could not find existing class PlayerPawn in package /Script/BulletEncoreProject for HotReload, assuming new class
+[2019.11.06-14.15.09:630][553]LogTexture: Display: Building textures: UE4_Mannequin_MAT_MASKA (AutoDXT, 1024X1024)
+[2019.11.06-14.15.09:630][553]LogTexture: Display: Building textures: UE4_Mannequin_occlusion_Mobile (DXT1, 512X512)
+[2019.11.06-14.15.09:630][553]LogTexture: Display: Building textures: UE4Man_Logo_N (BC5, 512X512)
+[2019.11.06-14.15.09:630][553]LogTexture: Display: Building textures: T_ML_Aluminum01 (DXT1, 512X512)
+[2019.11.06-14.15.09:630][553]LogTexture: Display: Building textures: T_ML_Aluminum01_N (BC5, 512X512)
+[2019.11.06-14.15.09:630][553]LogTexture: Display: Building textures: T_ML_Rubber_Blue_01_D (DXT1, 512X512)
+[2019.11.06-14.15.09:630][553]LogTexture: Display: Building textures: T_ML_Rubber_Blue_01_N (BC5, 512X512)
+[2019.11.06-14.15.09:630][553]LogTexture: Display: Building textures: UE4_Mannequin__normals (BC5, 2048X2048)
+[2019.11.06-14.15.09:630][553]LogMaterial: Display: Missing cached shader map for material M_UE4Man_Body, compiling. 
+[2019.11.06-14.15.10:591][553]LogMaterial: Display: Missing cached shader map for material M_UE4Man_Body, compiling. 
+[2019.11.06-14.15.10:959][553]LogSkeletalMesh: Building Skeletal Mesh SK_Mannequin...
+[2019.11.06-14.15.11:592][553]LogSkeletalMesh: Built Skeletal Mesh [0.63s] /Game/AnimStarterPack/UE4_Mannequin/Mesh/SK_Mannequin.SK_Mannequin
+[2019.11.06-14.15.12:345][553]LogHotReload: Re-instancing BulletEncoreProjectGameMode after hot-reload.
+[2019.11.06-14.15.17:344][553]LogHotReload: Re-instancing PlayerPawn after hot-reload.
+[2019.11.06-14.15.18:105][553]LogContentBrowser: Native class hierarchy updated for 'BulletEncoreProject' in 0.0022 seconds. Added 4 classes and 3 folders.
+[2019.11.06-14.15.18:125][553]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2019.11.06-14.15.18:879][553]LogUObjectHash: Compacting FUObjectHashTables data took   5.58ms
+[2019.11.06-14.15.19:542][553]LogContentBrowser: Native class hierarchy populated in 0.1002 seconds. Added 2737 classes and 664 folders.
+[2019.11.06-14.15.19:713][553]Display: HotReload took 20.6s.
+[2019.11.06-15.16.32:180][843]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.06-15.16.34:562][843]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap' with GeneratedClass '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap_C' with ClassGeneratedBy '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap'
+[2019.11.06-15.16.34:691][843]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.06-15.16.35:462][843]PIE: New page: PIE session: TwinStickExampleMap (Nov 6, 2019, 5:16:34 AM)
+[2019.11.06-15.16.36:401][843]LogPlayLevel: Creating play world package: /Game/TwinStickCPP/Maps/UEDPIE_0_TwinStickExampleMap
+[2019.11.06-15.16.38:128][843]LogPlayLevel: PIE: StaticDuplicateObject took: (1.708639s)
+[2019.11.06-15.16.38:693][843]LogAIModule: Creating AISystem for world TwinStickExampleMap
+[2019.11.06-15.16.38:784][843]LogPlayLevel: PIE: World Init took: (0.655358s)
+[2019.11.06-15.16.38:955][843]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap to /Game/TwinStickCPP/Maps/UEDPIE_0_TwinStickExampleMap.TwinStickExampleMap (2.554786s)
+[2019.11.06-15.16.39:136][843]LogUObjectHash: Compacting FUObjectHashTables data took   1.10ms
+[2019.11.06-15.16.39:595][843]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.06-15.16.40:045][843]LogInit: FAudioDevice initialized.
+[2019.11.06-15.16.40:720][843]LogLoad: Game class is 'BulletEncoreProjectGameMode'
+[2019.11.06-15.16.40:927][843]LogWorld: Bringing World /Game/TwinStickCPP/Maps/UEDPIE_0_TwinStickExampleMap.TwinStickExampleMap up for play (max tick rate 60) at 2019.11.06-10.16.40
+[2019.11.06-15.16.40:944][843]LogWorld: Bringing up level for play took: 0.038586
+[2019.11.06-15.16.42:883][843]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0013 seconds. Added 20 classes and 0 folders.
+[2019.11.06-15.16.43:277][843]PIE: Play in editor start time for /Game/TwinStickCPP/Maps/UEDPIE_0_TwinStickExampleMap 8.944
+[2019.11.06-15.16.43:820][843]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap' with GeneratedClass '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap_C' with ClassGeneratedBy '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap'
+[2019.11.06-15.17.00:947][843]LogWindows: Error: === Critical error: ===
+[2019.11.06-15.17.00:947][843]LogWindows: Error: 
+[2019.11.06-15.17.00:947][843]LogWindows: Error: Fatal error!
+[2019.11.06-15.17.00:947][843]LogWindows: Error: 
+[2019.11.06-15.17.00:947][843]LogWindows: Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x00000190
+[2019.11.06-15.17.00:947][843]LogWindows: Error: 
+[2019.11.06-15.17.00:947][843]LogWindows: Error: [Callstack] 0x00007ffae9afee87 UE4Editor-Engine.dll!UnknownFunction []
+[2019.11.06-15.17.00:947][843]LogWindows: Error: [Callstack] 0x00007ffb37fc3024 UE4Editor-BulletEncoreProject-0001.dll!APlayerPawn::RotatePlayer() [c:\users\malik\documents\github\bulletencore\bulletencoreproject\source\bulletencoreproject\private\playerpawn.cpp:125]
+[2019.11.06-15.17.00:947][843]LogWindows: Error: [Callstack] 0x00007ffb37fc3802 UE4Editor-BulletEncoreProject-0001.dll!APlayerPawn::Tick() [c:\users\malik\documents\github\bulletencore\bulletencoreproject\source\bulletencoreproject\private\playerpawn.cpp:46]
+[2019.11.06-15.17.00:947][843]LogWindows: Error: [Callstack] 0x00007ffae96efea2 UE4Editor-Engine.dll!UnknownFunction []
+[2019.11.06-15.17.00:947][843]LogWindows: Error: [Callstack] 0x00007ffae96baeed UE4Editor-Engine.dll!UnknownFunction []
+[2019.11.06-15.17.00:947][843]LogWindows: Error: [Callstack] 0x00007ffaea6772bc UE4Editor-Engine.dll!UnknownFunction []
+[2019.11.06-15.17.00:947][843]LogWindows: Error: [Callstack] 0x00007ffb001322d8 UE4Editor-Core.dll!UnknownFunction []
+[2019.11.06-15.17.00:947][843]LogWindows: Error: [Callstack] 0x00007ffb00132563 UE4Editor-Core.dll!UnknownFunction []
+[2019.11.06-15.17.00:947][843]LogWindows: Error: [Callstack] 0x00007ffb00142309 UE4Editor-Core.dll!UnknownFunction []
+[2019.11.06-15.17.00:947][843]LogWindows: Error: [Callstack] 0x00007ffaea6bf9e3 UE4Editor-Engine.dll!UnknownFunction []
+[2019.11.06-15.17.00:947][843]LogWindows: Error: [Callstack] 0x00007ffaea6cbd12 UE4Editor-Engine.dll!UnknownFunction []
+[2019.11.06-15.17.00:947][843]LogWindows: Error: [Callstack] 0x00007ffae9eedc4f UE4Editor-Engine.dll!UnknownFunction []
+[2019.11.06-15.17.00:947][843]LogWindows: Error: [Callstack] 0x00007ffae9ef7e28 UE4Editor-Engine.dll!UnknownFunction []
+[2019.11.06-15.17.00:947][843]LogWindows: Error: [Callstack] 0x00007ffae7d302f7 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2019.11.06-15.17.00:947][843]LogWindows: Error: [Callstack] 0x00007ffae854d396 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2019.11.06-15.17.00:948][843]LogWindows: Error: [Callstack] 0x00007ff6f7bd6bb1 UE4Editor.exe!UnknownFunction []
+[2019.11.06-15.17.00:948][843]LogWindows: Error: [Callstack] 0x00007ff6f7be554c UE4Editor.exe!UnknownFunction []
+[2019.11.06-15.17.00:948][843]LogWindows: Error: [Callstack] 0x00007ff6f7be55ca UE4Editor.exe!UnknownFunction []
+[2019.11.06-15.17.00:948][843]LogWindows: Error: [Callstack] 0x00007ff6f7bf316c UE4Editor.exe!UnknownFunction []
+[2019.11.06-15.17.00:948][843]LogWindows: Error: [Callstack] 0x00007ff6f7bf5b8e UE4Editor.exe!UnknownFunction []
+[2019.11.06-15.17.00:948][843]LogWindows: Error: [Callstack] 0x00007ffb401b7974 KERNEL32.DLL!UnknownFunction []
+[2019.11.06-15.17.00:948][843]LogWindows: Error: [Callstack] 0x00007ffb421ba271 ntdll.dll!UnknownFunction []
+[2019.11.06-15.17.00:948][843]LogWindows: Error: 
+[2019.11.06-15.17.01:584][843]LogExit: Executing StaticShutdownAfterError
+[2019.11.06-15.17.04:968][843]LogWindows: FPlatformMisc::RequestExit(1)
+[2019.11.06-15.17.05:042][843]Log file closed, 11/06/19 10:17:05

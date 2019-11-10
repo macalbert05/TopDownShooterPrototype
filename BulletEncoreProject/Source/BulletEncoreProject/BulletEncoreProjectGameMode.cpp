@@ -2,6 +2,7 @@
 
 #include "BulletEncoreProjectGameMode.h"
 #include "PlayerPawn.h"
+#include "UObject/ConstructorHelpers.h"
 
 ABulletEncoreProjectGameMode::ABulletEncoreProjectGameMode()
 {

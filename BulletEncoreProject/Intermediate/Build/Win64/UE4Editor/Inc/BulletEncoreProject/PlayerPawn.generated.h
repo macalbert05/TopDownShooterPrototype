@@ -8,13 +8,34 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FVector;
 #ifdef BULLETENCOREPROJECT_PlayerPawn_generated_h
 #error "PlayerPawn.generated.h already included, missing '#pragma once' in PlayerPawn.h"
 #endif
 #define BULLETENCOREPROJECT_PlayerPawn_generated_h
 
-#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_14_RPC_WRAPPERS
-#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_14_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetAimDirection) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=P_THIS->GetAimDirection(); \
+		P_NATIVE_END; \
+	}
+
+
+#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetAimDirection) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=P_THIS->GetAimDirection(); \
+		P_NATIVE_END; \
+	}
+
+
 #define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPlayerPawn(); \

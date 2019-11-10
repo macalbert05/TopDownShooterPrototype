@@ -3,17 +3,20 @@
 
 #include "PlayerPawn.h"
 #include "UObject/ConstructorHelpers.h" // Library needed to find and instantiate the player's static mesh
-#include "Components/StaticMeshComponent.h"	// Library needed in order to recognize the static mesh commponent as viable root component
+#include "Components/SkeletalMeshComponent.h"	// Library needed in order to recognize the static mesh commponent as viable root component
 #include "Engine/CollisionProfile.h"	// Used to settup default collision profile for this object
 #include "Components/InputComponent.h"	
+#include "Components/CapsuleComponent.h"
 #include "GameFramework/PlayerController.h"
 #include "Engine.h"
 #include "DrawDebugHelpers.h"
+#include "BaseProjectileClass.h"
 
 const FName APlayerPawn::MoveForwardBinding("MoveForward");
 const FName APlayerPawn::MoveRightBinding("MoveRight");
 const FName APlayerPawn::LookUpBinding("LookUp");
 const FName APlayerPawn::LookRightBinding("LookRight");
+const FName APlayerPawn::FireBinding("Fire");
 
 APlayerPawn::APlayerPawn()
 {
@@ -27,7 +30,9 @@ APlayerPawn::APlayerPawn()
 
 	movementSpeed = 500.0f;
 	currentSpeed = 0.0f;
-	rotationSpeed = 45.0f;
+	rotationSpeed = 30.0f;
+	fireCooldown = 1.0f;
+	bCanFire = true;
 }
 
 void APlayerPawn::BeginPlay()
@@ -47,14 +52,26 @@ void APlayerPawn::Tick(float DeltaTime)
 }
 
 void APlayerPawn::SetUpPlayerMeshComponent() {
-	// Find the mesh needed for the player in its heiearchy
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlayerMesh(TEXT("/Game/TwinStick/Meshes/TwinStickUFO.TwinStickUFO"));
+	
+	// Creating the capsule component
+	PlayerCapsuleComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CapsuleComp"));
+	RootComponent = PlayerCapsuleComponent;
+	PlayerCapsuleComponent->SetCapsuleHalfHeight(100.0f);
+	PlayerCapsuleComponent->SetCapsuleRadius(34.0f);
+	PlayerCapsuleComponent->SetSimulatePhysics(true);
+	PlayerCapsuleComponent->SetCollisionProfileName(UCollisionProfile::Pawn_ProfileName);
+	PlayerCapsuleComponent->SetEnableGravity(false);
+	PlayerCapsuleComponent->BodyInstance.bLockYRotation = true;
+	PlayerCapsuleComponent->BodyInstance.bLockYRotation = true;
 
-	// Creating the mesh component
-	PlayerMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PlayerMesh"));
-	RootComponent = PlayerMeshComponent; // Player Mesh Component will show up as root component in editor
-	PlayerMeshComponent->SetCollisionProfileName(UCollisionProfile::Pawn_ProfileName);
-	PlayerMeshComponent->SetStaticMesh(PlayerMesh.Object);
+	// Find the mesh needed for the player in its heiearchy
+	static ConstructorHelpers::FObjectFinder<USkeletalMesh> SkeletalMesh(TEXT("/Game/AnimStarterPack/UE4_Mannequin/Mesh/SK_Mannequin.SK_Mannequin"));
+	PlayerSkeletalMeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("SkeletalMesh"));
+	PlayerSkeletalMeshComponent->SetupAttachment(RootComponent);
+	PlayerSkeletalMeshComponent->SetSkeletalMesh(SkeletalMesh.Object);
+	PlayerSkeletalMeshComponent->SetRelativeLocation(FVector(0.0f, 0.0f, -95.0f));
+
+	
 }
 
 void APlayerPawn::SetUpCameraComponent() {
@@ -66,8 +83,8 @@ void APlayerPawn::SetUpCameraComponent() {
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
 	CameraBoom->bAbsoluteRotation = true;	// When the pawn rotates the camera will not
-	CameraBoom->TargetArmLength = 1200.0f;	// How far is the camera from the pawn
-	CameraBoom->RelativeRotation = FRotator(-80.0f, 0.0f, 0.0f);
+	CameraBoom->TargetArmLength = 650.0f;	// How far is the camera from the pawn
+	CameraBoom->RelativeRotation = FRotator(-60.0f, 0.0f, 0.0f);
 	CameraBoom->bDoCollisionTest = false;	// We will not be using collision test, so the camera will not be pulled in when it collides
 
 	// Now.. onto creating the camera component
@@ -86,7 +103,7 @@ void APlayerPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputCo
 	PlayerInputComponent->BindAxis(MoveRightBinding);
 	PlayerInputComponent->BindAxis(LookUpBinding);
 	PlayerInputComponent->BindAxis(LookRightBinding);
-
+	PlayerInputComponent->BindAction(FireBinding, EInputEvent::IE_Pressed, this, &APlayerPawn::FireShot);
 
 }
 
@@ -117,9 +134,11 @@ void APlayerPawn::RotatePlayer(float deltaTime) {
 	float upAxisValue = GetInputAxisValue(LookUpBinding);
 	float rightAxisValue = GetInputAxisValue(LookRightBinding);
 
+	FVector inputVector = FVector(rightAxisValue, upAxisValue, 0.0f);
+
 	// Calculate the direction Vector Based on the change in mouse position
-	FVector EndPoint = ( FVector(rightAxisValue, upAxisValue, 0.0f) * 25.0f ) + RootComponent->GetRelativeTransform().GetTranslation();
-	DrawDebugLine(GetWorld(), RootComponent->GetRelativeTransform().GetTranslation(), EndPoint, FColor::Red, false, -1.0f, 1, 5.0f);
+	FVector EndPoint = (inputVector * 25.0f) + RootComponent->GetRelativeTransform().GetTranslation();
+	// DrawDebugLine(GetWorld(), RootComponent->GetRelativeTransform().GetTranslation(), EndPoint, FColor::Red, false, -1.0f, 1, 5.0f);
 
 	// Getting the direction from the endpoint and current location
 	LookAtDirection = EndPoint - RootComponent->GetRelativeTransform().GetTranslation();
@@ -130,5 +149,54 @@ void APlayerPawn::RotatePlayer(float deltaTime) {
 	FRotator rotation = LookAtDirection.Rotation();
 	
 	// Finally, smoothing the rotation of the player
-	RootComponent->SetRelativeRotation(FMath::Lerp(RootComponent->GetRelativeTransform().GetRotation(), rotation.Quaternion(), 0.3f), true, &hit);
+	if (inputVector.Size() > 0.0f) {
+		RootComponent->SetRelativeRotation(FMath::Lerp(RootComponent->GetRelativeTransform().GetRotation(), rotation.Quaternion(), 0.1f), true, &hit);
+	}
+}
+
+FVector APlayerPawn::GetAimDirection() {
+	const FRotator fireRotation = RootComponent->GetRelativeTransform().GetRotation().Rotator();
+	FVector offset = FVector(90.0f, 0.0f, 0.0f);
+	FVector aimDirection = fireRotation.RotateVector(offset);
+	aimDirection.Normalize();
+	return aimDirection;
+}
+
+void APlayerPawn::FireShot() {
+
+	if (bCanFire) {
+		// Get the rotation of the player
+		const FRotator fireRotation = RootComponent->GetRelativeTransform().GetRotation().Rotator();
+		
+		// Create the offset of where the bullet will spawn
+		FVector offset = FVector(90.0f, 0.0f, 0.0f);
+		const FVector spawnLocation = GetActorLocation() + fireRotation.RotateVector(offset);
+
+		/*
+		if (GEngine) {
+			FString mssg = TEXT("Current Location: ") + RootComponent->GetRelativeTransform().GetLocation().ToString();
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Blue, mssg);
+			mssg = TEXT("Fired Weapon at location: ") + spawnLocation.ToString() + TEXT(" in the direction: ") + fireRotation.ToString();
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, mssg);
+		}
+		*/
+
+		UWorld* const World = GetWorld();
+		if (World != NULL) {
+			// Spawn the bullet
+			World->SpawnActor<ABaseProjectileClass>(spawnLocation, fireRotation);
+		}
+
+		bCanFire = false;
+		// Built in timer handler to implement cooldown on fire
+		World->GetTimerManager().SetTimer(TimerHandle_FireCooldownExpire, this, &APlayerPawn::FireCooldownExpire, fireCooldown);
+
+		bCanFire = false;
+	}
+}
+
+void APlayerPawn::FireCooldownExpire() {
+
+	bCanFire = true;
+
 }

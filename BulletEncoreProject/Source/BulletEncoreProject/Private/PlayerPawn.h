@@ -15,26 +15,30 @@ class APlayerPawn : public APawn
 
 public:
 
+	UPROPERTY(Category = Collider, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		class UCapsuleComponent* PlayerCapsuleComponent;
+
 	UPROPERTY(Category = Mesh, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UStaticMeshComponent* PlayerMeshComponent;
+		USkeletalMeshComponent* PlayerSkeletalMeshComponent;
 
-	UPROPERTY(Category = Camera, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UCameraComponent* CameraComponent;
+	UPROPERTY(Category = Camera, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		UCameraComponent* CameraComponent;
 
-	UPROPERTY(Category = Camera, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	USpringArmComponent* CameraBoom;
+	UPROPERTY(Category = Camera, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		USpringArmComponent* CameraBoom;
 
 	/*Movement Variables*/
 	UPROPERTY(Category = Movement, EditAnywhere, BlueprintReadWrite, meta = (ClampMin = "1.0"))
-	float movementSpeed;
+		float movementSpeed;
 
 
 	APlayerPawn();
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
 
-	FVector GetAimDirection() { return LookAtDirection; }
-	
+	UFUNCTION(BlueprintCallable)
+		FVector GetAimDirection();
+
 private:
 
 	float currentSpeed;
@@ -42,11 +46,17 @@ private:
 
 	FVector LookAtDirection;
 
+	/* Gun Variables*/
+	bool bCanFire;
+	float fireCooldown;
+	FTimerHandle TimerHandle_FireCooldownExpire;
+
 	/*Player Input Bindings*/
 	static const FName MoveForwardBinding;
 	static const FName MoveRightBinding;
 	static const FName LookUpBinding;
 	static const FName LookRightBinding;
+	static const FName FireBinding;
 
 	void SetUpPlayerMeshComponent();
 	void SetUpCameraComponent();
@@ -54,5 +64,8 @@ private:
 
 	void MovePlayer(float deltaTime);
 	void RotatePlayer(float deltaTime);
+
+	void FireShot();
+	void FireCooldownExpire();
 
 };
