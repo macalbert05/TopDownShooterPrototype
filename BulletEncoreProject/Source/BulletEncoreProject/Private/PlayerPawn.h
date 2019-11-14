@@ -8,6 +8,50 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "PlayerPawn.generated.h"
 
+
+UENUM(BlueprintType)
+enum class EAmmoType : uint8
+{
+	NormalBullet UMETA(DisplayName = "NormalBullet")
+};
+
+USTRUCT(BlueprintType)
+struct BULLETENCOREPROJECT_API FPlayerStats {
+
+	GENERATED_USTRUCT_BODY()
+
+	FPlayerStats() {
+		numberOfLives = 3;
+		maxHealth = 99.0f;
+		currentHealth = maxHealth;
+		currentAmmoType = EAmmoType::NormalBullet;
+		maxAmmoCount = 8;
+		currentAmmoCount = maxAmmoCount;
+	}
+
+	UPROPERTY(BlueprintreadWrite, EditAnywhere)
+		int numberOfLives;
+
+	UPROPERTY()
+		float currentHealth;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		float maxHealth;
+	
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		EAmmoType currentAmmoType;
+
+	UPROPERTY(VisibleAnywhere)
+		int currentAmmoCount;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		int maxAmmoCount;
+
+};
+
+
+
+
 UCLASS(Blueprintable)
 class APlayerPawn : public APawn
 {
@@ -21,6 +65,9 @@ public:
 	UPROPERTY(Category = Mesh, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 		USkeletalMeshComponent* PlayerSkeletalMeshComponent;
 
+	UPROPERTY(Category = Mesh, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		USkeletalMeshComponent* PlayerWeaponMeshComponent;
+
 	UPROPERTY(Category = Camera, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 		UCameraComponent* CameraComponent;
 
@@ -31,6 +78,8 @@ public:
 	UPROPERTY(Category = Movement, EditAnywhere, BlueprintReadWrite, meta = (ClampMin = "1.0"))
 		float movementSpeed;
 
+	UPROPERTY(Category = PlayerStatistics, BlueprintReadWrite, EditAnywhere)
+		FPlayerStats playerStats;
 
 	APlayerPawn();
 	virtual void BeginPlay() override;
@@ -38,6 +87,9 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 		FVector GetAimDirection();
+
+	UFUNCTION(BlueprintCallable)
+		float GetCurrentSpeed() const { return currentSpeed; }
 
 private:
 
@@ -50,6 +102,7 @@ private:
 	bool bCanFire;
 	float fireCooldown;
 	FTimerHandle TimerHandle_FireCooldownExpire;
+	
 
 	/*Player Input Bindings*/
 	static const FName MoveForwardBinding;
@@ -67,5 +120,7 @@ private:
 
 	void FireShot();
 	void FireCooldownExpire();
+
+	void PrintPlayerStatsToScreen();
 
 };

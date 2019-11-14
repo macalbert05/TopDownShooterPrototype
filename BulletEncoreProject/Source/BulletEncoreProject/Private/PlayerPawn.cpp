@@ -11,6 +11,7 @@
 #include "Engine.h"
 #include "DrawDebugHelpers.h"
 #include "BaseProjectileClass.h"
+#include "Animation/AnimBlueprint.h"
 
 const FName APlayerPawn::MoveForwardBinding("MoveForward");
 const FName APlayerPawn::MoveRightBinding("MoveRight");
@@ -29,10 +30,13 @@ APlayerPawn::APlayerPawn()
 	SetUpCameraComponent();
 
 	movementSpeed = 500.0f;
-	currentSpeed = 0.0f;
+	currentSpeed = movementSpeed;
 	rotationSpeed = 30.0f;
 	fireCooldown = 1.0f;
 	bCanFire = true;
+
+
+	
 }
 
 void APlayerPawn::BeginPlay()
@@ -40,6 +44,8 @@ void APlayerPawn::BeginPlay()
 	Super::BeginPlay();
 
 	currentSpeed = movementSpeed;
+
+	PrintPlayerStatsToScreen();
 	
 }
 
@@ -63,6 +69,7 @@ void APlayerPawn::SetUpPlayerMeshComponent() {
 	PlayerCapsuleComponent->SetEnableGravity(false);
 	PlayerCapsuleComponent->BodyInstance.bLockYRotation = true;
 	PlayerCapsuleComponent->BodyInstance.bLockYRotation = true;
+	
 
 	// Find the mesh needed for the player in its heiearchy
 	static ConstructorHelpers::FObjectFinder<USkeletalMesh> SkeletalMesh(TEXT("/Game/AnimStarterPack/UE4_Mannequin/Mesh/SK_Mannequin.SK_Mannequin"));
@@ -70,7 +77,18 @@ void APlayerPawn::SetUpPlayerMeshComponent() {
 	PlayerSkeletalMeshComponent->SetupAttachment(RootComponent);
 	PlayerSkeletalMeshComponent->SetSkeletalMesh(SkeletalMesh.Object);
 	PlayerSkeletalMeshComponent->SetRelativeLocation(FVector(0.0f, 0.0f, -95.0f));
+	PlayerSkeletalMeshComponent->SetRelativeRotation(FRotator(0.0f, -90.0f, 0.0f));
 
+	static ConstructorHelpers::FObjectFinder<USkeletalMesh> WeaponMesh(TEXT("/Game/PrototypeWeap/Prototype_AssaultRifle.Prototype_AssaultRifle"));
+	PlayerWeaponMeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("WeaponMesh"));
+	PlayerWeaponMeshComponent->SetupAttachment(PlayerSkeletalMeshComponent, TEXT("RightHandSocket"));
+	PlayerWeaponMeshComponent->SetSkeletalMesh(WeaponMesh.Object);
+	PlayerWeaponMeshComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
+	PlayerWeaponMeshComponent->SetRelativeRotation(FRotator(0.0f, 90.0f, 0.0f));
+
+	static ConstructorHelpers::FObjectFinder<UAnimBlueprint> BlueprintAnim(TEXT("/Game/AnimationBlueprints/Run_Shoot_Idle_AnimBP.Run_Shoot_Idle_AnimBP"));
+	PlayerSkeletalMeshComponent->SetAnimationMode(EAnimationMode::AnimationBlueprint);
+	PlayerSkeletalMeshComponent->SetAnimInstanceClass(BlueprintAnim.Object->GetAnimBlueprintGeneratedClass());
 	
 }
 
@@ -119,11 +137,16 @@ void APlayerPawn::MovePlayer(float deltaTime) {
 	// Create the velocity of the player using all the info
 	FVector velocity = movementDirection * currentSpeed * deltaTime;
 
+	// PlayerCapsuleComponent->ComponentVelocity += velocity;
+	// PlayerCapsuleComponent->SetPhysicsLinearVelocity(velocity);
+	// PlayerCapsuleComponent->AddImpulseAtLocation(velocity, PlayerCapsuleComponent->GetRelativeTransform().GetLocation());
+
 	// Instead getting the rotation of the vector we will be aiming the player
 	if (velocity.Size() > 0.0f) {
 		FHitResult hit(1.0f);
 		FRotator rotation = velocity.Rotation();
 		FVector newPosition = RootComponent->GetRelativeTransform().GetTranslation() + velocity;
+		// PlayerCapsuleComponent->AddForceAtLocation(velocity, PlayerCapsuleComponent->GetRelativeTransform().GetLocation());
 		RootComponent->SetRelativeLocation(newPosition, true, &hit);
 	}
 	
@@ -200,3 +223,27 @@ void APlayerPawn::FireCooldownExpire() {
 	bCanFire = true;
 
 }
+
+void APlayerPawn::PrintPlayerStatsToScreen() {
+	if (GEngine) {
+		FString msg = TEXT("Number of lives: ") + FString::FromInt(playerStats.numberOfLives);
+		GEngine->AddOnScreenDebugMessage(-1, 60.0f, FColor::Green, msg);
+
+		msg = TEXT("Current Health: ") + FString::SanitizeFloat(playerStats.currentHealth);
+		GEngine->AddOnScreenDebugMessage(-1, 60.0f, FColor::Green, msg);
+
+		msg = TEXT("Max Health: ") + FString::SanitizeFloat(playerStats.maxHealth);
+		GEngine->AddOnScreenDebugMessage(-1, 60.0f, FColor::Green, msg);
+
+		msg = TEXT("Ammo Type: ") + FString::FromInt((int)playerStats.currentAmmoType);
+		GEngine->AddOnScreenDebugMessage(-1, 60.0f, FColor::Green, msg);
+
+		msg = TEXT("Current Ammo Count: ") + FString::FromInt(playerStats.currentAmmoCount);
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, msg);
+
+		msg = TEXT("Max Ammo Count: ") + FString::FromInt(playerStats.maxAmmoCount);
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, msg);
+
+	}
+}
+
