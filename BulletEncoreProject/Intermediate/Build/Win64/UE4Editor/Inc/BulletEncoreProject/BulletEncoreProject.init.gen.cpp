@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeBulletEncoreProject_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x0EC282F5,
+				0xC00CB994,
 				0xD5B77DF5,
 				METADATA_PARAMS(nullptr, 0)
 			};

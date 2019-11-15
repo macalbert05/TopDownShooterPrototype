@@ -41,7 +41,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawn() {}
 		return EAmmoType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EAmmoType(EAmmoType_StaticEnum, TEXT("/Script/BulletEncoreProject"), TEXT("EAmmoType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_BulletEncoreProject_EAmmoType_Hash() { return 4163663519U; }
+	uint32 Get_Z_Construct_UEnum_BulletEncoreProject_EAmmoType_Hash() { return 1147445846U; }
 	UEnum* Z_Construct_UEnum_BulletEncoreProject_EAmmoType()
 	{
 #if WITH_HOT_RELOAD
@@ -57,6 +57,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawn() {}
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "BlueprintType", "true" },
 				{ "ModuleRelativePath", "Private/PlayerPawn.h" },
 				{ "NormalBullet.DisplayName", "NormalBullet" },
 			};

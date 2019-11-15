@@ -1,35 +1,28 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Malik\Documents\GitHub\BulletEncore).
-  Creating makefile for BulletEncoreProjectEditor (ini files are newer than makefile)
+﻿  Using 'git status' to determine working set for adaptive non-unity build (E:\GitHub\BulletEncore).
+  Creating makefile for BulletEncoreProjectEditor (no existing makefile)
   Parsing headers for BulletEncoreProjectEditor
-    Running UnrealHeaderTool "C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\BulletEncoreProject.uproject" "C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\BulletEncoreProjectEditor\Development\BulletEncoreProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for BulletEncoreProjectEditor in 63.2638263 seconds
-  Deleted hot-reload file: C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Binaries\Win64\UE4Editor-BulletEncoreProject-0001.dll
-  Deleted hot-reload file: C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Binaries\Win64\UE4Editor-BulletEncoreProject-0002.dll
-  Deleted hot-reload file: C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Binaries\Win64\UE4Editor-BulletEncoreProject-0004.dll
-  Deleted hot-reload file: C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject-0001.lib
-  Deleted hot-reload file: C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject-0002.lib
-  Deleted hot-reload file: C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject-0004.lib
-  Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.16299.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Distributing 4 actions to XGE
-  --------------------Build System Warning---------------------------------------
-  License is invalid:
-      License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
-      This build will run in standalone mode.
-  
-  -------------------------------------------------------------------------------
-  --------------------Project: Default-------------------------------------------
-  PlayerPawn.cpp (10:47.59 at +0:00)
-  UE4Editor-BulletEncoreProject.dll (0:03.35 at +10:47)
-     Creating library C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject.suppressed.lib and object C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject.suppressed.exp
-  UE4Editor-BulletEncoreProject.lib (0:00.40 at +10:51)
-     Creating library C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject.lib and object C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject.exp
-  BulletEncoreProjectEditor.target (0:00.78 at +10:51)
-  ---------------------- Done ----------------------
-  
-      Rebuild All: 1 succeeded, 0 failed, 0 skipped
-  
-  1 build system warning(s):
-     - License is invalid
-  
-  Total time in XGE executor: 653.53 seconds
-  Total execution time: 738.14 seconds
+    Running UnrealHeaderTool "E:\GitHub\BulletEncore\BulletEncoreProject\BulletEncoreProject.uproject" "E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\BulletEncoreProjectEditor\Development\BulletEncoreProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for BulletEncoreProjectEditor in 31.3677524 seconds
+  Using Visual Studio 2019 14.23.28105 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 17 actions with 8 processes...
+    [1/17] Default.rc2
+    [2/17] SharedPCH.Engine.cpp
+    [3/17] BulletEncoreProject.cpp
+    [4/17] BaseProjectileClass.cpp
+    [5/17] BulletEncoreProjectGameMode.gen.cpp
+    [6/17] BulletEncoreProjectGameMode.cpp
+    [7/17] BulletEncoreProjectPawn.gen.cpp
+    [8/17] BaseProjectileClass.gen.cpp
+    [9/17] BulletEncoreProjectProjectile.gen.cpp
+    [10/17] BulletEncoreProjectPawn.cpp
+    [11/17] BulletEncoreProject.init.gen.cpp
+    [12/17] BulletEncoreProjectProjectile.cpp
+    [13/17] PlayerPawn.gen.cpp
+    [14/17] PlayerPawn.cpp
+    [15/17] UE4Editor-BulletEncoreProject.lib
+       Creating library E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject.lib and object E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject.exp
+    [16/17] UE4Editor-BulletEncoreProject.dll
+       Creating library E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject.suppressed.lib and object E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject.suppressed.exp
+    [17/17] BulletEncoreProjectEditor.target
+  Total time in Parallel executor: 37.32 seconds
+  Total execution time: 71.41 seconds
