@@ -1,2 +1,2 @@
-E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\Definitions.BulletEncoreProject.h
-E:\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject\BulletEncoreProject.h
+E:\School Humber\Unreal Engine\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\Definitions.BulletEncoreProject.h
+e:\school humber\unreal engine\bulletencore\bulletencoreproject\source\bulletencoreproject\BulletEncoreProject.h

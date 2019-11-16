@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\BulletEncoreProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{B9F12AC0-A143-43DB-AC34-E94CA8210AC1}</UniqueIdentifier>
+      <UniqueIdentifier>{194D7635-E2E2-4521-8C69-B26E9C3A3FA7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\BulletEncoreProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{DD2D1CE0-FC27-463C-AB3D-87BB3569E3E9}</UniqueIdentifier>
+      <UniqueIdentifier>{215448EE-FA38-4FA6-98EE-24F825462055}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\BulletEncoreProject">
-      <UniqueIdentifier>{427CCF55-3045-49CD-B704-67A921659974}</UniqueIdentifier>
+      <UniqueIdentifier>{1C59AA8F-C310-4B3F-84E3-71D1C9AFD4B2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\BulletEncoreProject\BulletEncoreProject.Build.cs">
       <Filter>Source\BulletEncoreProject</Filter>
@@ -60,7 +60,7 @@
       <Filter>Source\BulletEncoreProject</Filter>
     </ClInclude>
     <Filter Include="Source\BulletEncoreProject\Private">
-      <UniqueIdentifier>{DEC10A53-0B5A-46C1-88B1-F6F8AE2D0D0A}</UniqueIdentifier>
+      <UniqueIdentifier>{3551566C-EF4F-4060-AE81-D52DE5C192AD}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\BulletEncoreProject\Private\BaseProjectileClass.cpp">
       <Filter>Source\BulletEncoreProject\Private</Filter>
