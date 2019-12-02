@@ -9,14 +9,10 @@
 
 ABaseProjectileClass::ABaseProjectileClass()
 {
-	SetSpeed(1000.0f);
-	SetGravityEnabled(false);
-	SetProjectileLifeSpan(3.0f);
-
+	bulletData = FBulletData();
 	SetUpMeshComponent();
 	SetUpMovementComponent();
 	
-
 }
 
 void ABaseProjectileClass::SetUpMeshComponent() {
@@ -33,14 +29,31 @@ void ABaseProjectileClass::SetUpMeshComponent() {
 }
 
 void ABaseProjectileClass::SetUpMovementComponent() {
-
 	ProjectileMoveComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("PorjectileMovement0"));
+}
+
+APawn* ABaseProjectileClass::GetOwner() const{
+	return Owner;
+}
+
+void ABaseProjectileClass::UpdateBulletData(FBulletData newBulletdata) {
+	bulletData = newBulletdata;
+	InitBulletMovementComponent();
+}
+
+void ABaseProjectileClass::UpdateBulletData(FBulletData newBulletdata, FVector newDirection) {
+	bulletData = newBulletdata;
+	direction = newDirection;
+	InitBulletMovementComponent();
+}
+
+void ABaseProjectileClass::InitBulletMovementComponent() {
 	ProjectileMoveComponent->UpdatedComponent = ProjectileMeshComponent;
-	ProjectileMoveComponent->InitialSpeed = speed;
-	ProjectileMoveComponent->MaxSpeed = speed;
-	ProjectileMoveComponent->bRotationFollowsVelocity = true;
-	
-	if (!bIsGravityEnabled) { 
+	ProjectileMoveComponent->InitialSpeed = bulletData.initialSpeed;
+	ProjectileMoveComponent->MaxSpeed = bulletData.maxSpeed;
+	ProjectileMoveComponent->Velocity = direction * bulletData.maxSpeed;
+
+	if (!bIsGravityEnabled) {
 		ProjectileMoveComponent->ProjectileGravityScale = 0.0f;
 		ProjectileMoveComponent->bShouldBounce = false;
 	}
@@ -50,7 +63,6 @@ void ABaseProjectileClass::SetUpMovementComponent() {
 	}
 
 	InitialLifeSpan = lifeSpan;
-
 }
 
 void ABaseProjectileClass::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit) {
@@ -63,21 +75,7 @@ void ABaseProjectileClass::OnHit(UPrimitiveComponent* HitComponent, AActor* Othe
 	Destroy();
 }
 
-void ABaseProjectileClass::SetDirection(FVector direc) {
 
-}
-
-void ABaseProjectileClass::SetGravityEnabled(bool IsGravityEnabled) {
-	bIsGravityEnabled = IsGravityEnabled;
-}
-
-void ABaseProjectileClass::SetSpeed(float newSpeed) {
-	speed = newSpeed;
-}
-
-void ABaseProjectileClass::SetProjectileLifeSpan(float timeInSeconds) {
-	lifeSpan = timeInSeconds;
-}
 
 
 

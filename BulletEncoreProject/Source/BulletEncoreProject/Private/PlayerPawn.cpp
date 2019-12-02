@@ -4,6 +4,8 @@
 #include "PlayerPawn.h"
 #include "UObject/ConstructorHelpers.h" // Library needed to find and instantiate the player's static mesh
 #include "Components/SkeletalMeshComponent.h"	// Library needed in order to recognize the static mesh commponent as viable root component
+#include "Camera/CameraComponent.h"
+#include "GameFramework/SpringArmComponent.h"
 #include "Engine/CollisionProfile.h"	// Used to settup default collision profile for this object
 #include "Components/InputComponent.h"	
 #include "Components/CapsuleComponent.h"
@@ -23,62 +25,83 @@ APlayerPawn::APlayerPawn()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
-	// Create Player Mesh Component
-	SetUpPlayerMeshComponent();
+	InitPlayerMeshComponents();
+	InitCameraComponent();
 
-	// Create camera component
-	SetUpCameraComponent();
 
 	movementSpeed = 500.0f;
 	currentSpeed = movementSpeed;
 	rotationSpeed = 30.0f;
-	fireCooldown = 1.0f;
-	bCanFire = true;
-
-
 	
+
+	numberOfGunSlots = 3;
+	currentGunIndex = 0;
+	HeldGuns.Empty();
+	HeldGuns.AddDefaulted(numberOfGunSlots);
+	fireRateCoolDown = 1.0f;
+	bCanFire = true;
+	bHasToReload = false;
+	bIsReloading = false;
 }
 
 void APlayerPawn::BeginPlay()
 {
 	Super::BeginPlay();
-
 	currentSpeed = movementSpeed;
-
-	PrintPlayerStatsToScreen();
-	
+	// PrintPlayerStatsToScreen();
 }
 
 void APlayerPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 	RotatePlayer(DeltaTime);
 	MovePlayer(DeltaTime);
 }
 
-void APlayerPawn::SetUpPlayerMeshComponent() {
+#if WITH_EDITOR
+void APlayerPawn::PostEditChangeProperty(struct FPropertyChangedEvent& PropertyChangedEvent) {
+	Super::PostEditChangeProperty(PropertyChangedEvent);
+}
+#endif
+
+void APlayerPawn::InitPlayerMeshComponents() {
 	
-	// Creating the capsule component
+	// Init Physics/ Collision Capsule
 	PlayerCapsuleComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CapsuleComp"));
 	RootComponent = PlayerCapsuleComponent;
 	PlayerCapsuleComponent->SetCapsuleHalfHeight(100.0f);
 	PlayerCapsuleComponent->SetCapsuleRadius(34.0f);
 	PlayerCapsuleComponent->SetSimulatePhysics(true);
 	PlayerCapsuleComponent->SetCollisionProfileName(UCollisionProfile::Pawn_ProfileName);
-	PlayerCapsuleComponent->SetEnableGravity(false);
+	PlayerCapsuleComponent->SetEnableGravity(true);
+	PlayerCapsuleComponent->BodyInstance.bLockXRotation = true;
 	PlayerCapsuleComponent->BodyInstance.bLockYRotation = true;
-	PlayerCapsuleComponent->BodyInstance.bLockYRotation = true;
-	
+	PlayerCapsuleComponent->BodyInstance.bLockZRotation = true;
 
-	// Find the mesh needed for the player in its heiearchy
+	// Init Aiming Component
+	PlayerAimCapsuleComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("AimCapsuleComp"));
+	PlayerAimCapsuleComponent->SetupAttachment(RootComponent);
+	PlayerAimCapsuleComponent->SetCapsuleHalfHeight(50.0f);
+	PlayerAimCapsuleComponent->SetCapsuleRadius(17.0f);
+	PlayerAimCapsuleComponent->SetSimulatePhysics(false);
+	PlayerAimCapsuleComponent->SetCollisionProfileName(UCollisionProfile::Pawn_ProfileName);
+	PlayerAimCapsuleComponent->SetEnableGravity(false);
+	PlayerAimCapsuleComponent->BodyInstance.bLockXRotation = true;
+	PlayerAimCapsuleComponent->BodyInstance.bLockYRotation = true;
+	PlayerAimCapsuleComponent->BodyInstance.bLockZRotation = false;
+	
+	// Init Skeletal Mesh
 	static ConstructorHelpers::FObjectFinder<USkeletalMesh> SkeletalMesh(TEXT("/Game/AnimStarterPack/UE4_Mannequin/Mesh/SK_Mannequin.SK_Mannequin"));
 	PlayerSkeletalMeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("SkeletalMesh"));
-	PlayerSkeletalMeshComponent->SetupAttachment(RootComponent);
+	PlayerSkeletalMeshComponent->SetupAttachment(PlayerAimCapsuleComponent);
 	PlayerSkeletalMeshComponent->SetSkeletalMesh(SkeletalMesh.Object);
 	PlayerSkeletalMeshComponent->SetRelativeLocation(FVector(0.0f, 0.0f, -95.0f));
 	PlayerSkeletalMeshComponent->SetRelativeRotation(FRotator(0.0f, -90.0f, 0.0f));
+	PlayerSkeletalMeshComponent->BodyInstance.bLockXRotation = true;
+	PlayerSkeletalMeshComponent->BodyInstance.bLockYRotation = true;
+	PlayerSkeletalMeshComponent->BodyInstance.bLockZRotation = false;
 
+	// Attach Default Weapon Mesh to Skeletal
 	static ConstructorHelpers::FObjectFinder<USkeletalMesh> WeaponMesh(TEXT("/Game/PrototypeWeap/Prototype_AssaultRifle.Prototype_AssaultRifle"));
 	PlayerWeaponMeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("WeaponMesh"));
 	PlayerWeaponMeshComponent->SetupAttachment(PlayerSkeletalMeshComponent, TEXT("RightHandSocket"));
@@ -86,13 +109,14 @@ void APlayerPawn::SetUpPlayerMeshComponent() {
 	PlayerWeaponMeshComponent->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
 	PlayerWeaponMeshComponent->SetRelativeRotation(FRotator(0.0f, 90.0f, 0.0f));
 
+	// Setting up Animation Blueprint On Character
 	static ConstructorHelpers::FObjectFinder<UAnimBlueprint> BlueprintAnim(TEXT("/Game/AnimationBlueprints/Run_Shoot_Idle_AnimBP.Run_Shoot_Idle_AnimBP"));
 	PlayerSkeletalMeshComponent->SetAnimationMode(EAnimationMode::AnimationBlueprint);
 	PlayerSkeletalMeshComponent->SetAnimInstanceClass(BlueprintAnim.Object->GetAnimBlueprintGeneratedClass());
 	
 }
 
-void APlayerPawn::SetUpCameraComponent() {
+void APlayerPawn::InitCameraComponent() {
 	// In creating the camera component, we will use the engine to our advantage
 	// We are using the spring arm component to keep a consistent distance from the playerPawn
 	// The Camera will be a child of the spring arm component, this is the way Unreal require the spring arm settup to be done
@@ -121,100 +145,145 @@ void APlayerPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputCo
 	PlayerInputComponent->BindAxis(MoveRightBinding);
 	PlayerInputComponent->BindAxis(LookUpBinding);
 	PlayerInputComponent->BindAxis(LookRightBinding);
-	PlayerInputComponent->BindAction(FireBinding, EInputEvent::IE_Pressed, this, &APlayerPawn::FireShot);
+	PlayerInputComponent->BindAction(FireBinding, EInputEvent::IE_Pressed, this, &APlayerPawn::FireShotFromCurrentGun);
 
+}
+
+FVector APlayerPawn::GetMovementAxisInput() const {
+	// Create Movement Vector from Input Vector
+	float forwardAxisValue = GetInputAxisValue(MoveForwardBinding);
+	float rightAxisValue = GetInputAxisValue(MoveRightBinding);
+	FVector movementDirection = FVector(forwardAxisValue, rightAxisValue, 0.0f);
+	movementDirection.Normalize();
+	return movementDirection;
+}
+
+FVector APlayerPawn::GetAimingAxisInput() const {
+	// Create Direction Vector from Input Vector
+	float upAxisValue = GetInputAxisValue(LookUpBinding);
+	float rightAxisValue = GetInputAxisValue(LookRightBinding);
+	FVector lookAtDirection = FVector(rightAxisValue, upAxisValue, 0.0f);
+	lookAtDirection.Normalize();
+	return lookAtDirection;
 }
 
 void APlayerPawn::MovePlayer(float deltaTime) {
-	// Get the axis values from the input
-	float forwardAxisValue = GetInputAxisValue(MoveForwardBinding);
-	float rightAxisValue = GetInputAxisValue(MoveRightBinding);
-	
-	// Create and normalize a direction vector
-	FVector movementDirection = FVector(forwardAxisValue, rightAxisValue, 0.0f);
-	movementDirection.Normalize();
-	
-	// Create the velocity of the player using all the info
-	FVector velocity = movementDirection * currentSpeed * deltaTime;
 
-	// PlayerCapsuleComponent->ComponentVelocity += velocity;
-	// PlayerCapsuleComponent->SetPhysicsLinearVelocity(velocity);
-	// PlayerCapsuleComponent->AddImpulseAtLocation(velocity, PlayerCapsuleComponent->GetRelativeTransform().GetLocation());
-
-	// Instead getting the rotation of the vector we will be aiming the player
-	if (velocity.Size() > 0.0f) {
-		FHitResult hit(1.0f);
-		FRotator rotation = velocity.Rotation();
-		FVector newPosition = RootComponent->GetRelativeTransform().GetTranslation() + velocity;
-		// PlayerCapsuleComponent->AddForceAtLocation(velocity, PlayerCapsuleComponent->GetRelativeTransform().GetLocation());
-		RootComponent->SetRelativeLocation(newPosition, true, &hit);
-	}
+	FVector MovementDirection = GetMovementAxisInput();
 	
+	FVector velocity = MovementDirection * currentSpeed;
+
+	PlayerCapsuleComponent->SetPhysicsLinearVelocity(velocity);
+
 }
 
 void APlayerPawn::RotatePlayer(float deltaTime) {
-	// Getting the input axis values
-	float upAxisValue = GetInputAxisValue(LookUpBinding);
-	float rightAxisValue = GetInputAxisValue(LookRightBinding);
 
-	FVector inputVector = FVector(rightAxisValue, upAxisValue, 0.0f);
+	FVector inputDirection = GetAimingAxisInput();
 
-	// Calculate the direction Vector Based on the change in mouse position
-	FVector EndPoint = (inputVector * 25.0f) + RootComponent->GetRelativeTransform().GetTranslation();
-	// DrawDebugLine(GetWorld(), RootComponent->GetRelativeTransform().GetTranslation(), EndPoint, FColor::Red, false, -1.0f, 1, 5.0f);
+	if (inputDirection.Size() > 0.1f) {
+		// Calculate the direction Vector Based on the change in mouse position
+		FVector EndPoint = (inputDirection * 25.0f) + PlayerAimCapsuleComponent->GetRelativeTransform().GetTranslation();
 
-	// Getting the direction from the endpoint and current location
-	LookAtDirection = EndPoint - RootComponent->GetRelativeTransform().GetTranslation();
-	LookAtDirection.Normalize();
-	LookAtDirection = LookAtDirection * rotationSpeed * deltaTime;
+		// Get the direction from the endpoint and current location
+		FVector newDirection = EndPoint - PlayerAimCapsuleComponent->GetRelativeTransform().GetTranslation();
+		newDirection.Normalize();
+		newDirection = newDirection * rotationSpeed * deltaTime;
 
-	FHitResult hit(1.0f);
-	FRotator rotation = LookAtDirection.Rotation();
-	
-	// Finally, smoothing the rotation of the player
-	if (inputVector.Size() > 0.0f) {
-		RootComponent->SetRelativeRotation(FMath::Lerp(RootComponent->GetRelativeTransform().GetRotation(), rotation.Quaternion(), 0.1f), true, &hit);
+		FHitResult hit(1.0f);
+		FRotator newRotation = newDirection.Rotation();
+
+		// Smooth the rotation of the player using an interpolation
+		PlayerAimCapsuleComponent->SetRelativeRotation(FMath::Lerp(PlayerAimCapsuleComponent->GetRelativeTransform().GetRotation(), newRotation.Quaternion(), 0.1f), true, &hit);
 	}
 }
 
-FVector APlayerPawn::GetAimDirection() {
-	const FRotator fireRotation = RootComponent->GetRelativeTransform().GetRotation().Rotator();
+FVector APlayerPawn::GetCurrentAimDirection() const{
+	const FRotator fireRotation = PlayerAimCapsuleComponent->GetRelativeTransform().GetRotation().Rotator();
 	FVector offset = FVector(90.0f, 0.0f, 0.0f);
 	FVector aimDirection = fireRotation.RotateVector(offset);
 	aimDirection.Normalize();
 	return aimDirection;
 }
 
-void APlayerPawn::FireShot() {
+void APlayerPawn::FireShotFromCurrentGun() {
 
-	if (bCanFire) {
-		// Get the rotation of the player
-		const FRotator fireRotation = RootComponent->GetRelativeTransform().GetRotation().Rotator();
-		
-		// Create the offset of where the bullet will spawn
-		FVector offset = FVector(90.0f, 0.0f, 0.0f);
-		const FVector spawnLocation = GetActorLocation() + fireRotation.RotateVector(offset);
+	if (GEngine)
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Orange, TEXT("Fired Shot Update!"));
 
-		/*
-		if (GEngine) {
-			FString mssg = TEXT("Current Location: ") + RootComponent->GetRelativeTransform().GetLocation().ToString();
-			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Blue, mssg);
-			mssg = TEXT("Fired Weapon at location: ") + spawnLocation.ToString() + TEXT(" in the direction: ") + fireRotation.ToString();
-			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, mssg);
+	if (bHasToReload) {
+
+		if(!bIsReloading)
+			ReloadCurrentGun();
+
+	}
+	else {
+
+		if (bCanFire) {
+
+			FVector bulletSpawnPoint = PlayerWeaponMeshComponent->GetSocketLocation(TEXT("BulletSpawnPoint"));
+			FRotator fireRotation = PlayerAimCapsuleComponent->GetRelativeTransform().GetRotation().Rotator();
+
+			UWorld* const World = GetWorld();
+
+			ABaseProjectileClass* currentBullet;
+
+			if (World != NULL) {
+
+
+				currentBullet = World->SpawnActor<ABaseProjectileClass>(bulletSpawnPoint, fireRotation);
+				currentBullet->UpdateBulletData(GetCurrentGunBulletData(), GetCurrentAimDirection());
+
+			}
+
+			OnFireShotUpdate();
+
+			bCanFire = false;
+
+			World->GetTimerManager().SetTimer(TimerHandle_FireCooldownExpire, this, &APlayerPawn::FireCooldownExpire, GetCurrentGunData().timeBetweenShots);
+
+			bCanFire = false;
 		}
-		*/
+
+	}
+	
+}
+
+//**** Make an event that can have functionality added to it in blueprints this is where you can spawn muzzle flares etc.
+void APlayerPawn::OnFireShotUpdate() {
+	
+	if (HeldGuns.Num() > 0) {
+
+		bIsReloading = false;
+
+		if (HeldGuns[currentGunIndex].rateOfFire == EFireRate::BurstFire) {	// **Spread fire will always result in a burst fire rate
+			HeldGuns[currentGunIndex].currentClipCount = HeldGuns[currentGunIndex].currentClipCount - (HeldGuns[currentGunIndex].burstFireRoundCount);
+		}
+		else {
+			HeldGuns[currentGunIndex].currentClipCount--;
+		}
+
+		if (HeldGuns[currentGunIndex].currentClipCount < 0)
+			HeldGuns[currentGunIndex].currentClipCount = 0;
+
+		if (HeldGuns[currentGunIndex].currentClipCount == 0) {
+			bHasToReload = true;
+		}
+
+		if (GEngine)
+			GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Blue, TEXT("Current Clip Amount: " + FString::FromInt(HeldGuns[currentGunIndex].currentClipCount)));
+
+	}
+}
+
+void APlayerPawn::ReloadCurrentGun() {
+	if (HeldGuns.Num() > 0) {
+		
+		bIsReloading = true;
 
 		UWorld* const World = GetWorld();
-		if (World != NULL) {
-			// Spawn the bullet
-			World->SpawnActor<ABaseProjectileClass>(spawnLocation, fireRotation);
-		}
-
-		bCanFire = false;
-		// Built in timer handler to implement cooldown on fire
-		World->GetTimerManager().SetTimer(TimerHandle_FireCooldownExpire, this, &APlayerPawn::FireCooldownExpire, fireCooldown);
-
-		bCanFire = false;
+		World->GetTimerManager().SetTimer(TimerHandle_ReloadCooldownExpire, this, &APlayerPawn::ReloadCoolDownExpire, GetCurrentGunData().reloadTime);
+		
 	}
 }
 
@@ -224,25 +293,57 @@ void APlayerPawn::FireCooldownExpire() {
 
 }
 
+void APlayerPawn::ReloadCoolDownExpire() {
+
+	if (HeldGuns.Num() > 0) {
+		int desiredAmmount = HeldGuns[currentGunIndex].maxClipCount - HeldGuns[currentGunIndex].currentClipCount;
+		int tempAmmoCount = HeldGuns[currentGunIndex].currentAmmoCount;
+		int actualAquiredAmmount = 0;
+
+		for (int i = 0; i < desiredAmmount; i++) {
+			if ((tempAmmoCount - i) <= 0)
+				break;
+
+			// Put a timer in hear if you want it to update with time so that the player can stop at any moment
+			actualAquiredAmmount++;
+		}
+
+		HeldGuns[currentGunIndex].currentClipCount = actualAquiredAmmount;
+		HeldGuns[currentGunIndex].currentAmmoCount = HeldGuns[currentGunIndex].currentAmmoCount - actualAquiredAmmount;
+
+	}
+
+	bHasToReload = false;
+	bIsReloading = false;
+}
+
+FBulletData APlayerPawn::GetCurrentGunBulletData() const{
+
+	if (HeldGuns.Num() > 0) {
+		return HeldGuns[currentGunIndex].bullets;
+	}
+
+	return FBulletData();
+}
+
+FGunData APlayerPawn::GetCurrentGunData() const {
+	if (HeldGuns.Num() > 0) {
+		return HeldGuns[currentGunIndex];
+	}
+
+	return FGunData();
+}
+
 void APlayerPawn::PrintPlayerStatsToScreen() {
 	if (GEngine) {
-		FString msg = TEXT("Number of lives: ") + FString::FromInt(playerStats.numberOfLives);
+		FString msg = TEXT("Number of lives: ") + FString::FromInt(PlayerHealth.numberOfLives);
 		GEngine->AddOnScreenDebugMessage(-1, 60.0f, FColor::Green, msg);
 
-		msg = TEXT("Current Health: ") + FString::SanitizeFloat(playerStats.currentHealth);
+		msg = TEXT("Current Health: ") + FString::SanitizeFloat(PlayerHealth.currentHealth);
 		GEngine->AddOnScreenDebugMessage(-1, 60.0f, FColor::Green, msg);
 
-		msg = TEXT("Max Health: ") + FString::SanitizeFloat(playerStats.maxHealth);
+		msg = TEXT("Max Health: ") + FString::SanitizeFloat(PlayerHealth.maxHealth);
 		GEngine->AddOnScreenDebugMessage(-1, 60.0f, FColor::Green, msg);
-
-		msg = TEXT("Ammo Type: ") + FString::FromInt((int)playerStats.currentAmmoType);
-		GEngine->AddOnScreenDebugMessage(-1, 60.0f, FColor::Green, msg);
-
-		msg = TEXT("Current Ammo Count: ") + FString::FromInt(playerStats.currentAmmoCount);
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, msg);
-
-		msg = TEXT("Max Ammo Count: ") + FString::FromInt(playerStats.maxAmmoCount);
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, msg);
 
 	}
 }

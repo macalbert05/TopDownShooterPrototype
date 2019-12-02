@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "WeaponData.h"
 #include "BaseProjectileClass.generated.h"
 
 
@@ -27,17 +28,27 @@ public:
 	void SetUpMeshComponent();
 	void SetUpMovementComponent();
 
-	void SetDirection(FVector direc);
-	void SetGravityEnabled(bool IsGravityEabled);
-	void SetSpeed(float newSpeed);
-	void SetProjectileLifeSpan(float timeInSeconds);
+	APawn* GetOwner() const;
+
+	void UpdateBulletData(FBulletData newBulletData);
+	void UpdateBulletData(FBulletData newBulletData, FVector newDirection);
+
+	void InitBulletMovementComponent();
 
 private:
 
-	FVector direction;
+	APawn* Owner;
+
 	float speed;
+	FVector direction;
+	float damage;
+	bool bIsDamageOverTimeBullet;
+	float damageOverTime;
+
 	bool bIsGravityEnabled;
 	float lifeSpan;
+
+	FBulletData bulletData;
 
 	// Callback/ delegate function for OnCollison Result
 	UFUNCTION()

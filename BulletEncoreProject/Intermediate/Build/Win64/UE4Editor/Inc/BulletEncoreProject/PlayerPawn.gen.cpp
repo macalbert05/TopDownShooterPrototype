@@ -13,60 +13,63 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodePlayerPawn() {}
 // Cross Module References
-	BULLETENCOREPROJECT_API UEnum* Z_Construct_UEnum_BulletEncoreProject_EAmmoType();
+	BULLETENCOREPROJECT_API UEnum* Z_Construct_UEnum_BulletEncoreProject_ERace();
 	UPackage* Z_Construct_UPackage__Script_BulletEncoreProject();
-	BULLETENCOREPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FPlayerStats();
+	BULLETENCOREPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FPlayerHealthInfo();
 	BULLETENCOREPROJECT_API UClass* Z_Construct_UClass_APlayerPawn_NoRegister();
 	BULLETENCOREPROJECT_API UClass* Z_Construct_UClass_APlayerPawn();
 	ENGINE_API UClass* Z_Construct_UClass_APawn();
-	BULLETENCOREPROJECT_API UFunction* Z_Construct_UFunction_APlayerPawn_GetAimDirection();
+	BULLETENCOREPROJECT_API UFunction* Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
-	BULLETENCOREPROJECT_API UFunction* Z_Construct_UFunction_APlayerPawn_GetCurrentSpeed();
+	BULLETENCOREPROJECT_API UFunction* Z_Construct_UFunction_APlayerPawn_GetCurrentGunData();
+	BULLETENCOREPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FGunData();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCapsuleComponent_NoRegister();
 // End Cross Module References
-	static UEnum* EAmmoType_StaticEnum()
+	static UEnum* ERace_StaticEnum()
 	{
 		static UEnum* Singleton = nullptr;
 		if (!Singleton)
 		{
-			Singleton = GetStaticEnum(Z_Construct_UEnum_BulletEncoreProject_EAmmoType, Z_Construct_UPackage__Script_BulletEncoreProject(), TEXT("EAmmoType"));
+			Singleton = GetStaticEnum(Z_Construct_UEnum_BulletEncoreProject_ERace, Z_Construct_UPackage__Script_BulletEncoreProject(), TEXT("ERace"));
 		}
 		return Singleton;
 	}
-	template<> BULLETENCOREPROJECT_API UEnum* StaticEnum<EAmmoType>()
+	template<> BULLETENCOREPROJECT_API UEnum* StaticEnum<ERace>()
 	{
-		return EAmmoType_StaticEnum();
+		return ERace_StaticEnum();
 	}
-	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EAmmoType(EAmmoType_StaticEnum, TEXT("/Script/BulletEncoreProject"), TEXT("EAmmoType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_BulletEncoreProject_EAmmoType_Hash() { return 1147445846U; }
-	UEnum* Z_Construct_UEnum_BulletEncoreProject_EAmmoType()
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_ERace(ERace_StaticEnum, TEXT("/Script/BulletEncoreProject"), TEXT("ERace"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_BulletEncoreProject_ERace_Hash() { return 476212518U; }
+	UEnum* Z_Construct_UEnum_BulletEncoreProject_ERace()
 	{
 #if WITH_HOT_RELOAD
 		UPackage* Outer = Z_Construct_UPackage__Script_BulletEncoreProject();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EAmmoType"), 0, Get_Z_Construct_UEnum_BulletEncoreProject_EAmmoType_Hash(), false);
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("ERace"), 0, Get_Z_Construct_UEnum_BulletEncoreProject_ERace_Hash(), false);
 #else
 		static UEnum* ReturnEnum = nullptr;
 #endif // WITH_HOT_RELOAD
 		if (!ReturnEnum)
 		{
 			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
-				{ "EAmmoType::NormalBullet", (int64)EAmmoType::NormalBullet },
+				{ "ERace::Human", (int64)ERace::Human },
+				{ "ERace::Alien", (int64)ERace::Alien },
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "Alien.DisplayName", "Alien" },
 				{ "BlueprintType", "true" },
+				{ "Human.DisplayName", "Human" },
 				{ "ModuleRelativePath", "Private/PlayerPawn.h" },
-				{ "NormalBullet.DisplayName", "NormalBullet" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
 				(UObject*(*)())Z_Construct_UPackage__Script_BulletEncoreProject,
 				nullptr,
-				"EAmmoType",
-				"EAmmoType",
+				"ERace",
+				"ERace",
 				Enumerators,
 				ARRAY_COUNT(Enumerators),
 				RF_Public|RF_Transient|RF_MarkAsNative,
@@ -78,55 +81,38 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawn() {}
 		}
 		return ReturnEnum;
 	}
-class UScriptStruct* FPlayerStats::StaticStruct()
+class UScriptStruct* FPlayerHealthInfo::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
 	if (!Singleton)
 	{
-		extern BULLETENCOREPROJECT_API uint32 Get_Z_Construct_UScriptStruct_FPlayerStats_Hash();
-		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FPlayerStats, Z_Construct_UPackage__Script_BulletEncoreProject(), TEXT("PlayerStats"), sizeof(FPlayerStats), Get_Z_Construct_UScriptStruct_FPlayerStats_Hash());
+		extern BULLETENCOREPROJECT_API uint32 Get_Z_Construct_UScriptStruct_FPlayerHealthInfo_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FPlayerHealthInfo, Z_Construct_UPackage__Script_BulletEncoreProject(), TEXT("PlayerHealthInfo"), sizeof(FPlayerHealthInfo), Get_Z_Construct_UScriptStruct_FPlayerHealthInfo_Hash());
 	}
 	return Singleton;
 }
-template<> BULLETENCOREPROJECT_API UScriptStruct* StaticStruct<FPlayerStats>()
+template<> BULLETENCOREPROJECT_API UScriptStruct* StaticStruct<FPlayerHealthInfo>()
 {
-	return FPlayerStats::StaticStruct();
+	return FPlayerHealthInfo::StaticStruct();
 }
-static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FPlayerStats(FPlayerStats::StaticStruct, TEXT("/Script/BulletEncoreProject"), TEXT("PlayerStats"), false, nullptr, nullptr);
-static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerStats
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FPlayerHealthInfo(FPlayerHealthInfo::StaticStruct, TEXT("/Script/BulletEncoreProject"), TEXT("PlayerHealthInfo"), false, nullptr, nullptr);
+static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerHealthInfo
 {
-	FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerStats()
+	FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerHealthInfo()
 	{
-		UScriptStruct::DeferCppStructOps(FName(TEXT("PlayerStats")),new UScriptStruct::TCppStructOps<FPlayerStats>);
+		UScriptStruct::DeferCppStructOps(FName(TEXT("PlayerHealthInfo")),new UScriptStruct::TCppStructOps<FPlayerHealthInfo>);
 	}
-} ScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerStats;
-	struct Z_Construct_UScriptStruct_FPlayerStats_Statics
+} ScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerHealthInfo;
+	struct Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics
 	{
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
 #endif
 		static void* NewStructOps();
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_maxAmmoCount_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_maxAmmoCount;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_currentAmmoCount_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_currentAmmoCount;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_currentAmmoType_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_currentAmmoType;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_currentAmmoType_Underlying;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_maxHealth_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_maxHealth;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_currentHealth_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_currentHealth;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_numberOfLives_MetaData[];
 #endif
@@ -135,107 +121,74 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerStat
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPlayerStats_Statics::Struct_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
 	};
 #endif
-	void* Z_Construct_UScriptStruct_FPlayerStats_Statics::NewStructOps()
+	void* Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewStructOps()
 	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FPlayerStats>();
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FPlayerHealthInfo>();
 	}
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_maxAmmoCount_MetaData[] = {
-		{ "Category", "PlayerStats" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_maxHealth_MetaData[] = {
+		{ "Category", "PlayerHealthInfo" },
 		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_maxAmmoCount = { "maxAmmoCount", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerStats, maxAmmoCount), METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_maxAmmoCount_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_maxAmmoCount_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_maxHealth = { "maxHealth", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerHealthInfo, maxHealth), METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_maxHealth_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_maxHealth_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentAmmoCount_MetaData[] = {
-		{ "Category", "PlayerStats" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_numberOfLives_MetaData[] = {
+		{ "Category", "PlayerHealthInfo" },
 		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentAmmoCount = { "currentAmmoCount", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerStats, currentAmmoCount), METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentAmmoCount_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentAmmoCount_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentAmmoType_MetaData[] = {
-		{ "Category", "PlayerStats" },
-		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_numberOfLives = { "numberOfLives", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerHealthInfo, numberOfLives), METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_numberOfLives_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_numberOfLives_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_maxHealth,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_numberOfLives,
 	};
-#endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentAmmoType = { "currentAmmoType", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerStats, currentAmmoType), Z_Construct_UEnum_BulletEncoreProject_EAmmoType, METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentAmmoType_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentAmmoType_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentAmmoType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_maxHealth_MetaData[] = {
-		{ "Category", "PlayerStats" },
-		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_maxHealth = { "maxHealth", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerStats, maxHealth), METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_maxHealth_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_maxHealth_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentHealth_MetaData[] = {
-		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentHealth = { "currentHealth", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerStats, currentHealth), METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentHealth_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentHealth_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_numberOfLives_MetaData[] = {
-		{ "Category", "PlayerStats" },
-		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_numberOfLives = { "numberOfLives", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerStats, numberOfLives), METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_numberOfLives_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_numberOfLives_MetaData)) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FPlayerStats_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_maxAmmoCount,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentAmmoCount,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentAmmoType,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentAmmoType_Underlying,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_maxHealth,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_currentHealth,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPlayerStats_Statics::NewProp_numberOfLives,
-	};
-	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FPlayerStats_Statics::ReturnStructParams = {
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_BulletEncoreProject,
 		nullptr,
 		&NewStructOps,
-		"PlayerStats",
-		sizeof(FPlayerStats),
-		alignof(FPlayerStats),
-		Z_Construct_UScriptStruct_FPlayerStats_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerStats_Statics::PropPointers),
+		"PlayerHealthInfo",
+		sizeof(FPlayerHealthInfo),
+		alignof(FPlayerHealthInfo),
+		Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::PropPointers,
+		ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000201),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerStats_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerStats_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::Struct_MetaDataParams))
 	};
-	UScriptStruct* Z_Construct_UScriptStruct_FPlayerStats()
+	UScriptStruct* Z_Construct_UScriptStruct_FPlayerHealthInfo()
 	{
 #if WITH_HOT_RELOAD
-		extern uint32 Get_Z_Construct_UScriptStruct_FPlayerStats_Hash();
+		extern uint32 Get_Z_Construct_UScriptStruct_FPlayerHealthInfo_Hash();
 		UPackage* Outer = Z_Construct_UPackage__Script_BulletEncoreProject();
-		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("PlayerStats"), sizeof(FPlayerStats), Get_Z_Construct_UScriptStruct_FPlayerStats_Hash(), false);
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("PlayerHealthInfo"), sizeof(FPlayerHealthInfo), Get_Z_Construct_UScriptStruct_FPlayerHealthInfo_Hash(), false);
 #else
 		static UScriptStruct* ReturnStruct = nullptr;
 #endif
 		if (!ReturnStruct)
 		{
-			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FPlayerStats_Statics::ReturnStructParams);
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::ReturnStructParams);
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPlayerStats_Hash() { return 170446507U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPlayerHealthInfo_Hash() { return 2171938782U; }
 	void APlayerPawn::StaticRegisterNativesAPlayerPawn()
 	{
 		UClass* Class = APlayerPawn::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
-			{ "GetAimDirection", &APlayerPawn::execGetAimDirection },
-			{ "GetCurrentSpeed", &APlayerPawn::execGetCurrentSpeed },
+			{ "GetCurrentAimDirection", &APlayerPawn::execGetCurrentAimDirection },
+			{ "GetCurrentGunData", &APlayerPawn::execGetCurrentGunData },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
-	struct Z_Construct_UFunction_APlayerPawn_GetAimDirection_Statics
+	struct Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection_Statics
 	{
-		struct PlayerPawn_eventGetAimDirection_Parms
+		struct PlayerPawn_eventGetCurrentAimDirection_Parms
 		{
 			FVector ReturnValue;
 		};
@@ -246,54 +199,54 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerStat
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_APlayerPawn_GetAimDirection_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlayerPawn_eventGetAimDirection_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APlayerPawn_GetAimDirection_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APlayerPawn_GetAimDirection_Statics::NewProp_ReturnValue,
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlayerPawn_eventGetCurrentAimDirection_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayerPawn_GetAimDirection_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayerPawn_GetAimDirection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayerPawn, nullptr, "GetAimDirection", sizeof(PlayerPawn_eventGetAimDirection_Parms), Z_Construct_UFunction_APlayerPawn_GetAimDirection_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawn_GetAimDirection_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayerPawn_GetAimDirection_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawn_GetAimDirection_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_APlayerPawn_GetAimDirection()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayerPawn, nullptr, "GetCurrentAimDirection", sizeof(PlayerPawn_eventGetCurrentAimDirection_Parms), Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayerPawn_GetAimDirection_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_APlayerPawn_GetCurrentSpeed_Statics
+	struct Z_Construct_UFunction_APlayerPawn_GetCurrentGunData_Statics
 	{
-		struct PlayerPawn_eventGetCurrentSpeed_Parms
+		struct PlayerPawn_eventGetCurrentGunData_Parms
 		{
-			float ReturnValue;
+			FGunData ReturnValue;
 		};
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_APlayerPawn_GetCurrentSpeed_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlayerPawn_eventGetCurrentSpeed_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APlayerPawn_GetCurrentSpeed_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APlayerPawn_GetCurrentSpeed_Statics::NewProp_ReturnValue,
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_APlayerPawn_GetCurrentGunData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlayerPawn_eventGetCurrentGunData_Parms, ReturnValue), Z_Construct_UScriptStruct_FGunData, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APlayerPawn_GetCurrentGunData_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APlayerPawn_GetCurrentGunData_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayerPawn_GetCurrentSpeed_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayerPawn_GetCurrentGunData_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayerPawn_GetCurrentSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayerPawn, nullptr, "GetCurrentSpeed", sizeof(PlayerPawn_eventGetCurrentSpeed_Parms), Z_Construct_UFunction_APlayerPawn_GetCurrentSpeed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawn_GetCurrentSpeed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayerPawn_GetCurrentSpeed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawn_GetCurrentSpeed_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_APlayerPawn_GetCurrentSpeed()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayerPawn_GetCurrentGunData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayerPawn, nullptr, "GetCurrentGunData", sizeof(PlayerPawn_eventGetCurrentGunData_Parms), Z_Construct_UFunction_APlayerPawn_GetCurrentGunData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawn_GetCurrentGunData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayerPawn_GetCurrentGunData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawn_GetCurrentGunData_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_APlayerPawn_GetCurrentGunData()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayerPawn_GetCurrentSpeed_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayerPawn_GetCurrentGunData_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -309,9 +262,18 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerStat
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_playerStats_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BulletSpawnPoint_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FStructPropertyParams NewProp_playerStats;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_BulletSpawnPoint;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HeldGuns_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_HeldGuns;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_HeldGuns_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlayerHealth_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_PlayerHealth;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_movementSpeed_MetaData[];
 #endif
@@ -333,6 +295,10 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerStat
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PlayerSkeletalMeshComponent;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlayerAimCapsuleComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PlayerAimCapsuleComponent;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlayerCapsuleComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PlayerCapsuleComponent;
@@ -345,8 +311,8 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerStat
 		(UObject* (*)())Z_Construct_UPackage__Script_BulletEncoreProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_APlayerPawn_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_APlayerPawn_GetAimDirection, "GetAimDirection" }, // 2230464986
-		{ &Z_Construct_UFunction_APlayerPawn_GetCurrentSpeed, "GetCurrentSpeed" }, // 1904912049
+		{ &Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection, "GetCurrentAimDirection" }, // 236125523
+		{ &Z_Construct_UFunction_APlayerPawn_GetCurrentGunData, "GetCurrentGunData" }, // 843039962
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::Class_MetaDataParams[] = {
@@ -358,18 +324,32 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerStat
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::NewProp_playerStats_MetaData[] = {
-		{ "Category", "PlayerStatistics" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::NewProp_BulletSpawnPoint_MetaData[] = {
+		{ "Category", "PlayerPawn" },
 		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_playerStats = { "playerStats", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerPawn, playerStats), Z_Construct_UScriptStruct_FPlayerStats, METADATA_PARAMS(Z_Construct_UClass_APlayerPawn_Statics::NewProp_playerStats_MetaData, ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::NewProp_playerStats_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_BulletSpawnPoint = { "BulletSpawnPoint", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerPawn, BulletSpawnPoint), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_APlayerPawn_Statics::NewProp_BulletSpawnPoint_MetaData, ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::NewProp_BulletSpawnPoint_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::NewProp_HeldGuns_MetaData[] = {
+		{ "Category", "PlayerGuns" },
+		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_HeldGuns = { "HeldGuns", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerPawn, HeldGuns), METADATA_PARAMS(Z_Construct_UClass_APlayerPawn_Statics::NewProp_HeldGuns_MetaData, ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::NewProp_HeldGuns_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_HeldGuns_Inner = { "HeldGuns", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FGunData, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerHealth_MetaData[] = {
+		{ "Category", "PlayerStats" },
+		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerHealth = { "PlayerHealth", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerPawn, PlayerHealth), Z_Construct_UScriptStruct_FPlayerHealthInfo, METADATA_PARAMS(Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerHealth_MetaData, ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerHealth_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::NewProp_movementSpeed_MetaData[] = {
-		{ "Category", "Movement" },
+		{ "Category", "PlayerMovement" },
 		{ "ClampMin", "1.0" },
 		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
-		{ "ToolTip", "Movement Variables" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_movementSpeed = { "movementSpeed", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerPawn, movementSpeed), METADATA_PARAMS(Z_Construct_UClass_APlayerPawn_Statics::NewProp_movementSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::NewProp_movementSpeed_MetaData)) };
@@ -410,6 +390,15 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerStat
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerSkeletalMeshComponent = { "PlayerSkeletalMeshComponent", nullptr, (EPropertyFlags)0x00100000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerPawn, PlayerSkeletalMeshComponent), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerSkeletalMeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerSkeletalMeshComponent_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerAimCapsuleComponent_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Collider" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerAimCapsuleComponent = { "PlayerAimCapsuleComponent", nullptr, (EPropertyFlags)0x00100000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerPawn, PlayerAimCapsuleComponent), Z_Construct_UClass_UCapsuleComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerAimCapsuleComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerAimCapsuleComponent_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerCapsuleComponent_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Collider" },
@@ -419,12 +408,16 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerStat
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerCapsuleComponent = { "PlayerCapsuleComponent", nullptr, (EPropertyFlags)0x00100000000b001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerPawn, PlayerCapsuleComponent), Z_Construct_UClass_UCapsuleComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerCapsuleComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerCapsuleComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APlayerPawn_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_playerStats,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_BulletSpawnPoint,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_HeldGuns,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_HeldGuns_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerHealth,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_movementSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_CameraComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerWeaponMeshComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerSkeletalMeshComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerAimCapsuleComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerPawn_Statics::NewProp_PlayerCapsuleComponent,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APlayerPawn_Statics::StaticCppClassTypeInfo = {
@@ -454,7 +447,7 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerStat
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlayerPawn, 1141886538);
+	IMPLEMENT_CLASS(APlayerPawn, 3438933406);
 	template<> BULLETENCOREPROJECT_API UClass* StaticClass<APlayerPawn>()
 	{
 		return APlayerPawn::StaticClass();

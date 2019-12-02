@@ -4,53 +4,43 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
-#include "Camera/CameraComponent.h"
-#include "GameFramework/SpringArmComponent.h"
+#include "WeaponData.h"
 #include "PlayerPawn.generated.h"
 
 
-UENUM(BlueprintType)
-enum class EAmmoType : uint8
-{
-	NormalBullet UMETA(DisplayName = "NormalBullet")
-};
 
 USTRUCT(BlueprintType)
-struct BULLETENCOREPROJECT_API FPlayerStats {
+struct BULLETENCOREPROJECT_API FPlayerHealthInfo {
 
 	GENERATED_USTRUCT_BODY()
 
-	FPlayerStats() {
+	FPlayerHealthInfo() {
 		numberOfLives = 3;
 		maxHealth = 99.0f;
 		currentHealth = maxHealth;
-		currentAmmoType = EAmmoType::NormalBullet;
-		maxAmmoCount = 8;
-		currentAmmoCount = maxAmmoCount;
 	}
 
 	UPROPERTY(BlueprintreadWrite, EditAnywhere)
 		int numberOfLives;
 
-	UPROPERTY()
-		float currentHealth;
-
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 		float maxHealth;
-	
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
-		EAmmoType currentAmmoType;
 
-	UPROPERTY(VisibleAnywhere)
-		int currentAmmoCount;
+	float currentHealth;
+};
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
-		int maxAmmoCount;
-
+UENUM(BlueprintType)
+enum class ERace : uint8 {
+	Human UMETA(DisplayName = "Human"),
+	Alien UMETA(DisplayName = "Alien")
 };
 
 
-
+class UCapsuleComponent;
+class USkeletalMeshComponent;
+class UStaticMeshComponent;
+class UCameraComponent;
+class USpringArmComponent;
 
 UCLASS(Blueprintable)
 class APlayerPawn : public APawn
@@ -60,7 +50,10 @@ class APlayerPawn : public APawn
 public:
 
 	UPROPERTY(Category = Collider, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-		class UCapsuleComponent* PlayerCapsuleComponent;
+		UCapsuleComponent* PlayerCapsuleComponent;
+	
+	UPROPERTY(Category = Collider, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+		UCapsuleComponent* PlayerAimCapsuleComponent;
 
 	UPROPERTY(Category = Mesh, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 		USkeletalMeshComponent* PlayerSkeletalMeshComponent;
@@ -74,36 +67,56 @@ public:
 	UPROPERTY(Category = Camera, VisibleDefaultsOnly, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 		USpringArmComponent* CameraBoom;
 
-	/*Movement Variables*/
-	UPROPERTY(Category = Movement, EditAnywhere, BlueprintReadWrite, meta = (ClampMin = "1.0"))
-		float movementSpeed;
 
-	UPROPERTY(Category = PlayerStatistics, BlueprintReadWrite, EditAnywhere)
-		FPlayerStats playerStats;
+
+
+	UPROPERTY(Category = PlayerMovement, EditAnywhere, BlueprintReadWrite, meta = (ClampMin = "1.0"))
+		float movementSpeed;
+	
+	UPROPERTY(Category = PlayerStats, BlueprintReadWrite, EditAnywhere)
+		FPlayerHealthInfo PlayerHealth;
+	
+	UPROPERTY(Category = PlayerGuns, BlueprintReadWrite, EditAnywhere)
+		TArray<FGunData> HeldGuns;
+
+	UPROPERTY(BlueprintReadWrite)
+		FVector BulletSpawnPoint;
+
+
 
 	APlayerPawn();
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
+#if WITH_EDITOR
+	virtual void PostEditChangeProperty(struct FPropertyChangedEvent& PropertyChangedEvent) override;
+#endif
+
+
 
 	UFUNCTION(BlueprintCallable)
-		FVector GetAimDirection();
+		FVector GetCurrentAimDirection() const;
 
 	UFUNCTION(BlueprintCallable)
-		float GetCurrentSpeed() const { return currentSpeed; }
+		FGunData GetCurrentGunData() const;
+
+		
 
 private:
 
 	float currentSpeed;
 	float rotationSpeed;
 
-	FVector LookAtDirection;
-
 	/* Gun Variables*/
 	bool bCanFire;
-	float fireCooldown;
+	bool bHasToReload;
+	bool bIsReloading;
+	float fireRateCoolDown;
 	FTimerHandle TimerHandle_FireCooldownExpire;
-	
+	FTimerHandle TimerHandle_ReloadCooldownExpire;
+	int currentGunIndex;
+	int numberOfGunSlots;
 
+	
 	/*Player Input Bindings*/
 	static const FName MoveForwardBinding;
 	static const FName MoveRightBinding;
@@ -111,15 +124,27 @@ private:
 	static const FName LookRightBinding;
 	static const FName FireBinding;
 
-	void SetUpPlayerMeshComponent();
-	void SetUpCameraComponent();
+
+	void InitPlayerMeshComponents();
+	void InitCameraComponent();
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	
+
+	FVector GetMovementAxisInput() const;
+	FVector GetAimingAxisInput() const;
+
 
 	void MovePlayer(float deltaTime);
 	void RotatePlayer(float deltaTime);
 
-	void FireShot();
+	void FireShotFromCurrentGun();
+	void OnFireShotUpdate();
+	void ReloadCurrentGun();
 	void FireCooldownExpire();
+	void ReloadCoolDownExpire();
+	FBulletData GetCurrentGunBulletData() const;
+
+	// ****Blueprint imprentable event for reload so we can play animations though the blueprint
 
 	void PrintPlayerStatsToScreen();
 
