@@ -23,6 +23,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawn() {}
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	BULLETENCOREPROJECT_API UFunction* Z_Construct_UFunction_APlayerPawn_GetCurrentGunData();
 	BULLETENCOREPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FGunData();
+	BULLETENCOREPROJECT_API UFunction* Z_Construct_UFunction_APlayerPawn_GetMovementAxisInput();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
@@ -183,6 +184,7 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerHeal
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GetCurrentAimDirection", &APlayerPawn::execGetCurrentAimDirection },
 			{ "GetCurrentGunData", &APlayerPawn::execGetCurrentGunData },
+			{ "GetMovementAxisInput", &APlayerPawn::execGetMovementAxisInput },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -250,6 +252,38 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerHeal
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_APlayerPawn_GetMovementAxisInput_Statics
+	{
+		struct PlayerPawn_eventGetMovementAxisInput_Parms
+		{
+			FVector ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_APlayerPawn_GetMovementAxisInput_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlayerPawn_eventGetMovementAxisInput_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APlayerPawn_GetMovementAxisInput_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APlayerPawn_GetMovementAxisInput_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayerPawn_GetMovementAxisInput_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayerPawn_GetMovementAxisInput_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayerPawn, nullptr, "GetMovementAxisInput", sizeof(PlayerPawn_eventGetMovementAxisInput_Parms), Z_Construct_UFunction_APlayerPawn_GetMovementAxisInput_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawn_GetMovementAxisInput_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayerPawn_GetMovementAxisInput_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawn_GetMovementAxisInput_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_APlayerPawn_GetMovementAxisInput()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayerPawn_GetMovementAxisInput_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_APlayerPawn_NoRegister()
 	{
 		return APlayerPawn::StaticClass();
@@ -313,6 +347,7 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerHeal
 	const FClassFunctionLinkInfo Z_Construct_UClass_APlayerPawn_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection, "GetCurrentAimDirection" }, // 236125523
 		{ &Z_Construct_UFunction_APlayerPawn_GetCurrentGunData, "GetCurrentGunData" }, // 843039962
+		{ &Z_Construct_UFunction_APlayerPawn_GetMovementAxisInput, "GetMovementAxisInput" }, // 1992745597
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::Class_MetaDataParams[] = {
@@ -447,7 +482,7 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerHeal
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlayerPawn, 3438933406);
+	IMPLEMENT_CLASS(APlayerPawn, 1764294350);
 	template<> BULLETENCOREPROJECT_API UClass* StaticClass<APlayerPawn>()
 	{
 		return APlayerPawn::StaticClass();

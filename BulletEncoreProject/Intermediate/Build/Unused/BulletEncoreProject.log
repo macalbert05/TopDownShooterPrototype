@@ -1,0 +1,32 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Malik\Documents\GitHub\BulletEncore).
+  Creating makefile for BulletEncoreProjectEditor (ini files are newer than makefile)
+  Parsing headers for BulletEncoreProjectEditor
+    Running UnrealHeaderTool "C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\BulletEncoreProject.uproject" "C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\BulletEncoreProjectEditor\Development\BulletEncoreProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for BulletEncoreProjectEditor in 46.61856 seconds
+  Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.16299.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Distributing 7 actions to XGE
+  --------------------Build System Warning---------------------------------------
+  License is invalid:
+      License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+      This build will run in standalone mode.
+  
+  -------------------------------------------------------------------------------
+  --------------------Project: Default-------------------------------------------
+  PlayerPawn.gen.cpp (4:09.73 at +0:00)
+  BulletEncoreProject.init.gen.cpp (0:04.43 at +4:09)
+  BulletEncoreProjectGameMode.cpp (0:36.56 at +4:14)
+  PlayerPawn.cpp (5:57.53 at +4:50)
+  UE4Editor-BulletEncoreProject-0001.dll (0:04.95 at +10:48)
+     Creating library C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject-0001.suppressed.lib and object C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject-0001.suppressed.exp
+  UE4Editor-BulletEncoreProject-0001.lib (0:00.37 at +10:53)
+     Creating library C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject-0001.lib and object C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject-0001.exp
+  BulletEncoreProjectEditor.target (0:00.93 at +10:53)
+  ---------------------- Done ----------------------
+  
+      Rebuild All: 1 succeeded, 0 failed, 0 skipped
+  
+  1 build system warning(s):
+     - License is invalid
+  
+  Total time in XGE executor: 655.98 seconds
+  Total execution time: 709.68 seconds

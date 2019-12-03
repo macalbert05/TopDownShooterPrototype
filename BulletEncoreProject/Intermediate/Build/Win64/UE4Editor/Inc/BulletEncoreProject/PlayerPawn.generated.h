@@ -8,8 +8,8 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-struct FGunData;
 struct FVector;
+struct FGunData;
 #ifdef BULLETENCOREPROJECT_PlayerPawn_generated_h
 #error "PlayerPawn.generated.h already included, missing '#pragma once' in PlayerPawn.h"
 #endif
@@ -23,6 +23,14 @@ struct FVector;
 template<> BULLETENCOREPROJECT_API UScriptStruct* StaticStruct<struct FPlayerHealthInfo>();
 
 #define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetMovementAxisInput) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=P_THIS->GetMovementAxisInput(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetCurrentGunData) \
 	{ \
@@ -42,6 +50,14 @@ template<> BULLETENCOREPROJECT_API UScriptStruct* StaticStruct<struct FPlayerHea
 
 
 #define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetMovementAxisInput) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FVector*)Z_Param__Result=P_THIS->GetMovementAxisInput(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetCurrentGunData) \
 	{ \

@@ -99,6 +99,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 		FGunData GetCurrentGunData() const;
 
+	UFUNCTION(BlueprintCallable)
+		FVector GetMovementAxisInput() const;
 		
 
 private:
@@ -130,7 +132,7 @@ private:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	
 
-	FVector GetMovementAxisInput() const;
+	
 	FVector GetAimingAxisInput() const;
 
 
