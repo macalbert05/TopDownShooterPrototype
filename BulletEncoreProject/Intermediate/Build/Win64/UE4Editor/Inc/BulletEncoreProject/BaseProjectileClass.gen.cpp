@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeBaseProjectileClass() {}
 	BULLETENCOREPROJECT_API UClass* Z_Construct_UClass_ABaseProjectileClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_BulletEncoreProject();
+	BULLETENCOREPROJECT_API UFunction* Z_Construct_UFunction_ABaseProjectileClass_GetBulletData();
+	BULLETENCOREPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FBulletData();
 	BULLETENCOREPROJECT_API UFunction* Z_Construct_UFunction_ABaseProjectileClass_OnHit();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
@@ -29,9 +31,42 @@ void EmptyLinkFunctionForGeneratedCodeBaseProjectileClass() {}
 	{
 		UClass* Class = ABaseProjectileClass::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "GetBulletData", &ABaseProjectileClass::execGetBulletData },
 			{ "OnHit", &ABaseProjectileClass::execOnHit },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ABaseProjectileClass_GetBulletData_Statics
+	{
+		struct BaseProjectileClass_eventGetBulletData_Parms
+		{
+			FBulletData ReturnValue;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABaseProjectileClass_GetBulletData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BaseProjectileClass_eventGetBulletData_Parms, ReturnValue), Z_Construct_UScriptStruct_FBulletData, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseProjectileClass_GetBulletData_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseProjectileClass_GetBulletData_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseProjectileClass_GetBulletData_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Private/BaseProjectileClass.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseProjectileClass_GetBulletData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseProjectileClass, nullptr, "GetBulletData", sizeof(BaseProjectileClass_eventGetBulletData_Parms), Z_Construct_UFunction_ABaseProjectileClass_GetBulletData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_ABaseProjectileClass_GetBulletData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseProjectileClass_GetBulletData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_ABaseProjectileClass_GetBulletData_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseProjectileClass_GetBulletData()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseProjectileClass_GetBulletData_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ABaseProjectileClass_OnHit_Statics
 	{
@@ -134,10 +169,12 @@ void EmptyLinkFunctionForGeneratedCodeBaseProjectileClass() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_BulletEncoreProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseProjectileClass_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ABaseProjectileClass_GetBulletData, "GetBulletData" }, // 2946068896
 		{ &Z_Construct_UFunction_ABaseProjectileClass_OnHit, "OnHit" }, // 4178701492
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseProjectileClass_Statics::Class_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
 		{ "IncludePath", "BaseProjectileClass.h" },
 		{ "ModuleRelativePath", "Private/BaseProjectileClass.h" },
 	};
@@ -192,7 +229,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseProjectileClass() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseProjectileClass, 260671662);
+	IMPLEMENT_CLASS(ABaseProjectileClass, 2203045888);
 	template<> BULLETENCOREPROJECT_API UClass* StaticClass<ABaseProjectileClass>()
 	{
 		return ABaseProjectileClass::StaticClass();

@@ -22,7 +22,35 @@ struct FGunData;
 
 template<> BULLETENCOREPROJECT_API UScriptStruct* StaticStruct<struct FPlayerHealthInfo>();
 
-#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_RPC_WRAPPERS \
+#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_RPC_WRAPPERS \
+	virtual void ReloadCurrentGun_Implementation(); \
+	virtual void FireShotFromCurrentGun_Implementation(); \
+	virtual float OnTakeDamage_Implementation(float damage); \
+ \
+	DECLARE_FUNCTION(execReloadCurrentGun) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ReloadCurrentGun_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execFireShotFromCurrentGun) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->FireShotFromCurrentGun_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnTakeDamage) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_damage); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->OnTakeDamage_Implementation(Z_Param_damage); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetMovementAxisInput) \
 	{ \
@@ -49,7 +77,32 @@ template<> BULLETENCOREPROJECT_API UScriptStruct* StaticStruct<struct FPlayerHea
 	}
 
 
-#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
+#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execReloadCurrentGun) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ReloadCurrentGun_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execFireShotFromCurrentGun) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->FireShotFromCurrentGun_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOnTakeDamage) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_damage); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->OnTakeDamage_Implementation(Z_Param_damage); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetMovementAxisInput) \
 	{ \
@@ -76,7 +129,22 @@ template<> BULLETENCOREPROJECT_API UScriptStruct* StaticStruct<struct FPlayerHea
 	}
 
 
-#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_INCLASS_NO_PURE_DECLS \
+#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_EVENT_PARMS \
+	struct PlayerPawn_eventOnTakeDamage_Parms \
+	{ \
+		float damage; \
+		float ReturnValue; \
+ \
+		/** Constructor, initializes return property only **/ \
+		PlayerPawn_eventOnTakeDamage_Parms() \
+			: ReturnValue(0) \
+		{ \
+		} \
+	};
+
+
+#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_CALLBACK_WRAPPERS
+#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPlayerPawn(); \
 	friend struct Z_Construct_UClass_APlayerPawn_Statics; \
@@ -85,7 +153,7 @@ public: \
 	DECLARE_SERIALIZER(APlayerPawn)
 
 
-#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_INCLASS \
+#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_INCLASS \
 private: \
 	static void StaticRegisterNativesAPlayerPawn(); \
 	friend struct Z_Construct_UClass_APlayerPawn_Statics; \
@@ -94,7 +162,7 @@ public: \
 	DECLARE_SERIALIZER(APlayerPawn)
 
 
-#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_STANDARD_CONSTRUCTORS \
+#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APlayerPawn(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APlayerPawn) \
@@ -107,7 +175,7 @@ private: \
 public:
 
 
-#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_ENHANCED_CONSTRUCTORS \
+#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API APlayerPawn(APlayerPawn&&); \
@@ -118,26 +186,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APlayerPawn); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APlayerPawn)
 
 
-#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_PRIVATE_PROPERTY_OFFSET
-#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_45_PROLOG
-#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_GENERATED_BODY_LEGACY \
+#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_PRIVATE_PROPERTY_OFFSET
+#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_46_PROLOG \
+	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_EVENT_PARMS
+
+
+#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_PRIVATE_PROPERTY_OFFSET \
-	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_RPC_WRAPPERS \
-	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_INCLASS \
-	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_STANDARD_CONSTRUCTORS \
+	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_PRIVATE_PROPERTY_OFFSET \
+	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_RPC_WRAPPERS \
+	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_CALLBACK_WRAPPERS \
+	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_INCLASS \
+	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_GENERATED_BODY \
+#define BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_PRIVATE_PROPERTY_OFFSET \
-	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_RPC_WRAPPERS_NO_PURE_DECLS \
-	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_INCLASS_NO_PURE_DECLS \
-	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_48_ENHANCED_CONSTRUCTORS \
+	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_PRIVATE_PROPERTY_OFFSET \
+	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_RPC_WRAPPERS_NO_PURE_DECLS \
+	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_CALLBACK_WRAPPERS \
+	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_INCLASS_NO_PURE_DECLS \
+	BulletEncoreProject_Source_BulletEncoreProject_Private_PlayerPawn_h_49_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

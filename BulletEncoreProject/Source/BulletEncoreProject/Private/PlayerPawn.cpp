@@ -29,9 +29,9 @@ APlayerPawn::APlayerPawn()
 	InitCameraComponent();
 
 
-	movementSpeed = 500.0f;
+	movementSpeed = 425.0f;
 	currentSpeed = movementSpeed;
-	rotationSpeed = 30.0f;
+	rotationSpeed = 45.0f;
 	
 
 	numberOfGunSlots = 3;
@@ -42,6 +42,9 @@ APlayerPawn::APlayerPawn()
 	bCanFire = true;
 	bHasToReload = false;
 	bIsReloading = false;
+
+
+	bIsDead = false;
 }
 
 void APlayerPawn::BeginPlay()
@@ -125,7 +128,7 @@ void APlayerPawn::InitCameraComponent() {
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
 	CameraBoom->bAbsoluteRotation = true;	// When the pawn rotates the camera will not
-	CameraBoom->TargetArmLength = 650.0f;	// How far is the camera from the pawn
+	CameraBoom->TargetArmLength = 900.0f;	// How far is the camera from the pawn
 	CameraBoom->RelativeRotation = FRotator(-60.0f, 0.0f, 0.0f);
 	CameraBoom->bDoCollisionTest = false;	// We will not be using collision test, so the camera will not be pulled in when it collides
 
@@ -206,10 +209,10 @@ FVector APlayerPawn::GetCurrentAimDirection() const{
 	return aimDirection;
 }
 
-void APlayerPawn::FireShotFromCurrentGun() {
+void APlayerPawn::FireShotFromCurrentGun_Implementation() {
 
-	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Orange, TEXT("Fired Shot Update!"));
+	// if (GEngine)
+		// GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Orange, TEXT("Fired Shot Update!"));
 
 	if (bHasToReload) {
 
@@ -270,13 +273,13 @@ void APlayerPawn::OnFireShotUpdate() {
 			bHasToReload = true;
 		}
 
-		if (GEngine)
-			GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Blue, TEXT("Current Clip Amount: " + FString::FromInt(HeldGuns[currentGunIndex].currentClipCount)));
+		// if (GEngine)
+			// GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Blue, TEXT("Current Clip Amount: " + FString::FromInt(HeldGuns[currentGunIndex].currentClipCount)));
 
 	}
 }
 
-void APlayerPawn::ReloadCurrentGun() {
+void APlayerPawn::ReloadCurrentGun_Implementation() {
 	if (HeldGuns.Num() > 0) {
 		
 		bIsReloading = true;
@@ -346,5 +349,26 @@ void APlayerPawn::PrintPlayerStatsToScreen() {
 		GEngine->AddOnScreenDebugMessage(-1, 60.0f, FColor::Green, msg);
 
 	}
+}
+
+float APlayerPawn::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) {
+	PlayerHealth.currentHealth -= Damage;
+	if (PlayerHealth.currentHealth <= 0.0f) {
+		bIsDead = true;
+		PlayerHealth.numberOfLives--;
+	}
+
+	return Damage;
+}
+
+float APlayerPawn::OnTakeDamage_Implementation(float damage) {
+	PlayerHealth.currentHealth -= damage;
+	if (PlayerHealth.currentHealth <= 0.0f) {
+		bIsDead = true;
+		PlayerHealth.numberOfLives--;
+	}
+
+	return damage;
+
 }
 

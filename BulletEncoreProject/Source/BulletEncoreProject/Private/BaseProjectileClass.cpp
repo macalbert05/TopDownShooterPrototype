@@ -75,6 +75,10 @@ void ABaseProjectileClass::OnHit(UPrimitiveComponent* HitComponent, AActor* Othe
 	Destroy();
 }
 
+FBulletData ABaseProjectileClass::GetBulletData() {
+	return bulletData;
+}
+
 
 
 
