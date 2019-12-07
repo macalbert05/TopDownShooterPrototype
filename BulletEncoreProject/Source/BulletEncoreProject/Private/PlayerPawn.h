@@ -140,7 +140,8 @@ private:
 	static const FName MoveRightBinding;
 	static const FName LookUpBinding;
 	static const FName LookRightBinding;
-	static const FName FireBinding;
+	static const FName FireMouseBinding;
+	static const FName FireTriggerBinding;
 
 	bool bIsDead;
 
@@ -162,6 +163,8 @@ private:
 	void FireCooldownExpire();
 	void ReloadCoolDownExpire();
 	FBulletData GetCurrentGunBulletData() const;
+
+	void RapidFire();
 
 	// ****Blueprint imprentable event for reload so we can play animations though the blueprint
 

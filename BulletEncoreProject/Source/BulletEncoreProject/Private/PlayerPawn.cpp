@@ -19,7 +19,8 @@ const FName APlayerPawn::MoveForwardBinding("MoveForward");
 const FName APlayerPawn::MoveRightBinding("MoveRight");
 const FName APlayerPawn::LookUpBinding("LookUp");
 const FName APlayerPawn::LookRightBinding("LookRight");
-const FName APlayerPawn::FireBinding("Fire");
+const FName APlayerPawn::FireMouseBinding("FireMouseClick");
+const FName APlayerPawn::FireTriggerBinding("FireGamepadTrigger");
 
 APlayerPawn::APlayerPawn()
 {
@@ -148,7 +149,8 @@ void APlayerPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputCo
 	PlayerInputComponent->BindAxis(MoveRightBinding);
 	PlayerInputComponent->BindAxis(LookUpBinding);
 	PlayerInputComponent->BindAxis(LookRightBinding);
-	PlayerInputComponent->BindAction(FireBinding, EInputEvent::IE_Pressed, this, &APlayerPawn::FireShotFromCurrentGun);
+	PlayerInputComponent->BindAction(FireTriggerBinding, EInputEvent::IE_Repeat, this, &APlayerPawn::FireShotFromCurrentGun);
+	PlayerInputComponent->BindAction(FireMouseBinding, EInputEvent::IE_Pressed, this, &APlayerPawn::FireShotFromCurrentGun);
 
 }
 
@@ -370,5 +372,11 @@ float APlayerPawn::OnTakeDamage_Implementation(float damage) {
 
 	return damage;
 
+}
+
+void APlayerPawn::RapidFire() {
+	while (!bIsReloading) {
+		FireShotFromCurrentGun();
+	}
 }
 
