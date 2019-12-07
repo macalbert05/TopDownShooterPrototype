@@ -8,7 +8,7 @@
 #include "BaseProjectileClass.generated.h"
 
 
-UCLASS()
+UCLASS(BlueprintType)
 class ABaseProjectileClass : public AActor
 {
 	GENERATED_BODY()
@@ -34,6 +34,9 @@ public:
 	void UpdateBulletData(FBulletData newBulletData, FVector newDirection);
 
 	void InitBulletMovementComponent();
+
+	UFUNCTION(BlueprintCallable)
+	FBulletData GetBulletData();
 
 private:
 

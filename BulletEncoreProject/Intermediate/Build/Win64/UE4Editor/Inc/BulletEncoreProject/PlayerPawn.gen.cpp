@@ -19,11 +19,14 @@ void EmptyLinkFunctionForGeneratedCodePlayerPawn() {}
 	BULLETENCOREPROJECT_API UClass* Z_Construct_UClass_APlayerPawn_NoRegister();
 	BULLETENCOREPROJECT_API UClass* Z_Construct_UClass_APlayerPawn();
 	ENGINE_API UClass* Z_Construct_UClass_APawn();
+	BULLETENCOREPROJECT_API UFunction* Z_Construct_UFunction_APlayerPawn_FireShotFromCurrentGun();
 	BULLETENCOREPROJECT_API UFunction* Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	BULLETENCOREPROJECT_API UFunction* Z_Construct_UFunction_APlayerPawn_GetCurrentGunData();
 	BULLETENCOREPROJECT_API UScriptStruct* Z_Construct_UScriptStruct_FGunData();
 	BULLETENCOREPROJECT_API UFunction* Z_Construct_UFunction_APlayerPawn_GetMovementAxisInput();
+	BULLETENCOREPROJECT_API UFunction* Z_Construct_UFunction_APlayerPawn_OnTakeDamage();
+	BULLETENCOREPROJECT_API UFunction* Z_Construct_UFunction_APlayerPawn_ReloadCurrentGun();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
@@ -111,6 +114,10 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerHeal
 #endif
 		static void* NewStructOps();
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_currentHealth_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_currentHealth;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_maxHealth_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_maxHealth;
@@ -132,6 +139,13 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerHeal
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FPlayerHealthInfo>();
 	}
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_currentHealth_MetaData[] = {
+		{ "Category", "PlayerHealthInfo" },
+		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_currentHealth = { "currentHealth", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerHealthInfo, currentHealth), METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_currentHealth_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_currentHealth_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_maxHealth_MetaData[] = {
 		{ "Category", "PlayerHealthInfo" },
 		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
@@ -146,6 +160,7 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerHeal
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_numberOfLives = { "numberOfLives", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPlayerHealthInfo, numberOfLives), METADATA_PARAMS(Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_numberOfLives_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_numberOfLives_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_currentHealth,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_maxHealth,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FPlayerHealthInfo_Statics::NewProp_numberOfLives,
 	};
@@ -177,16 +192,59 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerHeal
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FPlayerHealthInfo_Hash() { return 2171938782U; }
+	uint32 Get_Z_Construct_UScriptStruct_FPlayerHealthInfo_Hash() { return 2333819328U; }
+	static FName NAME_APlayerPawn_FireShotFromCurrentGun = FName(TEXT("FireShotFromCurrentGun"));
+	void APlayerPawn::FireShotFromCurrentGun()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_APlayerPawn_FireShotFromCurrentGun),NULL);
+	}
+	static FName NAME_APlayerPawn_OnTakeDamage = FName(TEXT("OnTakeDamage"));
+	float APlayerPawn::OnTakeDamage(float damage)
+	{
+		PlayerPawn_eventOnTakeDamage_Parms Parms;
+		Parms.damage=damage;
+		ProcessEvent(FindFunctionChecked(NAME_APlayerPawn_OnTakeDamage),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_APlayerPawn_ReloadCurrentGun = FName(TEXT("ReloadCurrentGun"));
+	void APlayerPawn::ReloadCurrentGun()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_APlayerPawn_ReloadCurrentGun),NULL);
+	}
 	void APlayerPawn::StaticRegisterNativesAPlayerPawn()
 	{
 		UClass* Class = APlayerPawn::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "FireShotFromCurrentGun", &APlayerPawn::execFireShotFromCurrentGun },
 			{ "GetCurrentAimDirection", &APlayerPawn::execGetCurrentAimDirection },
 			{ "GetCurrentGunData", &APlayerPawn::execGetCurrentGunData },
 			{ "GetMovementAxisInput", &APlayerPawn::execGetMovementAxisInput },
+			{ "OnTakeDamage", &APlayerPawn::execOnTakeDamage },
+			{ "ReloadCurrentGun", &APlayerPawn::execReloadCurrentGun },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_APlayerPawn_FireShotFromCurrentGun_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayerPawn_FireShotFromCurrentGun_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayerPawn_FireShotFromCurrentGun_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayerPawn, nullptr, "FireShotFromCurrentGun", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayerPawn_FireShotFromCurrentGun_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawn_FireShotFromCurrentGun_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_APlayerPawn_FireShotFromCurrentGun()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayerPawn_FireShotFromCurrentGun_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection_Statics
 	{
@@ -284,6 +342,59 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerHeal
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_APlayerPawn_OnTakeDamage_Statics
+	{
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_damage;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_APlayerPawn_OnTakeDamage_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlayerPawn_eventOnTakeDamage_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_APlayerPawn_OnTakeDamage_Statics::NewProp_damage = { "damage", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlayerPawn_eventOnTakeDamage_Parms, damage), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APlayerPawn_OnTakeDamage_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APlayerPawn_OnTakeDamage_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APlayerPawn_OnTakeDamage_Statics::NewProp_damage,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayerPawn_OnTakeDamage_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayerPawn_OnTakeDamage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayerPawn, nullptr, "OnTakeDamage", sizeof(PlayerPawn_eventOnTakeDamage_Parms), Z_Construct_UFunction_APlayerPawn_OnTakeDamage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawn_OnTakeDamage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayerPawn_OnTakeDamage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawn_OnTakeDamage_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_APlayerPawn_OnTakeDamage()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayerPawn_OnTakeDamage_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_APlayerPawn_ReloadCurrentGun_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayerPawn_ReloadCurrentGun_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Private/PlayerPawn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayerPawn_ReloadCurrentGun_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayerPawn, nullptr, "ReloadCurrentGun", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayerPawn_ReloadCurrentGun_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_APlayerPawn_ReloadCurrentGun_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_APlayerPawn_ReloadCurrentGun()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayerPawn_ReloadCurrentGun_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_APlayerPawn_NoRegister()
 	{
 		return APlayerPawn::StaticClass();
@@ -345,9 +456,12 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerHeal
 		(UObject* (*)())Z_Construct_UPackage__Script_BulletEncoreProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_APlayerPawn_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_APlayerPawn_FireShotFromCurrentGun, "FireShotFromCurrentGun" }, // 2303260233
 		{ &Z_Construct_UFunction_APlayerPawn_GetCurrentAimDirection, "GetCurrentAimDirection" }, // 236125523
 		{ &Z_Construct_UFunction_APlayerPawn_GetCurrentGunData, "GetCurrentGunData" }, // 843039962
 		{ &Z_Construct_UFunction_APlayerPawn_GetMovementAxisInput, "GetMovementAxisInput" }, // 1992745597
+		{ &Z_Construct_UFunction_APlayerPawn_OnTakeDamage, "OnTakeDamage" }, // 279847476
+		{ &Z_Construct_UFunction_APlayerPawn_ReloadCurrentGun, "ReloadCurrentGun" }, // 818825345
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerPawn_Statics::Class_MetaDataParams[] = {
@@ -482,7 +596,7 @@ static struct FScriptStruct_BulletEncoreProject_StaticRegisterNativesFPlayerHeal
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlayerPawn, 1764294350);
+	IMPLEMENT_CLASS(APlayerPawn, 1870192494);
 	template<> BULLETENCOREPROJECT_API UClass* StaticClass<APlayerPawn>()
 	{
 		return APlayerPawn::StaticClass();

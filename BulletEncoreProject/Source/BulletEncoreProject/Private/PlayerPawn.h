@@ -26,7 +26,8 @@ struct BULLETENCOREPROJECT_API FPlayerHealthInfo {
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 		float maxHealth;
 
-	float currentHealth;
+	UPROPERTY(BlueprintReadOnly)
+		float currentHealth;
 };
 
 UENUM(BlueprintType)
@@ -90,6 +91,7 @@ public:
 #if WITH_EDITOR
 	virtual void PostEditChangeProperty(struct FPropertyChangedEvent& PropertyChangedEvent) override;
 #endif
+	virtual float TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 
 
 
@@ -101,7 +103,21 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 		FVector GetMovementAxisInput() const;
+
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+		float OnTakeDamage(float damage);
+
+	virtual float OnTakeDamage_Implementation(float damage);
+
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+		void FireShotFromCurrentGun();
 		
+	virtual void FireShotFromCurrentGun_Implementation();
+
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+		void ReloadCurrentGun();
+
+	virtual void ReloadCurrentGun_Implementation();
 
 private:
 
@@ -124,7 +140,10 @@ private:
 	static const FName MoveRightBinding;
 	static const FName LookUpBinding;
 	static const FName LookRightBinding;
-	static const FName FireBinding;
+	static const FName FireMouseBinding;
+	static const FName FireTriggerBinding;
+
+	bool bIsDead;
 
 
 	void InitPlayerMeshComponents();
@@ -139,12 +158,13 @@ private:
 	void MovePlayer(float deltaTime);
 	void RotatePlayer(float deltaTime);
 
-	void FireShotFromCurrentGun();
+	
 	void OnFireShotUpdate();
-	void ReloadCurrentGun();
 	void FireCooldownExpire();
 	void ReloadCoolDownExpire();
 	FBulletData GetCurrentGunBulletData() const;
+
+	void RapidFire();
 
 	// ****Blueprint imprentable event for reload so we can play animations though the blueprint
 

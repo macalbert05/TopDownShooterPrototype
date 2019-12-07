@@ -12,6 +12,7 @@ class UPrimitiveComponent;
 class AActor;
 struct FVector;
 struct FHitResult;
+struct FBulletData;
 #ifdef BULLETENCOREPROJECT_BaseProjectileClass_generated_h
 #error "BaseProjectileClass.generated.h already included, missing '#pragma once' in BaseProjectileClass.h"
 #endif
@@ -30,6 +31,14 @@ struct FHitResult;
 		P_NATIVE_BEGIN; \
 		P_THIS->OnHit(Z_Param_HitComponent,Z_Param_OtherActor,Z_Param_OtherComponent,Z_Param_NormalImpulse,Z_Param_Out_Hit); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetBulletData) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FBulletData*)Z_Param__Result=P_THIS->GetBulletData(); \
+		P_NATIVE_END; \
 	}
 
 
@@ -45,6 +54,14 @@ struct FHitResult;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnHit(Z_Param_HitComponent,Z_Param_OtherActor,Z_Param_OtherComponent,Z_Param_NormalImpulse,Z_Param_Out_Hit); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetBulletData) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FBulletData*)Z_Param__Result=P_THIS->GetBulletData(); \
 		P_NATIVE_END; \
 	}
 
