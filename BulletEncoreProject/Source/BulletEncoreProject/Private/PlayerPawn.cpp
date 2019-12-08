@@ -30,7 +30,7 @@ APlayerPawn::APlayerPawn()
 	InitCameraComponent();
 
 
-	movementSpeed = 425.0f;
+	movementSpeed = 500.0f;
 	currentSpeed = movementSpeed;
 	rotationSpeed = 45.0f;
 	
@@ -74,7 +74,7 @@ void APlayerPawn::InitPlayerMeshComponents() {
 	PlayerCapsuleComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CapsuleComp"));
 	RootComponent = PlayerCapsuleComponent;
 	PlayerCapsuleComponent->SetCapsuleHalfHeight(100.0f);
-	PlayerCapsuleComponent->SetCapsuleRadius(34.0f);
+	PlayerCapsuleComponent->SetCapsuleRadius(44.0f);
 	PlayerCapsuleComponent->SetSimulatePhysics(true);
 	PlayerCapsuleComponent->SetCollisionProfileName(UCollisionProfile::Pawn_ProfileName);
 	PlayerCapsuleComponent->SetEnableGravity(true);
@@ -129,7 +129,7 @@ void APlayerPawn::InitCameraComponent() {
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
 	CameraBoom->bAbsoluteRotation = true;	// When the pawn rotates the camera will not
-	CameraBoom->TargetArmLength = 900.0f;	// How far is the camera from the pawn
+	CameraBoom->TargetArmLength = 1200.0f;	// How far is the camera from the pawn
 	CameraBoom->RelativeRotation = FRotator(-60.0f, 0.0f, 0.0f);
 	CameraBoom->bDoCollisionTest = false;	// We will not be using collision test, so the camera will not be pulled in when it collides
 
@@ -353,15 +353,6 @@ void APlayerPawn::PrintPlayerStatsToScreen() {
 	}
 }
 
-float APlayerPawn::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) {
-	PlayerHealth.currentHealth -= Damage;
-	if (PlayerHealth.currentHealth <= 0.0f) {
-		bIsDead = true;
-		PlayerHealth.numberOfLives--;
-	}
-
-	return Damage;
-}
 
 float APlayerPawn::OnTakeDamage_Implementation(float damage) {
 	PlayerHealth.currentHealth -= damage;
@@ -374,9 +365,5 @@ float APlayerPawn::OnTakeDamage_Implementation(float damage) {
 
 }
 
-void APlayerPawn::RapidFire() {
-	while (!bIsReloading) {
-		FireShotFromCurrentGun();
-	}
-}
+
 

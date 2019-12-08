@@ -1,9 +1,0 @@
-E:\School Humber\Unreal Engine\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\Definitions.BulletEncoreProject.h
-H:\Games\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-H:\Games\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-E:\School Humber\Unreal Engine\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject/BulletEncoreProjectGameMode.h
-H:\Games\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
-H:\Games\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
-H:\Games\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
-H:\Games\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-e:\school humber\unreal engine\bulletencore\bulletencoreproject\intermediate\build\win64\ue4editor\inc\bulletencoreproject\BulletEncoreProjectGameMode.generated.h

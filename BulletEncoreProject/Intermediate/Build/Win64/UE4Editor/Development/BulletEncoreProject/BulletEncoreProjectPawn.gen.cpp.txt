@@ -1,9 +1,0 @@
-E:\School Humber\Unreal Engine\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\Definitions.BulletEncoreProject.h
-H:\Games\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-H:\Games\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-E:\School Humber\Unreal Engine\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject/BulletEncoreProjectPawn.h
-H:\Games\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
-H:\Games\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
-H:\Games\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
-H:\Games\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-e:\school humber\unreal engine\bulletencore\bulletencoreproject\intermediate\build\win64\ue4editor\inc\bulletencoreproject\BulletEncoreProjectPawn.generated.h

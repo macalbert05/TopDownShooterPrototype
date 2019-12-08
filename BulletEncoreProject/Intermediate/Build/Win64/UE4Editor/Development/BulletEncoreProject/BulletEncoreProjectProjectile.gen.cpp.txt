@@ -1,5 +1,0 @@
-E:\School Humber\Unreal Engine\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\Definitions.BulletEncoreProject.h
-H:\Games\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-H:\Games\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-E:\School Humber\Unreal Engine\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject/BulletEncoreProjectProjectile.h
-e:\school humber\unreal engine\bulletencore\bulletencoreproject\intermediate\build\win64\ue4editor\inc\bulletencoreproject\BulletEncoreProjectProjectile.generated.h

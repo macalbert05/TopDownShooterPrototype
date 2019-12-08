@@ -12,7 +12,7 @@ ABaseProjectileClass::ABaseProjectileClass()
 	bulletData = FBulletData();
 	SetUpMeshComponent();
 	SetUpMovementComponent();
-	
+	InitialLifeSpan = 3.0f;
 }
 
 void ABaseProjectileClass::SetUpMeshComponent() {
@@ -48,6 +48,10 @@ void ABaseProjectileClass::UpdateBulletData(FBulletData newBulletdata, FVector n
 }
 
 void ABaseProjectileClass::InitBulletMovementComponent() {
+
+	// if (GEngine)
+		// GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Blue, TEXT("BULLET SPAWNED!"));
+
 	ProjectileMoveComponent->UpdatedComponent = ProjectileMeshComponent;
 	ProjectileMoveComponent->InitialSpeed = bulletData.initialSpeed;
 	ProjectileMoveComponent->MaxSpeed = bulletData.maxSpeed;
@@ -62,7 +66,7 @@ void ABaseProjectileClass::InitBulletMovementComponent() {
 		ProjectileMoveComponent->bShouldBounce = true;
 	}
 
-	InitialLifeSpan = lifeSpan;
+	
 }
 
 void ABaseProjectileClass::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit) {
@@ -71,8 +75,15 @@ void ABaseProjectileClass::OnHit(UPrimitiveComponent* HitComponent, AActor* Othe
 	{
 		OtherComponent->AddImpulseAtLocation(GetVelocity() * 20.0f, GetActorLocation());
 	}
+	else if ((OtherActor != NULL) && (OtherActor != this) && (OtherComponent != NULL) && OtherComponent->IsSimulatingPhysics() && OtherComponent->GetCollisionProfileName() == UCollisionProfile::Pawn_ProfileName) {
 
-	Destroy();
+	}
+	else {
+		Destroy();
+	}
+	
+
+	
 }
 
 FBulletData ABaseProjectileClass::GetBulletData() {
