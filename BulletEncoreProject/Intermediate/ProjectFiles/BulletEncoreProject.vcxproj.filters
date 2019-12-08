@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\BulletEncoreProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{031B131E-AD62-44D3-BA65-D302FC822EE8}</UniqueIdentifier>
+      <UniqueIdentifier>{DC9F31AD-66A7-4F3D-9AA8-BD56671EA06F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\BulletEncoreProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{27DDA5BA-DEC4-4821-B0A8-ED4D606A552F}</UniqueIdentifier>
+      <UniqueIdentifier>{B0DF139D-0639-4718-A933-C10E227B1A52}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\BulletEncoreProject">
-      <UniqueIdentifier>{82A8243C-2226-4274-B02D-DCC33918A97F}</UniqueIdentifier>
+      <UniqueIdentifier>{17A342A4-586A-4645-A71F-AD7CDDA8BD6F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\BulletEncoreProject\BulletEncoreProject.Build.cs">
       <Filter>Source\BulletEncoreProject</Filter>
@@ -60,7 +60,7 @@
       <Filter>Source\BulletEncoreProject</Filter>
     </ClInclude>
     <Filter Include="Source\BulletEncoreProject\Private">
-      <UniqueIdentifier>{EF11E259-8991-4A1F-A396-8B239A8A88CD}</UniqueIdentifier>
+      <UniqueIdentifier>{18669FCA-D022-4DFE-98D5-C5D5F5E9D942}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\BulletEncoreProject\Private\BaseProjectileClass.cpp">
       <Filter>Source\BulletEncoreProject\Private</Filter>
@@ -68,6 +68,9 @@
     <ClInclude Include="..\..\Source\BulletEncoreProject\Private\BaseProjectileClass.h">
       <Filter>Source\BulletEncoreProject\Private</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\BulletEncoreProject\Private\EnemyBase.cpp">
+      <Filter>Source\BulletEncoreProject\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\BulletEncoreProject\Private\PlayerPawn.cpp">
       <Filter>Source\BulletEncoreProject\Private</Filter>
     </ClCompile>
@@ -76,6 +79,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\BulletEncoreProject\Private\WeaponData.h">
       <Filter>Source\BulletEncoreProject\Private</Filter>
+    </ClInclude>
+    <Filter Include="Source\BulletEncoreProject\Public">
+      <UniqueIdentifier>{CB1EF876-C200-4728-B45B-6C745F22B8D5}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\BulletEncoreProject\Public\EnemyBase.h">
+      <Filter>Source\BulletEncoreProject\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

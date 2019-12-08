@@ -1,31 +1,17 @@
-﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Malik\Documents\GitHub\BulletEncore).
+﻿  Using 'git status' to determine working set for adaptive non-unity build (E:\School Humber\Unreal Engine\BulletEncore).
   Creating makefile for BulletEncoreProjectEditor (ini files are newer than makefile)
   Parsing headers for BulletEncoreProjectEditor
-    Running UnrealHeaderTool "C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\BulletEncoreProject.uproject" "C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\BulletEncoreProjectEditor\Development\BulletEncoreProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for BulletEncoreProjectEditor in 21.8464658 seconds
+    Running UnrealHeaderTool "E:\School Humber\Unreal Engine\BulletEncore\BulletEncoreProject\BulletEncoreProject.uproject" "E:\School Humber\Unreal Engine\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\BulletEncoreProjectEditor\Development\BulletEncoreProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for BulletEncoreProjectEditor in 4.8221496 seconds
   Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.16299.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Distributing 6 actions to XGE
-  --------------------Build System Warning---------------------------------------
-  License is invalid:
-      License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
-      This build will run in standalone mode.
-  
-  -------------------------------------------------------------------------------
-  --------------------Project: Default-------------------------------------------
-  PlayerPawn.gen.cpp (0:02.54 at +0:00)
-  BulletEncoreProjectGameMode.cpp (0:01.00 at +0:02)
-  PlayerPawn.cpp (0:24.01 at +0:03)
-  UE4Editor-BulletEncoreProject.dll (0:01.43 at +0:27)
-     Creating library C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject.suppressed.lib and object C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject.suppressed.exp
-  UE4Editor-BulletEncoreProject.lib (0:00.28 at +0:29)
-     Creating library C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject.lib and object C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject.exp
-  BulletEncoreProjectEditor.target (0:00.21 at +0:29)
-  ---------------------- Done ----------------------
-  
-      Rebuild All: 1 succeeded, 0 failed, 0 skipped
-  
-  1 build system warning(s):
-     - License is invalid
-  
-  Total time in XGE executor: 30.23 seconds
-  Total execution time: 54.30 seconds
+  Building 6 actions with 4 processes...
+    [1/6] BulletEncoreProject.init.gen.cpp
+    [2/6] EnemyBase.cpp
+    [3/6] EnemyBase.gen.cpp
+    [4/6] UE4Editor-BulletEncoreProject-0007.lib
+       Creating library E:\School Humber\Unreal Engine\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject-0007.lib and object E:\School Humber\Unreal Engine\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject-0007.exp
+    [5/6] UE4Editor-BulletEncoreProject-0007.dll
+       Creating library E:\School Humber\Unreal Engine\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject-0007.suppressed.lib and object E:\School Humber\Unreal Engine\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject-0007.suppressed.exp
+    [6/6] BulletEncoreProjectEditor.target
+  Total time in Parallel executor: 1.64 seconds
+  Total execution time: 8.02 seconds
