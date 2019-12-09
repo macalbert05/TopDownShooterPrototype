@@ -47,6 +47,7 @@ float ABaseEnemyCharacter::OnTakeDamage_Implementation(float damage) {
 	if (EnemyHealth.currentHealth <= 0.0f) {
 		bIsDead = true;
 		EnemyHealth.numberOfLives--;
+		OnDeath();
 	}
 
 	return damage;

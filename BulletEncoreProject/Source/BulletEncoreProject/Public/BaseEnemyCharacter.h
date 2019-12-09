@@ -56,6 +56,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 		FGunData GetCurrentGunData() const;
 
+	UFUNCTION(BlueprintImplementableEvent)
+		void OnDeath();
+
 
 private:
 

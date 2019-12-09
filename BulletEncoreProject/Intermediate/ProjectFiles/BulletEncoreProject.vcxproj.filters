@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\BulletEncoreProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{74F341CF-CEA1-4783-8DF7-3E544A0D3BC3}</UniqueIdentifier>
+      <UniqueIdentifier>{1DF1747E-60DA-4933-9C77-3FEBB2294950}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\BulletEncoreProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{32317CDD-0C3B-43C6-8B46-357E4A5374AC}</UniqueIdentifier>
+      <UniqueIdentifier>{76164954-86F7-4477-B664-AB63995EAAE4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\BulletEncoreProject">
-      <UniqueIdentifier>{4FF39EBD-F10C-44F9-AE19-505A233DA0D5}</UniqueIdentifier>
+      <UniqueIdentifier>{72B47E5A-B644-4501-992D-6786C0F716DA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\BulletEncoreProject\BulletEncoreProject.Build.cs">
       <Filter>Source\BulletEncoreProject</Filter>
@@ -60,7 +60,7 @@
       <Filter>Source\BulletEncoreProject</Filter>
     </ClInclude>
     <Filter Include="Source\BulletEncoreProject\Private">
-      <UniqueIdentifier>{07FB1584-302D-4210-ADCB-67EFF9F2689C}</UniqueIdentifier>
+      <UniqueIdentifier>{523CA36D-4878-4505-A9E7-536635F96890}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\BulletEncoreProject\Private\BaseEnemyCharacter.cpp">
       <Filter>Source\BulletEncoreProject\Private</Filter>
@@ -72,7 +72,7 @@
       <Filter>Source\BulletEncoreProject\Private</Filter>
     </ClCompile>
     <Filter Include="Source\BulletEncoreProject\Public">
-      <UniqueIdentifier>{1A1DE21E-4FBA-4345-89F1-B3108259FC99}</UniqueIdentifier>
+      <UniqueIdentifier>{8DFCA6BA-D9B2-4158-BFDB-518B227EC927}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\BulletEncoreProject\Public\BaseEnemyCharacter.h">
       <Filter>Source\BulletEncoreProject\Public</Filter>

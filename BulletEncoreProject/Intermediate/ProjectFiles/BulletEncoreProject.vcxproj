@@ -99,7 +99,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{94285220-A07C-44B3-972B-5CEBA53B4475}</ProjectGuid>
+    <ProjectGuid>{9CC33A28-800A-4251-B2A7-A5D1F5A87494}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <RootNamespace>BulletEncoreProject</RootNamespace>
     <PlatformToolset>v141</PlatformToolset>
