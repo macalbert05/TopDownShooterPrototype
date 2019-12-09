@@ -1,9 +1,9 @@
-C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\Definitions.BulletEncoreProject.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject/BulletEncoreProjectGameMode.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-c:\users\malik\documents\github\bulletencore\bulletencoreproject\intermediate\build\win64\ue4editor\inc\bulletencoreproject\BulletEncoreProjectGameMode.generated.h
+E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\Definitions.BulletEncoreProject.h
+E:\Software\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+E:\Software\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+E:\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject/BulletEncoreProjectGameMode.h
+E:\Software\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+E:\Software\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+E:\Software\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+E:\Software\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Inc\BulletEncoreProject\BulletEncoreProjectGameMode.generated.h

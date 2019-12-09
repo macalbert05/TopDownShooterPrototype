@@ -28,7 +28,7 @@
 /wd4838
 /we4668
 /I .
-/I C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject\Private
+/I E:\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject\Private
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime
 /I Runtime\Engine\Classes
@@ -427,21 +427,21 @@
 /I ThirdParty
 /I ThirdParty\libSampleRate\Public
 /I ThirdParty\libSampleRate
-/I C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Inc\BulletEncoreProject
-/I C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Source
-/I C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject\Public
-/I C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject
-/I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"
-/FI"C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\BulletEncoreProjectEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\BulletEncoreProjectEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\BulletEncoreProjectEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject\BulletEncoreProjectPawn.cpp"
-/FI"C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\Definitions.BulletEncoreProject.h"
-/Fo"C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\BulletEncoreProjectPawn.cpp.obj"
+/I E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Inc\BulletEncoreProject
+/I E:\GitHub\BulletEncore\BulletEncoreProject\Source
+/I E:\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject\Public
+/I E:\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\INCLUDE"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
+/FI"E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\BulletEncoreProjectEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\BulletEncoreProjectEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\BulletEncoreProjectEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"E:\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject\BulletEncoreProjectPawn.cpp"
+/FI"E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\Definitions.BulletEncoreProject.h"
+/Fo"E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\BulletEncoreProjectPawn.cpp.obj"
 /TP
 /GR-
 /W4

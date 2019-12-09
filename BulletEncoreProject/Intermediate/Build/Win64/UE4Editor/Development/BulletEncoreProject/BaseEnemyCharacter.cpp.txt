@@ -1,15 +1,15 @@
-C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\Definitions.BulletEncoreProject.h
-C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject\Public\BaseEnemyCharacter.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-c:\users\malik\documents\github\bulletencore\bulletencoreproject\source\bulletencoreproject\public\WeaponData.h
-C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Inc\BulletEncoreProject\WeaponData.generated.h
-C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Inc\BulletEncoreProject\BaseEnemyCharacter.generated.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/CapsuleComponent.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
-C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CapsuleComponent.generated.h
-C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject\Public\BaseProjectileClass.h
-C:\Users\Malik\Documents\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Inc\BulletEncoreProject\BaseProjectileClass.generated.h
+E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\Definitions.BulletEncoreProject.h
+E:\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject\Public\BaseEnemyCharacter.h
+E:\Software\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+E:\Software\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+E:\Software\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+E:\Software\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+E:\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject\Public\WeaponData.h
+E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Inc\BulletEncoreProject\WeaponData.generated.h
+E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Inc\BulletEncoreProject\BaseEnemyCharacter.generated.h
+E:\Software\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/CapsuleComponent.h
+E:\Software\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+E:\Software\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+E:\Software\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CapsuleComponent.generated.h
+E:\GitHub\BulletEncore\BulletEncoreProject\Source\BulletEncoreProject\Public\BaseProjectileClass.h
+E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Inc\BulletEncoreProject\BaseProjectileClass.generated.h

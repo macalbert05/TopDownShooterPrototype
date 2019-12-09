@@ -1,0 +1,1426 @@
+﻿Log file open, 12/09/19 12:58:02
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: BulletEncoreProject
+LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.993541
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleVision
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin Firebase
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.22-CL-7053642
+LogInit: Engine Version: 4.22.3-7053642+++UE4+Release-4.22
+LogInit: Compatible Engine Version: 4.22.0-5660361+++UE4+Release-4.22
+LogInit: Net CL: 5660361
+LogInit: OS: Windows 10 (Release 1809) (), CPU: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz, GPU: Intel(R) HD Graphics 630
+LogInit: Compiled (64-bit): Jun 18 2019 03:09:11
+LogInit: Compiled with Visual C++: 19.16.27025.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.22
+LogInit: Command Line: 
+LogInit: Base Directory: E:/Software/UE_4.22/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 23
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 3
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 30
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 35
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 28
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 11
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 2
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 25
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 6
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 2
+LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Engine.ini]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Engine.ini]
+[2019.12.09-17.58.04:843][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Engine.ini]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Engine.ini]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2019.12.09-17.58.04:843][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Engine.ini]
+[2019.12.09-17.58.04:843][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Engine.ini]
+[2019.12.09-17.58.04:846][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.12.09-17.58.04:846][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.12.09-17.58.04:847][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.12.09-17.58.04:847][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.12.09-17.58.04:847][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.12.09-17.58.04:847][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.12.09-17.58.04:847][  0]LogInit: Selected Device Profile: [Windows]
+[2019.12.09-17.58.04:847][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.12.09-17.58.04:878][  0]LogHAL: Display: Platform has ~ 8 GB [8505876480 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:0		; Required until we fix HLR fall-out]]
+[2019.12.09-17.58.04:878][  0]LogInit: Going up to parent DeviceProfile []
+[2019.12.09-17.58.04:878][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.12.09-17.58.04:878][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Scalability.ini]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2019.12.09-17.58.04:879][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Config/Windows/Engine.ini]
+[2019.12.09-17.58.04:879][  0]LogInit: Computer: MSI
+[2019.12.09-17.58.04:879][  0]LogInit: User: Will
+[2019.12.09-17.58.04:879][  0]LogInit: CPU Page size=4096, Cores=4
+[2019.12.09-17.58.04:879][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2019.12.09-17.58.04:880][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2019.12.09-17.58.04:880][  0]LogMemory: Platform Memory Stats for Windows
+[2019.12.09-17.58.04:880][  0]LogMemory: Process Physical Memory: 96.07 MB used, 96.07 MB peak
+[2019.12.09-17.58.04:880][  0]LogMemory: Process Virtual Memory: 88.88 MB used, 88.88 MB peak
+[2019.12.09-17.58.04:880][  0]LogMemory: Physical Memory: 5761.28 MB used,  2350.56 MB free, 8111.84 MB total
+[2019.12.09-17.58.04:880][  0]LogMemory: Virtual Memory: 4656.41 MB used,  134213072.00 MB free, 134217728.00 MB total
+[2019.12.09-17.58.05:453][  0]LogInit: Using OS detected language (en-US).
+[2019.12.09-17.58.05:453][  0]LogInit: Using OS detected locale (en-CA).
+[2019.12.09-17.58.05:498][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2019.12.09-17.58.08:003][  0]LogInit: Setting process to per monitor DPI aware
+[2019.12.09-17.58.08:321][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.12.09-17.58.08:321][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.12.09-17.58.11:040][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.12.09-17.58.11:040][  0]LogD3D11RHI: D3D11 adapters:
+[2019.12.09-17.58.11:731][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050' (Feature Level 11_0)
+[2019.12.09-17.58.11:731][  0]LogD3D11RHI:       1979/0/4055 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2019.12.09-17.58.11:744][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 630' (Feature Level 11_0)
+[2019.12.09-17.58.11:744][  0]LogD3D11RHI:       128/0/4055 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2019.12.09-17.58.11:746][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.12.09-17.58.11:746][  0]LogD3D11RHI:       0/0/4055 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.12.09-17.58.11:746][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.12.09-17.58.11:775][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.12.09-17.58.11:775][  0]LogD3D11RHI:     GPU DeviceId: 0x1c8d (for the marketing name, search the web for "GPU Device Id")
+[2019.12.09-17.58.11:775][  0]LogWindows: EnumDisplayDevices:
+[2019.12.09-17.58.11:776][  0]LogWindows:    0. 'Intel(R) HD Graphics 630' (P:1 D:1)
+[2019.12.09-17.58.11:776][  0]LogWindows:    1. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2019.12.09-17.58.11:776][  0]LogWindows:    2. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2019.12.09-17.58.11:776][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2019.12.09-17.58.11:776][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050
+[2019.12.09-17.58.11:776][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2019.12.09-17.58.11:776][  0]LogD3D11RHI:      Driver Date: Unknown
+[2019.12.09-17.58.11:776][  0]LogRHI: Texture pool is 1385 MB (70% of 1979 MB)
+[2019.12.09-17.58.11:811][  0]LogD3D11RHI: Async texture creation enabled
+[2019.12.09-17.58.11:814][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.12.09-17.58.11:814][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.12.09-17.58.11:814][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
+[2019.12.09-17.58.11:828][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2019.12.09-17.58.13:503][  0]LogTemp: Display: Module 'AllDesktopTargetPlatform' loaded TargetPlatform 'AllDesktop'
+[2019.12.09-17.58.13:515][  0]LogTemp: Display: Module 'MacClientTargetPlatform' loaded TargetPlatform 'MacClient'
+[2019.12.09-17.58.13:528][  0]LogTemp: Display: Module 'MacNoEditorTargetPlatform' loaded TargetPlatform 'MacNoEditor'
+[2019.12.09-17.58.13:584][  0]LogTemp: Display: Module 'MacServerTargetPlatform' loaded TargetPlatform 'MacServer'
+[2019.12.09-17.58.13:632][  0]LogTemp: Display: Module 'MacTargetPlatform' loaded TargetPlatform 'Mac'
+[2019.12.09-17.58.13:682][  0]LogTemp: Display: Module 'WindowsClientTargetPlatform' loaded TargetPlatform 'WindowsClient'
+[2019.12.09-17.58.13:753][  0]LogTemp: Display: Module 'WindowsNoEditorTargetPlatform' loaded TargetPlatform 'WindowsNoEditor'
+[2019.12.09-17.58.13:931][  0]LogTemp: Display: Module 'WindowsServerTargetPlatform' loaded TargetPlatform 'WindowsServer'
+[2019.12.09-17.58.13:936][  0]LogTemp: Display: Module 'WindowsTargetPlatform' loaded TargetPlatform 'Windows'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTC'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATC'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXT'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1a'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTC'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'AndroidClient'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTCClient'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATCClient'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXTClient'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1Client'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1aClient'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2Client'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTCClient'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_Multi'
+[2019.12.09-17.58.14:060][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_MultiClient'
+[2019.12.09-17.58.14:102][  0]LogTemp: Display: Module 'HTML5TargetPlatform' loaded TargetPlatform 'HTML5'
+[2019.12.09-17.58.14:571][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOSClient'
+[2019.12.09-17.58.14:572][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOS'
+[2019.12.09-17.58.14:595][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOSClient'
+[2019.12.09-17.58.14:595][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOS'
+[2019.12.09-17.58.14:634][  0]LogTemp: Display: Module 'LinuxClientTargetPlatform' loaded TargetPlatform 'LinuxClient'
+[2019.12.09-17.58.14:646][  0]LogTemp: Display: Module 'LinuxNoEditorTargetPlatform' loaded TargetPlatform 'LinuxNoEditor'
+[2019.12.09-17.58.14:660][  0]LogTemp: Display: Module 'LinuxServerTargetPlatform' loaded TargetPlatform 'LinuxServer'
+[2019.12.09-17.58.14:682][  0]LogTemp: Display: Module 'LinuxTargetPlatform' loaded TargetPlatform 'Linux'
+[2019.12.09-17.58.14:751][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'Lumin'
+[2019.12.09-17.58.14:751][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'LuminClient'
+[2019.12.09-17.58.14:752][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.12.09-17.58.14:984][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2019.12.09-17.58.15:594][  0]LogShaderCompilers: Guid format shader working directory is -10 characters bigger than the processId version (../../../../../GitHub/BulletEncore/BulletEncoreProject/Intermediate/Shaders/WorkingDirectory/16280/).
+[2019.12.09-17.58.15:595][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Will/AppData/Local/Temp/UnrealShaderWorkingDir/1599FAFA45A7345916D7818CDCA2509C/'.
+[2019.12.09-17.58.15:600][  0]LogXGEController: Cleaning working directory: C:/Users/Will/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2019.12.09-17.58.15:600][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.12.09-17.58.15:601][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.12.09-17.58.15:601][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.12.09-17.58.20:038][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.12.09-17.58.20:321][  0]LogDerivedDataCache: Loaded boot cache 0.28s 109MB C:/Users/Will/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
+[2019.12.09-17.58.20:321][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Will/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc
+[2019.12.09-17.58.20:321][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../GitHub/BulletEncore/BulletEncoreProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.12.09-17.58.20:321][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.12.09-17.58.20:321][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../GitHub/BulletEncore/BulletEncoreProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.12.09-17.58.20:321][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.12.09-17.58.20:334][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.12.09-17.58.20:335][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.12.09-17.58.20:335][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2019.12.09-17.58.20:347][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Will/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.12.09-17.58.20:347][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.12.09-17.58.20:347][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.12.09-17.58.20:396][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.12.09-17.58.20:397][  0]LogSlate: Using FreeType 2.6.0
+[2019.12.09-17.58.20:397][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.12.09-17.58.20:697][  0]LogAssetRegistry: FAssetRegistry took 0.0386 seconds to start up
+[2019.12.09-17.58.21:445][  0]LogInit: Selected Device Profile: [Windows]
+[2019.12.09-17.58.22:083][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.12.09-17.58.22:083][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2019.12.09-17.58.22:083][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.12.09-17.58.22:083][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2019.12.09-17.58.22:083][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2019.12.09-17.58.22:121][  0]LogNetVersion: BulletEncoreProject 1.0.0, NetCL: 5660361, EngineNetVer: 10, GameNetVer: 0 (Checksum: 3294845334)
+[2019.12.09-17.58.22:973][  0]LogPackageLocalizationCache: Processed 10 localized package path(s) for 1 prioritized culture(s) in 0.043536 seconds
+[2019.12.09-17.58.22:980][  0]LogUObjectArray: 42205 objects as part of root set at end of initial load.
+[2019.12.09-17.58.22:981][  0]LogUObjectAllocator: 7325032 out of 0 bytes used by permanent object pool.
+[2019.12.09-17.58.22:981][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.12.09-17.58.29:500][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.12.09-17.58.29:527][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.12.09-17.58.31:137][  0]SourceControl: Source control is disabled
+[2019.12.09-17.58.31:137][  0]SourceControl: Source control is disabled
+[2019.12.09-17.58.31:382][  0]SourceControl: Source control is disabled
+[2019.12.09-17.58.31:437][  0]SourceControl: Source control is disabled
+[2019.12.09-17.58.32:884][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.12.09-17.58.33:524][  0]LogOcInput: OculusInput pre-init called
+[2019.12.09-17.58.34:498][  0]LogEngine: Initializing Engine...
+[2019.12.09-17.58.34:498][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.12.09-17.58.34:499][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2019.12.09-17.58.34:784][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.12.09-17.58.34:872][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.12.09-17.58.34:921][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.12.09-17.58.35:056][  0]LogInit: FAudioDevice initialized.
+[2019.12.09-17.58.35:056][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.12.09-17.58.35:153][  0]LogDerivedDataCache: Saved boot cache 0.10s 75MB C:/Users/Will/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
+[2019.12.09-17.58.35:163][  0]LogInit: Texture streaming: Enabled
+[2019.12.09-17.58.35:215][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.12.09-17.58.35:230][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={53E8B0AB-42D3-C50F-3349-FDA7CF94DD28}
+[2019.12.09-17.58.35:345][  0]LogInit: Transaction tracking system initialized
+[2019.12.09-17.58.35:637][  0]BlueprintLog: New page: Editor Load
+[2019.12.09-17.58.36:370][  0]LocalizationService: Localization service is disabled
+[2019.12.09-17.58.37:178][  0]LogFileCache: Scanning file cache for directory 'E:/GitHub/BulletEncore/BulletEncoreProject/Content/' took 0.01s
+[2019.12.09-17.58.37:178][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.12.09-17.58.37:178][  0]LogCook: Display: Mobile HDR setting 1
+[2019.12.09-17.58.38:478][  0]SourceControl: Source control is disabled
+[2019.12.09-17.58.38:485][  0]Cmd: MAP LOAD FILE="../../../../../GitHub/BulletEncore/BulletEncoreProject/Content/TwinStickCPP/Maps/TwinStickExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.12.09-17.58.38:485][  0]LightingResults: New page: Lighting Build
+[2019.12.09-17.58.38:496][  0]MapCheck: New page: Map Check
+[2019.12.09-17.58.38:496][  0]LightingResults: New page: Lighting Build
+[2019.12.09-17.58.38:547][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.02ms
+[2019.12.09-17.58.38:669][  0]LogBlueprint: Warning: [Compiler Ue4ASP_Character] InputAction Event references unknown Action 'Crouch' for  InputAction Crouch
+[2019.12.09-17.58.38:670][  0]LogBlueprint: Warning: [Compiler Ue4ASP_Character] InputAction Event references unknown Action 'Jump' for  InputAction Jump
+[2019.12.09-17.58.38:670][  0]LogBlueprint: Warning: [Compiler Ue4ASP_Character] Input Axis Event references unknown Axis 'Turn' for  InputAxis Turn
+[2019.12.09-17.58.38:678][  0]LogBlueprint: Warning: [Compiler Ue4ASP_Character] [0048.38] Compile of Ue4ASP_Character successful, but with 3 Warning(s) [in 30 ms] (/Game/AnimStarterPack/Ue4ASP_Character.Ue4ASP_Character)
+[2019.12.09-17.58.39:592][  0]LogAIModule: Creating AISystem for world TwinStickExampleMap
+[2019.12.09-17.58.39:607][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.12.09-17.58.39:643][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.85ms
+[2019.12.09-17.58.39:643][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.12.09-17.58.39:643][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.089ms to complete.
+[2019.12.09-17.58.39:643][  0]LogFileHelpers: Loading map 'TwinStickExampleMap' took 1.165
+[2019.12.09-17.58.40:002][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.09-17.58.40:010][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.09-17.58.40:018][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.09-17.58.40:026][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.09-17.58.40:058][  0]LogCollectionManager: Loaded 0 collections in 0.000878 seconds
+[2019.12.09-17.58.40:091][  0]LogFileCache: Scanning file cache for directory 'E:/GitHub/BulletEncore/BulletEncoreProject/Saved/Collections/' took 0.01s
+[2019.12.09-17.58.40:091][  0]LogFileCache: Scanning file cache for directory 'E:/GitHub/BulletEncore/BulletEncoreProject/Content/Developers/Will/Collections/' took 0.00s
+[2019.12.09-17.58.40:091][  0]LogFileCache: Scanning file cache for directory 'E:/GitHub/BulletEncore/BulletEncoreProject/Content/Collections/' took 0.00s
+[2019.12.09-17.58.40:091][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2019.12.09-17.58.40:099][  0]LogContentBrowser: Native class hierarchy populated in 0.0083 seconds. Added 2738 classes and 662 folders.
+[2019.12.09-17.58.40:156][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.12.09-17.58.40:217][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:261][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:288][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:296][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:303][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:309][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:332][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:340][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:348][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:391][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:398][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:442][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:451][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:459][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:485][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:494][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:522][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:529][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:555][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:565][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:574][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:582][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:591][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:617][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:633][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.40:689][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.12.09-17.58.41:345][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.12.09-17.58.41:473][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2019.12.09-17.58.41:542][  0]LogSlate: Took 0.000147 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.12.09-17.58.41:545][  0]LogSlate: Took 0.000261 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.12.09-17.58.41:578][  0]LogSlate: Took 0.028694 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.12.09-17.58.41:689][  0]LogRenderer: Reallocating scene render targets to support 1076x612 Format 10 NumSamples 1 (Frame:1).
+[2019.12.09-17.58.41:937][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2019.12.09-17.58.41:937][  0]LogLoad: (Engine Initialization) Total time: 51.64 seconds
+[2019.12.09-17.58.41:937][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.12.09-17.58.41:997][  0]LogAssetRegistry: Asset discovery search completed in 21.3231 seconds
+[2019.12.09-17.58.41:999][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2019.12.09-17.58.41:999][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000042 seconds (updated 0 objects)
+[2019.12.09-17.58.42:000][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.12.09-17.58.42:109][  0]LogSlate: Took 0.000224 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.12.09-17.58.42:296][  1]LogFileCache: Retrieving MD5 hashes for directory 'E:/GitHub/BulletEncore/BulletEncoreProject/Content/' took 0.33s
+[2019.12.09-17.58.48:556][360]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.09-17.58.48:639][365]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.09-17.58.48:653][365]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap' with GeneratedClass '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap_C' with ClassGeneratedBy '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap'
+[2019.12.09-17.58.48:653][365]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.09-17.58.48:653][365]PIE: New page: PIE session: TwinStickExampleMap (Dec 9, 2019, 7:58:48 AM)
+[2019.12.09-17.58.48:666][365]LogPlayLevel: Creating play world package: /Game/TwinStickCPP/Maps/UEDPIE_0_TwinStickExampleMap
+[2019.12.09-17.58.48:689][365]LogPlayLevel: PIE: StaticDuplicateObject took: (0.023371s)
+[2019.12.09-17.58.48:690][365]LogAIModule: Creating AISystem for world TwinStickExampleMap
+[2019.12.09-17.58.48:690][365]LogPlayLevel: PIE: World Init took: (0.000762s)
+[2019.12.09-17.58.48:690][365]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap to /Game/TwinStickCPP/Maps/UEDPIE_0_TwinStickExampleMap.TwinStickExampleMap (0.024384s)
+[2019.12.09-17.58.48:718][365]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2019.12.09-17.58.48:759][365]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.12.09-17.58.48:824][365]LogInit: FAudioDevice initialized.
+[2019.12.09-17.58.48:863][365]LogLoad: Game class is 'GameModeDefault_C'
+[2019.12.09-17.58.48:868][365]LogWorld: Bringing World /Game/TwinStickCPP/Maps/UEDPIE_0_TwinStickExampleMap.TwinStickExampleMap up for play (max tick rate 60) at 2019.12.09-12.58.48
+[2019.12.09-17.58.48:869][365]LogBlueprintUserMessages: [AIPawn_Controller_C_0] AI is possed
+[2019.12.09-17.58.48:870][365]LogBlueprintUserMessages: [AIPawn_Controller_C_1] AI is possed
+[2019.12.09-17.58.48:871][365]LogBlueprintUserMessages: [AIPawn_Controller_C_2] AI is possed
+[2019.12.09-17.58.48:871][365]LogBlueprintUserMessages: [AIPawn_Controller_C_3] AI is possed
+[2019.12.09-17.58.48:871][365]LogWorld: Bringing up level for play took: 0.006871
+[2019.12.09-17.58.48:887][365]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
+[2019.12.09-17.58.49:233][365]PIE: Play in editor start time for /Game/TwinStickCPP/Maps/UEDPIE_0_TwinStickExampleMap 1.209
+[2019.12.09-17.58.49:233][365]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap' with GeneratedClass '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap_C' with ClassGeneratedBy '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap'
+[2019.12.09-17.58.50:242][417]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-17.58.50:392][426]LogPhysics: Warning: COLLISION PROFILE [None] is not found
+[2019.12.09-17.58.50:392][426]LogPhysics: Warning: COLLISION PROFILE [None] is not found
+[2019.12.09-17.58.51:893][516]LogPhysics: Warning: COLLISION PROFILE [None] is not found
+[2019.12.09-17.58.51:893][516]LogPhysics: Warning: COLLISION PROFILE [None] is not found
+[2019.12.09-17.58.51:893][516]LogPhysics: Warning: COLLISION PROFILE [None] is not found
+[2019.12.09-17.58.52:241][529]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-17.58.52:774][561]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-17.58.53:474][603]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-17.58.56:707][797]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-17.59.04:925][290]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-17.59.10:125][602]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-17.59.11:708][697]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-17.59.27:928][670]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-17.59.43:299][592]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-17.59.46:182][765]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-17.59.59:568][567]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.00.03:268][787]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.00.11:297][267]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.00.13:981][428]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.00.18:815][718]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.00.23:015][970]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.00.23:699][ 11]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.00.26:165][159]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.00.30:433][415]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap' with GeneratedClass '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap_C' with ClassGeneratedBy '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap'
+[2019.12.09-18.00.30:434][415]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.09-18.00.30:483][415]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.12.09-18.00.30:483][415]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap' with GeneratedClass '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap_C' with ClassGeneratedBy '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap'
+[2019.12.09-18.00.30:520][415]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.09-18.00.30:574][415]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2019.12.09-18.00.30:601][416]LogPlayLevel: Display: Destroying online subsystem :Context_3
+[2019.12.09-18.00.34:429][642]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.09-18.00.35:652][710]LogSlate: Took 0.000136 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.12.09-18.00.35:663][710]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/PlayerBP/PlayerPawn_BP.PlayerPawn_BP
+[2019.12.09-18.00.37:510][710]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 121 classes and 0 folders.
+[2019.12.09-18.00.40:043][710]LogSlate: Took 0.017472 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2019.12.09-18.00.40:733][711]LogSlate: Took 0.000128 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2019.12.09-18.00.43:793][821]LogSlate: Window 'PlayerPawn_BP' being destroyed
+[2019.12.09-18.02.08:783][668]BlueprintLog: New page: Compile PlayerPawn_BP
+[2019.12.09-18.02.09:187][668]LogUObjectHash: Compacting FUObjectHashTables data took   3.39ms
+[2019.12.09-18.02.09:968][692]LogUObjectHash: Compacting FUObjectHashTables data took   2.76ms
+[2019.12.09-18.02.10:253][692]LogUObjectHash: Compacting FUObjectHashTables data took   0.64ms
+[2019.12.09-18.02.10:698][692]LogSavePackage: Moving '../../../../../GitHub/BulletEncore/BulletEncoreProject/Saved/TwinStickExampleMapB79A88234A5418710C6A75A66E8FD7D9.tmp' to '../../../../../GitHub/BulletEncore/BulletEncoreProject/Content/TwinStickCPP/Maps/TwinStickExampleMap.umap'
+[2019.12.09-18.02.10:804][692]LogFileHelpers: Saving map 'TwinStickExampleMap' took 0.718
+[2019.12.09-18.02.10:868][692]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/PlayerBP/PlayerPawn_BP" FILE="../../../../../GitHub/BulletEncore/BulletEncoreProject/Content/Blueprints/PlayerBP/PlayerPawn_BP.uasset" SILENT=true
+[2019.12.09-18.02.11:181][692]LogSavePackage: Moving '../../../../../GitHub/BulletEncore/BulletEncoreProject/Saved/PlayerPawn_BPFE4B299949D67073D4C90AB458206B41.tmp' to '../../../../../GitHub/BulletEncore/BulletEncoreProject/Content/Blueprints/PlayerBP/PlayerPawn_BP.uasset'
+[2019.12.09-18.02.13:191][811]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.09-18.02.13:215][811]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap' with GeneratedClass '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap_C' with ClassGeneratedBy '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap'
+[2019.12.09-18.02.13:215][811]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.09-18.02.13:215][811]PIE: New page: PIE session: TwinStickExampleMap (Dec 9, 2019, 8:02:13 AM)
+[2019.12.09-18.02.13:216][811]LogPlayLevel: Creating play world package: /Game/TwinStickCPP/Maps/UEDPIE_0_TwinStickExampleMap
+[2019.12.09-18.02.13:233][811]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017470s)
+[2019.12.09-18.02.13:234][811]LogAIModule: Creating AISystem for world TwinStickExampleMap
+[2019.12.09-18.02.13:234][811]LogPlayLevel: PIE: World Init took: (0.000717s)
+[2019.12.09-18.02.13:234][811]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap to /Game/TwinStickCPP/Maps/UEDPIE_0_TwinStickExampleMap.TwinStickExampleMap (0.018335s)
+[2019.12.09-18.02.13:296][811]LogUObjectHash: Compacting FUObjectHashTables data took   2.49ms
+[2019.12.09-18.02.13:332][811]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.12.09-18.02.13:398][811]LogInit: FAudioDevice initialized.
+[2019.12.09-18.02.13:425][811]LogLoad: Game class is 'GameModeDefault_C'
+[2019.12.09-18.02.13:429][811]LogWorld: Bringing World /Game/TwinStickCPP/Maps/UEDPIE_0_TwinStickExampleMap.TwinStickExampleMap up for play (max tick rate 60) at 2019.12.09-13.02.13
+[2019.12.09-18.02.13:430][811]LogBlueprintUserMessages: [AIPawn_Controller_C_0] AI is possed
+[2019.12.09-18.02.13:431][811]LogBlueprintUserMessages: [AIPawn_Controller_C_1] AI is possed
+[2019.12.09-18.02.13:431][811]LogBlueprintUserMessages: [AIPawn_Controller_C_2] AI is possed
+[2019.12.09-18.02.13:431][811]LogBlueprintUserMessages: [AIPawn_Controller_C_3] AI is possed
+[2019.12.09-18.02.13:432][811]LogWorld: Bringing up level for play took: 0.005729
+[2019.12.09-18.02.13:779][811]PIE: Play in editor start time for /Game/TwinStickCPP/Maps/UEDPIE_0_TwinStickExampleMap -0.245
+[2019.12.09-18.02.13:780][811]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap' with GeneratedClass '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap_C' with ClassGeneratedBy '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap'
+[2019.12.09-18.02.14:920][872]LogPhysics: Warning: COLLISION PROFILE [None] is not found
+[2019.12.09-18.02.14:920][872]LogPhysics: Warning: COLLISION PROFILE [None] is not found
+[2019.12.09-18.02.16:420][962]LogPhysics: Warning: COLLISION PROFILE [None] is not found
+[2019.12.09-18.02.16:420][962]LogPhysics: Warning: COLLISION PROFILE [None] is not found
+[2019.12.09-18.02.16:420][962]LogPhysics: Warning: COLLISION PROFILE [None] is not found
+[2019.12.09-18.02.18:970][115]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.02.22:739][341]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap' with GeneratedClass '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap_C' with ClassGeneratedBy '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap'
+[2019.12.09-18.02.22:739][341]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.09-18.02.22:788][341]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.12.09-18.02.22:789][341]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap' with GeneratedClass '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap_C' with ClassGeneratedBy '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap'
+[2019.12.09-18.02.22:831][341]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.09-18.02.22:887][341]LogUObjectHash: Compacting FUObjectHashTables data took   2.23ms
+[2019.12.09-18.02.22:917][342]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2019.12.09-18.02.25:960][524]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.09-18.02.35:002][ 57]LogEditorViewport: Clicking on Actor (LMB): PlayerPawn_BP_C (PlayerPawn_BP)
+[2019.12.09-18.02.46:819][748]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.09-18.02.59:542][495]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.09-18.02.59:562][495]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap' with GeneratedClass '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap_C' with ClassGeneratedBy '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap'
+[2019.12.09-18.02.59:562][495]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.09-18.02.59:562][495]PIE: New page: PIE session: TwinStickExampleMap (Dec 9, 2019, 8:02:59 AM)
+[2019.12.09-18.02.59:562][495]LogPlayLevel: Creating play world package: /Game/TwinStickCPP/Maps/UEDPIE_0_TwinStickExampleMap
+[2019.12.09-18.02.59:583][495]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020106s)
+[2019.12.09-18.02.59:583][495]LogAIModule: Creating AISystem for world TwinStickExampleMap
+[2019.12.09-18.02.59:584][495]LogPlayLevel: PIE: World Init took: (0.000974s)
+[2019.12.09-18.02.59:584][495]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap to /Game/TwinStickCPP/Maps/UEDPIE_0_TwinStickExampleMap.TwinStickExampleMap (0.021265s)
+[2019.12.09-18.02.59:634][495]LogUObjectHash: Compacting FUObjectHashTables data took   3.00ms
+[2019.12.09-18.02.59:671][495]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.12.09-18.02.59:740][495]LogInit: FAudioDevice initialized.
+[2019.12.09-18.02.59:772][495]LogLoad: Game class is 'GameModeDefault_C'
+[2019.12.09-18.02.59:777][495]LogWorld: Bringing World /Game/TwinStickCPP/Maps/UEDPIE_0_TwinStickExampleMap.TwinStickExampleMap up for play (max tick rate 60) at 2019.12.09-13.02.59
+[2019.12.09-18.02.59:777][495]LogBlueprintUserMessages: [AIPawn_Controller_C_0] AI is possed
+[2019.12.09-18.02.59:778][495]LogBlueprintUserMessages: [AIPawn_Controller_C_1] AI is possed
+[2019.12.09-18.02.59:779][495]LogBlueprintUserMessages: [AIPawn_Controller_C_2] AI is possed
+[2019.12.09-18.02.59:779][495]LogBlueprintUserMessages: [AIPawn_Controller_C_3] AI is possed
+[2019.12.09-18.02.59:779][495]LogWorld: Bringing up level for play took: 0.006190
+[2019.12.09-18.03.00:140][495]PIE: Play in editor start time for /Game/TwinStickCPP/Maps/UEDPIE_0_TwinStickExampleMap 0.116
+[2019.12.09-18.03.00:140][495]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap' with GeneratedClass '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap_C' with ClassGeneratedBy '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap'
+[2019.12.09-18.03.01:358][552]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.03.01:528][562]LogPhysics: Warning: COLLISION PROFILE [None] is not found
+[2019.12.09-18.03.01:528][562]LogPhysics: Warning: COLLISION PROFILE [None] is not found
+[2019.12.09-18.03.03:026][652]LogPhysics: Warning: COLLISION PROFILE [None] is not found
+[2019.12.09-18.03.03:027][652]LogPhysics: Warning: COLLISION PROFILE [None] is not found
+[2019.12.09-18.03.04:375][733]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.03.17:572][523]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.03.22:720][832]LogBlueprintUserMessages: [BaseEnemy_CharacterBP2_5] Enemy Took Damage25.0
+[2019.12.09-18.03.22:938][845]LogBlueprintUserMessages: [BaseEnemy_CharacterBP2_5] Enemy Took Damage25.0
+[2019.12.09-18.03.23:557][882]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.03.24:570][943]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.03.28:538][181]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.04.09:342][622]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.04.11:699][762]LogBlueprintUserMessages: [PlayerPawn_BP_2] Player Took Damage1.0
+[2019.12.09-18.04.18:050][143]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap' with GeneratedClass '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap_C' with ClassGeneratedBy '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap'
+[2019.12.09-18.04.18:050][143]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.09-18.04.18:104][143]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.12.09-18.04.18:104][143]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap' with GeneratedClass '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap_C' with ClassGeneratedBy '/Game/TwinStickCPP/Maps/TwinStickExampleMap.TwinStickExampleMap:PersistentLevel.TwinStickExampleMap'
+[2019.12.09-18.04.18:151][143]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.12.09-18.04.18:200][143]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2019.12.09-18.04.18:232][144]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2019.12.09-18.04.19:433][210]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.09-18.04.24:954][531]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.09-18.04.32:262][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:262][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:262][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:262][854]LogLinker: Warning: Unable to load Default__EnemyBaseBP_C with outer Package /Game/Blueprints/EnemiesBP/EnemyBaseBP because its class does not exist
+[2019.12.09-18.04.32:262][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:262][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:262][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:262][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:262][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:262][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:262][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:263][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:263][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:263][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:263][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:263][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:263][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:263][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:263][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:263][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:263][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:263][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:264][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:264][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:264][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:264][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:264][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:264][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:266][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:266][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:266][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:267][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:267][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:267][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:267][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:267][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:267][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:267][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:268][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:325][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:325][854]LogBlueprint: Warning: FMemberReference::ResolveMember (K2_GetActorLocation) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:325][854]LogBlueprint: Warning: FMemberReference::ResolveMember (K2_GetActorLocation) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:326][854]LogBlueprint: Warning: FMemberReference::ResolveMember (K2_DestroyActor) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:326][854]LogBlueprint: Warning: FMemberReference::ResolveMember (Patrol) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:326][854]LogBlueprint: Warning: FMemberReference::ResolveMember (EnableInput) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:326][854]LogBlueprint: Warning: FMemberReference::ResolveMember (ReceiveDamage) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:326][854]LogBlueprint: Warning: FMemberReference::ResolveMember (Damaged) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:326][854]LogBlueprint: Warning: FMemberReference::ResolveMember (BPChase) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:326][854]LogBlueprint: Warning: FMemberReference::ResolveMember (K2_GetActorLocation) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:326][854]LogBlueprint: Warning: FMemberReference::ResolveMember (Chase) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:326][854]LogBlueprint: Warning: FMemberReference::ResolveMember (Evade) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:326][854]LogBlueprint: Warning: FMemberReference::ResolveMember (AltitudeControl) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:326][854]LogBlueprint: Warning: FMemberReference::ResolveMember (FindRandomDestination) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:327][854]LogBlueprint: Warning: FMemberReference::ResolveMember (Patrol) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:327][854]LogBlueprint: Warning: FMemberReference::ResolveMember (FindRandomDestination) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:327][854]LogBlueprint: Warning: FMemberReference::ResolveMember (GetCurrentHealth) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:327][854]LogBlueprint: Warning: FMemberReference::ResolveMember (DestroySelf) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:327][854]LogBlueprint: Warning: FMemberReference::ResolveMember (ChangeHealth) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.04.32:328][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:328][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:328][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:328][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:328][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:328][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:329][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:329][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:329][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:329][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:329][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:330][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:330][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:330][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:330][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:330][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:330][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:330][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:330][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:330][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:330][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:330][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:331][854]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.32:334][854]LogMaterial: Display: Missing cached shader map for material BasicEnemyMat, compiling. 
+[2019.12.09-18.04.32:989][854]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP
+[2019.12.09-18.04.41:921][854]LogSlate: Window 'Message' being destroyed
+[2019.12.09-18.04.41:956][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UberGraphFrame': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:956][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'AttackTrigger': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:956][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ExecuteUbergraph_EnemyBaseBP': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'EntryPoint': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'BndEvt__AttackTrigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OverlappedComponent': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BndEvt__AttackTrigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Damaged': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OverlappedComponent': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'EvadePlayer': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ChasePlayer': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'DestroySelf': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ReceiveTick': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'DeltaSeconds': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ReceiveTick
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ReceiveBeginPlay': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'InpActEvt_Up_K2Node_InputKeyEvent_0': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Key': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:InpActEvt_Up_K2Node_InputKeyEvent_0
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UserConstructionScript': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_CreateDynamicMaterialInstance_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:UserConstructionScript
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'FindRandomDestination': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'NewDestination': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:FindRandomDestination
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Temp_object_Variable': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:FindRandomDestination
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Temp_object_Variable': ArrayProperty /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:FindRandomDestination.Temp_object_Variable
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'bFromSweep': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BndEvt__AttackTrigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.04.41:957][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'bFromSweep': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.04.41:958][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Patrol': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:958][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_FindRandomDestination_NewDestination': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:Patrol
+[2019.12.09-18.04.41:958][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Moving': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:958][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_GetComponentLocation_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:Moving
+[2019.12.09-18.04.41:958][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ReceiveDamage': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:958][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'DamageValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ReceiveDamage
+[2019.12.09-18.04.41:958][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'BPChase': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:958][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_GetComponentLocation_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPChase
+[2019.12.09-18.04.41:958][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_IsValid_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPChase
+[2019.12.09-18.04.41:958][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'BPEvade': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:958][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_GetComponentLocation_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPEvade
+[2019.12.09-18.04.41:958][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_IsValid_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPEvade
+[2019.12.09-18.04.41:958][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_IsValid_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:959][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_IsValid_ReturnValue1': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:959][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_bFromSweep': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:959][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_bFromSweep1': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:959][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_DynamicCast_bSuccess': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:959][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_DynamicCast_bSuccess1': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:959][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_GreaterEqual_IntInt_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:FindRandomDestination
+[2019.12.09-18.04.41:959][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_LineTraceSingleByProfile_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:FindRandomDestination
+[2019.12.09-18.04.41:959][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'isMoving': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:960][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_LessEqual_FloatFloat_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:Moving
+[2019.12.09-18.04.41:960][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_LessEqual_IntInt_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ReceiveDamage
+[2019.12.09-18.04.41:960][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ComponentDelegateBinding_39': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:960][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_BreakVector_X': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPChase
+[2019.12.09-18.04.41:960][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_BreakVector_Y': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPChase
+[2019.12.09-18.04.41:960][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_BreakVector_Z': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPChase
+[2019.12.09-18.04.41:960][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_BreakVector_X': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPEvade
+[2019.12.09-18.04.41:960][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_BreakVector_Y': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPEvade
+[2019.12.09-18.04.41:960][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_BreakVector_Z': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPEvade
+[2019.12.09-18.04.41:961][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Multiply_FloatFloat_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPEvade
+[2019.12.09-18.04.41:961][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_Event_DeltaSeconds': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:961][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Multiply_FloatFloat_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:FindRandomDestination
+[2019.12.09-18.04.41:961][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_RandomFloatInRange_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:FindRandomDestination
+[2019.12.09-18.04.41:961][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_RandomFloatInRange_ReturnValue1': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:FindRandomDestination
+[2019.12.09-18.04.41:962][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'frameCycle': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:962][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_BreakVector_X': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:Moving
+[2019.12.09-18.04.41:962][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_BreakVector_Y': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:Moving
+[2019.12.09-18.04.41:962][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_BreakVector_Z': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:Moving
+[2019.12.09-18.04.41:962][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_VSize_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:Moving
+[2019.12.09-18.04.41:962][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'searchRadius': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:962][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'InputKeyDelegateBinding_28': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:963][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OtherBodyIndex': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BndEvt__AttackTrigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.04.41:963][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OtherBodyIndex': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.04.41:963][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_OtherBodyIndex': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:963][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_OtherBodyIndex1': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:963][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Add_IntInt_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:FindRandomDestination
+[2019.12.09-18.04.41:963][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Temp_int_Variable': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:FindRandomDestination
+[2019.12.09-18.04.41:963][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_GetCurrentHealth_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ReceiveDamage
+[2019.12.09-18.04.41:964][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'searchAttempt': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:964][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OtherActor': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BndEvt__AttackTrigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.04.41:964][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OtherComp': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BndEvt__AttackTrigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.04.41:964][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OtherActor': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.04.41:964][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OtherComp': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.04.41:964][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_GetPlayerController_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPChase
+[2019.12.09-18.04.41:964][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_GetPawn_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPChase
+[2019.12.09-18.04.41:964][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_GetPlayerController_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPEvade
+[2019.12.09-18.04.41:965][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_GetPawn_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPEvade
+[2019.12.09-18.04.41:965][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_GetPlayerController_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:965][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_GetPlayerController_ReturnValue1': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:965][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_GetPawn_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:965][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_OtherActor': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:965][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_OtherActor1': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:966][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_OtherComp': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:966][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_OtherComp1': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:966][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_OverlappedComponent': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:966][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_OverlappedComponent1': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:967][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_DynamicCast_AsPlayer_Pawn': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:967][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_DynamicCast_AsPlayer_Pawn1': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:967][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'MaterialRef': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:967][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'playerRef': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:967][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'RadarTrigger': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:967][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Skin': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:968][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'DefaultSceneRoot_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:968][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SimpleConstructionScript_0': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:969][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_0': SimpleConstructionScript /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:SimpleConstructionScript_0
+[2019.12.09-18.04.41:970][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_1': SimpleConstructionScript /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:SimpleConstructionScript_0
+[2019.12.09-18.04.41:971][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_2': SimpleConstructionScript /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:SimpleConstructionScript_0
+[2019.12.09-18.04.41:971][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_3': SimpleConstructionScript /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:SimpleConstructionScript_0
+[2019.12.09-18.04.41:972][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SphereTrigger': EnemyBaseBP_C /Game/Blueprints/EnemiesBP/EnemyBaseBP.Default__EnemyBaseBP_C
+[2019.12.09-18.04.41:972][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'AttackTrigger_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:973][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'RadarTrigger_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:973][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Body': EnemyBaseBP_C /Game/Blueprints/EnemiesBP/EnemyBaseBP.Default__EnemyBaseBP_C
+[2019.12.09-18.04.41:973][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Skin_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:973][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Conv_FloatToString_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:Moving
+[2019.12.09-18.04.41:974][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SweepResult': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BndEvt__AttackTrigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.04.41:974][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SweepResult': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.04.41:974][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_GetActorLocation_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPChase
+[2019.12.09-18.04.41:974][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_MakeVector_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPChase
+[2019.12.09-18.04.41:974][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Multiply_VectorFloat_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPChase
+[2019.12.09-18.04.41:975][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Normal_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPChase
+[2019.12.09-18.04.41:975][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Subtract_VectorVector_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPChase
+[2019.12.09-18.04.41:975][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_GetActorLocation_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPEvade
+[2019.12.09-18.04.41:976][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_MakeVector_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPEvade
+[2019.12.09-18.04.41:976][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Multiply_VectorFloat_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPEvade
+[2019.12.09-18.04.41:976][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Normal_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPEvade
+[2019.12.09-18.04.41:976][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Subtract_VectorVector_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:BPEvade
+[2019.12.09-18.04.41:977][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_GetActorLocation_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:977][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_SweepResult': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:977][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_SweepResult1': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:978][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_InputKeyEvent_Key': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:ExecuteUbergraph_EnemyBaseBP
+[2019.12.09-18.04.41:978][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Add_VectorVector_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:FindRandomDestination
+[2019.12.09-18.04.41:979][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_FindRandomDestination_NewDestination': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:FindRandomDestination
+[2019.12.09-18.04.41:979][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_GetComponentLocation_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:FindRandomDestination
+[2019.12.09-18.04.41:980][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_LineTraceSingleByProfile_OutHit': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:FindRandomDestination
+[2019.12.09-18.04.41:981][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_MakeVector_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:FindRandomDestination
+[2019.12.09-18.04.41:981][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'nextDestination': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:FindRandomDestination
+[2019.12.09-18.04.41:981][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_MakeVector_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:Moving
+[2019.12.09-18.04.41:981][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Multiply_VectorFloat_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:Moving
+[2019.12.09-18.04.41:982][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Normal_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:Moving
+[2019.12.09-18.04.41:982][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Subtract_VectorVector_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:Moving
+[2019.12.09-18.04.41:982][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_SetTimer_ReturnValue': Function /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C:Patrol
+[2019.12.09-18.04.41:982][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'targetDestination': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.04.41:983][854]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'TimerHandle': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.50:722][881]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.09-18.05.52:691][998]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP
+[2019.12.09-18.05.54:384][998]LogSlate: Window 'Message' being destroyed
+[2019.12.09-18.05.56:631][129]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.09-18.05.57:488][167]LogBlueprint: Warning: FMemberReference::ResolveMember (FindRandomDestination) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:488][167]LogBlueprint: Warning: FMemberReference::ResolveMember (FindRandomDestination) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:488][167]LogBlueprint: Warning: FMemberReference::ResolveMember (Patrol) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:488][167]LogBlueprint: Warning: FMemberReference::ResolveMember (ChangeHealth) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:488][167]LogBlueprint: Warning: FMemberReference::ResolveMember (GetCurrentHealth) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:488][167]LogBlueprint: Warning: FMemberReference::ResolveMember (DestroySelf) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:488][167]LogBlueprint: Warning: FMemberReference::ResolveMember (K2_GetActorLocation) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:488][167]LogBlueprint: Warning: FMemberReference::ResolveMember (K2_GetActorLocation) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:488][167]LogBlueprint: Warning: FMemberReference::ResolveMember (K2_DestroyActor) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:488][167]LogBlueprint: Warning: FMemberReference::ResolveMember (Patrol) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:488][167]LogBlueprint: Warning: FMemberReference::ResolveMember (K2_GetActorLocation) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:488][167]LogBlueprint: Warning: FMemberReference::ResolveMember (Chase) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:488][167]LogBlueprint: Warning: FMemberReference::ResolveMember (Evade) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:488][167]LogBlueprint: Warning: FMemberReference::ResolveMember (AltitudeControl) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:488][167]LogBlueprint: Warning: FMemberReference::ResolveMember (ReceiveDamage) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:489][167]LogBlueprint: Warning: FMemberReference::ResolveMember (EnableInput) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:489][167]LogBlueprint: Warning: FMemberReference::ResolveMember (Damaged) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:489][167]LogBlueprint: Warning: FMemberReference::ResolveMember (BPChase) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:495][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:495][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:495][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:495][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:495][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:495][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: Unable to load Default__ShootingEnemy_C with outer Package /Game/Blueprints/EnemiesBP/ShootingEnemy because its class does not exist
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:496][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:497][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:497][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:497][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:497][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:498][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:498][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:498][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:498][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:498][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:498][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:498][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:498][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:498][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:498][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:498][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:498][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:498][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:499][167]LogBlueprint: Warning: FMemberReference::ResolveMember (ShootPlayer) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:499][167]LogBlueprint: Warning: FMemberReference::ResolveMember (Attack) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.05.57:499][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:499][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:499][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:499][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:499][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:499][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:500][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:500][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:500][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:500][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:501][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:501][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:501][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:501][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:501][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP_C
+[2019.12.09-18.05.57:501][167]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.57:524][167]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy
+[2019.12.09-18.05.59:329][167]LogSlate: Window 'Message' being destroyed
+[2019.12.09-18.05.59:361][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UberGraphFrame': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.59:362][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'unitsAhead': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.59:362][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ExecuteUbergraph_ShootingEnemy': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.59:362][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'EntryPoint': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:362][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'BndEvt__AttackTrigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.59:362][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OverlappedComponent': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:BndEvt__AttackTrigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.05.59:363][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'bFromSweep': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:BndEvt__AttackTrigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.05.59:363][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'BndEvt__RadarTrigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.59:363][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OverlappedComponent': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:BndEvt__RadarTrigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.05.59:363][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'bFromSweep': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:BndEvt__RadarTrigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.05.59:364][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_IsValid_ReturnValue': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:364][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_IsValid_ReturnValue1': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:364][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_bFromSweep': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:364][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_bFromSweep1': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:365][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_DynamicCast_bSuccess': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:365][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_DynamicCast_bSuccess1': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:365][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ComponentDelegateBinding_4': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.59:366][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'spawnDistance': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.59:366][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_CustomEvent_PlayerVelocity': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:367][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_CustomEvent_PlayerLocation': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:367][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Attack': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.59:367][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'PlayerVelocity': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:Attack
+[2019.12.09-18.05.59:368][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'PlayerLocation': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:Attack
+[2019.12.09-18.05.59:368][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ShootPlayer': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.59:368][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_FinishSpawningActor_ReturnValue': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ShootPlayer
+[2019.12.09-18.05.59:368][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ShootPlayer
+[2019.12.09-18.05.59:369][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_MakeTransform_ReturnValue': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ShootPlayer
+[2019.12.09-18.05.59:369][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Subtract_VectorVector_ReturnValue': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ShootPlayer
+[2019.12.09-18.05.59:369][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Add_VectorVector_ReturnValue1': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ShootPlayer
+[2019.12.09-18.05.59:370][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_GetComponentLocation_ReturnValue': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ShootPlayer
+[2019.12.09-18.05.59:370][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Add_VectorVector_ReturnValue': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ShootPlayer
+[2019.12.09-18.05.59:370][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Multiply_VectorFloat_ReturnValue1': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ShootPlayer
+[2019.12.09-18.05.59:370][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Multiply_VectorFloat_ReturnValue': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ShootPlayer
+[2019.12.09-18.05.59:371][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_GetForwardVector_ReturnValue': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ShootPlayer
+[2019.12.09-18.05.59:371][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Normal_ReturnValue': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ShootPlayer
+[2019.12.09-18.05.59:371][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'targetVelocity': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ShootPlayer
+[2019.12.09-18.05.59:372][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'targetLocation': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ShootPlayer
+[2019.12.09-18.05.59:372][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'InheritableComponentHandler': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.59:372][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OtherBodyIndex': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:BndEvt__AttackTrigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.05.59:373][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OtherBodyIndex': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:BndEvt__RadarTrigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.05.59:374][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_OtherBodyIndex': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:375][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_OtherBodyIndex1': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:375][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OtherActor': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:BndEvt__AttackTrigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.05.59:376][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OtherComp': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:BndEvt__AttackTrigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.05.59:376][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OtherActor': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:BndEvt__RadarTrigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.05.59:376][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OtherComp': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:BndEvt__RadarTrigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.05.59:377][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_OtherActor': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:378][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_OtherActor1': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:379][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_OtherComp': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:379][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_OtherComp1': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:380][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_OverlappedComponent': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:380][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_OverlappedComponent1': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:380][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_DynamicCast_AsPlayer_Pawn': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:382][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_DynamicCast_AsPlayer_Pawn1': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:382][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'DefaultSceneRoot_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.59:382][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SimpleConstructionScript_0': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.59:383][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_0': SimpleConstructionScript /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:SimpleConstructionScript_0
+[2019.12.09-18.05.59:383][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SphereTrigger': ShootingEnemy_C /Game/Blueprints/EnemiesBP/ShootingEnemy.Default__ShootingEnemy_C
+[2019.12.09-18.05.59:383][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'AttackTrigger_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.59:384][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'RadarTrigger_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.59:384][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Body': ShootingEnemy_C /Game/Blueprints/EnemiesBP/ShootingEnemy.Default__ShootingEnemy_C
+[2019.12.09-18.05.59:384][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Skin_GEN_VARIABLE': BlueprintGeneratedClass /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C
+[2019.12.09-18.05.59:384][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SweepResult': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:BndEvt__AttackTrigger_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.05.59:385][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SweepResult': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:BndEvt__RadarTrigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+[2019.12.09-18.05.59:385][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_GetPhysicsLinearVelocity_ReturnValue': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:385][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_GetComponentLocation_ReturnValue': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:386][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_SweepResult': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.05.59:386][167]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_ComponentBoundEvent_SweepResult1': Function /Game/Blueprints/EnemiesBP/ShootingEnemy.ShootingEnemy_C:ExecuteUbergraph_ShootingEnemy
+[2019.12.09-18.06.09:996][791]LogEditorViewport: Clicking on Actor (LMB): EnemiesSpawner_C (EnemiesSpawner)
+[2019.12.09-18.06.21:482][471]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.09-18.06.21:637][480]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/EnemiesBP/EnemiesSpawner.EnemiesSpawner
+[2019.12.09-18.06.39:916][521]LogUObjectHash: Compacting FUObjectHashTables data took   2.87ms
+[2019.12.09-18.06.39:995][521]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2019.12.09-18.06.39:996][521]LogBlueprint: Warning: FMemberReference::ResolveMember (ShootPlayer) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.06.39:997][521]LogBlueprint: Warning: FMemberReference::ResolveMember (Attack) bSelfContext == true, but no scope supplied!
+[2019.12.09-18.06.40:269][521]LogSavePackage: Moving '../../../../../GitHub/BulletEncore/BulletEncoreProject/Saved/TwinStickExampleMap1AC195464FB7C16CD009AE8A6BF2EC88.tmp' to '../../../../../GitHub/BulletEncore/BulletEncoreProject/Content/TwinStickCPP/Maps/TwinStickExampleMap.umap'
+[2019.12.09-18.06.40:583][521]LogFileHelpers: Saving map 'TwinStickExampleMap' took 0.625
+[2019.12.09-18.06.57:792][548]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.09-18.07.18:708][556]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.09-18.10.03:351][893]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.09-18.11.37:048][359]Running E:/Software/UE_4.22/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="E:/GitHub/BulletEncore/BulletEncoreProject/BulletEncoreProject.uproject" -game -rocket -progress
+[2019.12.09-18.11.38:227][359]Discovering modules, targets and source code for project...
+[2019.12.09-18.11.49:800][359]Binding IntelliSense data...
+[2019.12.09-18.11.53:531][359]Binding IntelliSense data... 100%
+[2019.12.09-18.11.53:531][359]Writing project files...
+[2019.12.09-18.12.01:386][359]Writing project files... 100%
+[2019.12.09-18.12.02:117][359]Candidate modules for hot reload:
+[2019.12.09-18.12.02:117][359]  BulletEncoreProject
+[2019.12.09-18.12.02:117][359]Launching UnrealBuildTool... [E:/Software/UE_4.22/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=BulletEncoreProject,883 Win64 Development -TargetType=Editor -Project="E:/GitHub/BulletEncore/BulletEncoreProject/BulletEncoreProject.uproject" "E:/GitHub/BulletEncore/BulletEncoreProject/BulletEncoreProject.uproject"  -IgnoreJunk]
+[2019.12.09-18.15.56:780][359]CompilerResultsLog: New page: Compilation - Dec 9, 2019, 8:15:56 AM
+[2019.12.09-18.15.56:796][359]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\GitHub\BulletEncore).
+[2019.12.09-18.15.56:796][359]CompilerResultsLog: Creating makefile for BulletEncoreProjectEditor (no existing makefile)
+[2019.12.09-18.15.56:796][359]CompilerResultsLog: Parsing headers for BulletEncoreProjectEditor
+[2019.12.09-18.15.56:796][359]CompilerResultsLog:   Running UnrealHeaderTool "E:\GitHub\BulletEncore\BulletEncoreProject\BulletEncoreProject.uproject" "E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\BulletEncoreProjectEditor\Development\BulletEncoreProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2019.12.09-18.15.56:796][359]CompilerResultsLog: Reflection code generated for BulletEncoreProjectEditor in 33.9957436 seconds
+[2019.12.09-18.15.56:796][359]CompilerResultsLog: Using Visual Studio 2019 14.23.28105 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2019.12.09-18.15.56:796][359]CompilerResultsLog: Building 6 actions with 8 processes...
+[2019.12.09-18.15.56:796][359]CompilerResultsLog:   [1/6] BulletEncoreProject.init.gen.cpp
+[2019.12.09-18.15.56:796][359]CompilerResultsLog:   [2/6] EnemyBase.cpp
+[2019.12.09-18.15.56:796][359]CompilerResultsLog:   [3/6] EnemyBase.gen.cpp
+[2019.12.09-18.15.56:796][359]CompilerResultsLog:   [4/6] UE4Editor-BulletEncoreProject-0883.lib
+[2019.12.09-18.15.56:796][359]CompilerResultsLog:      Creating library E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject-0883.lib and object E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject-0883.exp
+[2019.12.09-18.15.56:796][359]CompilerResultsLog:   [5/6] UE4Editor-BulletEncoreProject-0883.dll
+[2019.12.09-18.15.56:796][359]CompilerResultsLog:      Creating library E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject-0883.suppressed.lib and object E:\GitHub\BulletEncore\BulletEncoreProject\Intermediate\Build\Win64\UE4Editor\Development\BulletEncoreProject\UE4Editor-BulletEncoreProject-0883.suppressed.exp
+[2019.12.09-18.15.56:796][359]CompilerResultsLog:   [6/6] BulletEncoreProjectEditor.target
+[2019.12.09-18.15.56:796][359]CompilerResultsLog: Total time in Parallel executor: 195.64 seconds
+[2019.12.09-18.15.56:796][359]CompilerResultsLog: Total execution time: 234.41 seconds
+[2019.12.09-18.15.56:806][359]LogMainFrame: MainFrame: Module compiling took 234.942 seconds
+[2019.12.09-18.15.57:138][359]LogUObjectHash: Compacting FUObjectHashTables data took   2.97ms
+[2019.12.09-18.15.57:163][359]LogBlueprintActionDatabase: Requesting refresh due to hot reload
+[2019.12.09-18.15.57:298][359]LogContentBrowser: Native class hierarchy populated in 0.0084 seconds. Added 2739 classes and 664 folders.
+[2019.12.09-18.15.57:386][359]Display: HotReload took 235.7s.
+[2019.12.09-18.15.57:424][359]Warning: HotReload operation took 235.8s.
+[2019.12.09-18.15.58:153][359]LogVSAccessor: Warning: Couldn't open file 'E:/GitHub/BulletEncore/BulletEncoreProject/Source/BulletEncoreProject/Public/EnemyBase.h'.
+[2019.12.09-18.15.58:155][359]LogVSAccessor: Warning: Couldn't open file 'E:/GitHub/BulletEncore/BulletEncoreProject/Source/BulletEncoreProject/Private/EnemyBase.cpp'.
+[2019.12.09-18.15.58:163][359]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2019.12.09-18.15.58:170][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:170][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:170][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:170][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:170][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:171][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:171][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:171][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:171][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:172][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:172][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:173][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:174][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:174][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:175][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:175][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:175][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:176][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:176][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:176][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:176][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:176][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:176][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:177][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:177][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:177][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:177][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:177][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:177][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:178][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:178][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:178][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:178][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:178][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:178][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:178][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:179][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:179][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:179][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:179][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:179][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:179][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:179][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:179][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:180][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:180][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:180][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:180][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:180][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:180][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:180][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:181][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:181][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:181][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:181][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:181][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:181][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:182][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:182][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:182][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:182][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:183][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:183][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:183][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:184][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:184][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:184][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:184][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:185][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:185][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:185][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:185][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:185][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:185][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:185][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:185][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:185][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:185][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:186][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:186][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:186][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:186][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:186][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:186][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:186][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:186][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:186][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:187][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:187][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:187][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:187][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:187][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:187][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:187][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:187][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:188][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:189][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:190][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:191][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:191][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:191][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:192][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:258][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:301][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:306][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:306][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:306][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:309][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:315][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:331][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:331][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:331][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:331][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:368][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:383][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:390][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:390][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:390][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:391][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:391][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:391][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:391][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:409][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:410][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:410][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:412][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:463][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:469][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:473][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:480][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:484][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:485][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:485][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:485][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:486][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:486][359]LogVSAccessor: Warning: Couldn't access module table
+[2019.12.09-18.15.58:486][359]LogSlate: Window 'Add C++ Class' being destroyed
+[2019.12.09-18.15.59:272][359]LogHotReload: New module detected: UE4Editor-BulletEncoreProject-0883.dll
+[2019.12.09-18.15.59:880][360]LogHotReload: Starting Hot-Reload from IDE
+[2019.12.09-18.15.59:964][360]LogUObjectHash: Compacting FUObjectHashTables data took   5.38ms
+[2019.12.09-18.15.59:965][360]LogBlueprintActionDatabase: Requesting refresh due to module change: BulletEncoreProject (unloaded)
+[2019.12.09-18.16.00:220][360]LogClass: Could not find existing class EnemyBase in package /Script/BulletEncoreProject for HotReload, assuming new class
+[2019.12.09-18.16.00:294][360]LogClass: ERace HotReload.
+[2019.12.09-18.16.00:294][360]LogClass: EFireRate HotReload.
+[2019.12.09-18.16.00:294][360]LogClass: EBulletType HotReload.
+[2019.12.09-18.16.00:294][360]LogClass: GunData HotReload.
+[2019.12.09-18.16.00:294][360]LogClass: BulletData HotReload.
+[2019.12.09-18.16.00:294][360]LogClass: PlayerHealthInfo HotReload.
+[2019.12.09-18.16.00:323][360]LogBlueprintActionDatabase: Requesting refresh due to module change: BulletEncoreProject (loaded)
+[2019.12.09-18.16.00:324][360]LogContentBrowser: Native class hierarchy updated for 'BulletEncoreProject' in 0.0005 seconds. Added 7 classes and 3 folders.
+[2019.12.09-18.16.00:329][360]Display: HotReload successful (14 functions remapped  3 scriptstructs remapped)
+[2019.12.09-18.16.00:708][360]LogUObjectHash: Compacting FUObjectHashTables data took   2.54ms
+[2019.12.09-18.16.00:709][360]LogBlueprintActionDatabase: Requesting refresh due to hot reload
+[2019.12.09-18.16.00:728][360]LogContentBrowser: Native class hierarchy populated in 0.0113 seconds. Added 2740 classes and 664 folders.
+[2019.12.09-18.16.00:732][360]Display: HotReload took  0.9s.
+[2019.12.09-18.16.00:740][360]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.000 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.09-18.16.00:740][360]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.000 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.09-18.16.00:740][360]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.000 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.09-18.16.00:740][360]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.000 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.09-18.16.42:081][483]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (41.340 sec). This should never happen. Something is wrong with the timer delegate!
+[2019.12.09-18.17.08:387][927]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/EnemiesBP/EnemyBaseBP.EnemyBaseBP
+[2019.12.09-18.17.16:093][927]LogSlate: Window 'Message' being destroyed
+[2019.12.09-18.17.16:436][927]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2019.12.09-18.17.21:525][927]LogStats: FPlatformStackWalk::StackWalkAndDump -  5.089 s
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: === Handled ensure: ===
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: 
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: Ensure condition failed: BpClass != nullptr [File:D:\Build\++UE4\Sync\Engine\Source\Editor\BlueprintGraph\Private\BlueprintActionFilter.cpp] [Line: 632]
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: Unable to resolve IsEventUnimplementable() - Blueprint (EnemyBaseBP) missing an authoratative class (skel: [NULL], generated: [NULL], parent: [NULL])
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: Stack: 
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd06842e2b UE4Editor-BlueprintGraph.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd066a4efe UE4Editor-BlueprintGraph.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd066a5882 UE4Editor-BlueprintGraph.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd066a56fb UE4Editor-BlueprintGraph.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd04df063f UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd04e11ff8 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd04df0c9e UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd05046bd8 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd05087639 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd057e54cf UE4Editor-GraphEditor.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd056fe4d9 UE4Editor-GraphEditor.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd0505bbb8 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd05057554 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd050317b9 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd05057a74 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd04e76768 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd04e6dae6 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd04e99cf8 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd04e715ed UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf7be44d2 UE4Editor-AssetTools.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd08417b09 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf7b672ae UE4Editor-AssetTools.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf6b330aa UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf6af0ad9 UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf6b3b2fc UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf6aee70a UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf6aeae10 UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf6b44e80 UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf6b3b66f UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd092b35ea UE4Editor-Slate.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd0932e49e UE4Editor-Slate.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd09319d89 UE4Editor-Slate.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd0930fd42 UE4Editor-Slate.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd603bb88c UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd603aef9f UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2019.12.09-18.17.21:525][927]LogOutputDevice: Error: [Callstack] 0x00007ffd603bd77f UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2019.12.09-18.17.21:526][927]LogOutputDevice: Error: [Callstack] 0x00007ffd603ac090 UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2019.12.09-18.17.21:526][927]LogOutputDevice: Error: [Callstack] 0x00007ffd7dcfc906 USER32.dll!UnknownFunction []
+[2019.12.09-18.17.21:526][927]LogOutputDevice: Error: [Callstack] 0x00007ffd7dcfc422 USER32.dll!UnknownFunction []
+[2019.12.09-18.17.21:526][927]LogOutputDevice: Error: [Callstack] 0x00007ffd603be946 UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2019.12.09-18.17.21:526][927]LogOutputDevice: Error: [Callstack] 0x00007ff74f775d3e UE4Editor.exe!UnknownFunction []
+[2019.12.09-18.17.21:526][927]LogOutputDevice: Error: [Callstack] 0x00007ff74f78554c UE4Editor.exe!UnknownFunction []
+[2019.12.09-18.17.21:526][927]LogOutputDevice: Error: [Callstack] 0x00007ff74f7855ca UE4Editor.exe!UnknownFunction []
+[2019.12.09-18.17.21:526][927]LogOutputDevice: Error: [Callstack] 0x00007ff74f79316c UE4Editor.exe!UnknownFunction []
+[2019.12.09-18.17.21:526][927]LogOutputDevice: Error: [Callstack] 0x00007ff74f795b8e UE4Editor.exe!UnknownFunction []
+[2019.12.09-18.17.21:526][927]LogOutputDevice: Error: [Callstack] 0x00007ffd7bd77974 KERNEL32.DLL!UnknownFunction []
+[2019.12.09-18.17.21:526][927]LogOutputDevice: Error: [Callstack] 0x00007ffd7e2ca271 ntdll.dll!UnknownFunction []
+[2019.12.09-18.17.21:526][927]LogOutputDevice: Error: 
+[2019.12.09-18.17.21:548][927]LogStats:                SubmitErrorReport -  0.018 s
+[2019.12.09-18.17.33:808][927]LogStats:                    SendNewReport - 12.259 s
+[2019.12.09-18.17.33:808][927]LogStats:             FDebug::EnsureFailed - 17.372 s
+[2019.12.09-18.17.33:819][927]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2019.12.09-18.17.33:821][927]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.001 s
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: === Handled ensure: ===
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: 
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: Ensure condition failed: BpClass != nullptr [File:D:\Build\++UE4\Sync\Engine\Source\Editor\BlueprintGraph\Private\BlueprintActionFilter.cpp] [Line: 731]
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: Unable to resolve IsFieldInaccessible() - Blueprint (EnemyBaseBP) missing an authoratative class (skel: [NULL], generated: [NULL], parent: [NULL])
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: Stack: 
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd0684287b UE4Editor-BlueprintGraph.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd066a561a UE4Editor-BlueprintGraph.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd066a5882 UE4Editor-BlueprintGraph.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd066a56fb UE4Editor-BlueprintGraph.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd04df063f UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd04e11ff8 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd04df0c9e UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd05046bd8 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd05087639 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd057e54cf UE4Editor-GraphEditor.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd056fe4d9 UE4Editor-GraphEditor.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd0505bbb8 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd05057554 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd050317b9 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd05057a74 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd04e76768 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd04e6dae6 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd04e99cf8 UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd04e715ed UE4Editor-Kismet.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf7be44d2 UE4Editor-AssetTools.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd08417b09 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf7b672ae UE4Editor-AssetTools.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf6b330aa UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf6af0ad9 UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf6b3b2fc UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf6aee70a UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf6aeae10 UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf6b44e80 UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffcf6b3b66f UE4Editor-ContentBrowser.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd092b35ea UE4Editor-Slate.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd0932e49e UE4Editor-Slate.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd09319d89 UE4Editor-Slate.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd0930fd42 UE4Editor-Slate.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd603bb88c UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd603aef9f UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd603bd77f UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd603ac090 UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd7dcfc906 USER32.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd7dcfc422 USER32.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ffd603be946 UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ff74f775d3e UE4Editor.exe!UnknownFunction []
+[2019.12.09-18.17.33:821][927]LogOutputDevice: Error: [Callstack] 0x00007ff74f78554c UE4Editor.exe!UnknownFunction []
+[2019.12.09-18.17.33:822][927]LogOutputDevice: Error: [Callstack] 0x00007ff74f7855ca UE4Editor.exe!UnknownFunction []
+[2019.12.09-18.17.33:822][927]LogOutputDevice: Error: [Callstack] 0x00007ff74f79316c UE4Editor.exe!UnknownFunction []
+[2019.12.09-18.17.33:822][927]LogOutputDevice: Error: [Callstack] 0x00007ff74f795b8e UE4Editor.exe!UnknownFunction []
+[2019.12.09-18.17.33:822][927]LogOutputDevice: Error: [Callstack] 0x00007ffd7bd77974 KERNEL32.DLL!UnknownFunction []
+[2019.12.09-18.17.33:822][927]LogOutputDevice: Error: [Callstack] 0x00007ffd7e2ca271 ntdll.dll!UnknownFunction []
+[2019.12.09-18.17.33:822][927]LogOutputDevice: Error: 
+[2019.12.09-18.17.33:827][927]LogStats:                SubmitErrorReport -  0.000 s
